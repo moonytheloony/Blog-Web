@@ -1,6 +1,0 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "Rahul Rai Site"
-
-[Params]
-	Author ="Rahul Rai"
