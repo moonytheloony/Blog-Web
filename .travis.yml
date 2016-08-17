@@ -1,27 +1,16 @@
 language: go
-
 go:
     - "1.5.1"
-
 env:
-    global:
-        - SSH_KEY="travis_key"
-        - GIT_NAME="Rahul Rai"
-        - GIT_EMAIL="rahulrai@rahulrai.in"
-        - SOURCE_DIR="public"
-        - DEPLOY_BRANCH="master"
-
 before_script:
     - go get -u -v github.com/spf13/hugo
-
 script:
+    - cd Sites/rahulrai
     - hugo
-
 deploy:
   provider: azure_web_apps
   on: master
   verbose: true
-
 after_success:
     - echo "rahulrai.in" > ./public/CNAME
     - ./scripts/deploy.sh
