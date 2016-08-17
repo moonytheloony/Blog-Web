@@ -6,6 +6,8 @@ go:
 env:
 before_script:
     - go get -u -v github.com/spf13/hugo
+
+before_install:
     - cd Sites/rahulrai
 
 script:
