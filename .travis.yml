@@ -10,7 +10,8 @@ script:
 
 deploy:
   provider: azure_web_apps
-  on: master
+  on: 
+    branch: master
   verbose: true
 
 after_success:
