@@ -13,6 +13,3 @@ deploy:
   on: 
     branch: master
   verbose: true
-
-after_success:
-    - echo "Deployed"
