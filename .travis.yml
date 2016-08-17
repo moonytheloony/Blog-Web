@@ -6,7 +6,7 @@ before_install:
 install: go get -v github.com/spf13/hugo
 
 script:
-    - hugo
+    - hugo --theme=hugo_theme_robust -v
 
 deploy:
   provider: azure_web_apps
