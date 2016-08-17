@@ -1,0 +1,31 @@
+language: go
+
+go:
+    - "1.5.1"
+
+env:
+    global:
+        - SSH_KEY="travis_key"
+        - GIT_NAME="Rahul Rai"
+        - GIT_EMAIL="rahulrai@rahulrai.in"
+        - SOURCE_DIR="public"
+        - DEPLOY_BRANCH="master"
+
+before_install:
+    - openssl aes-256-cbc -K $encrypted_5badef0aa7c9_key -iv $encrypted_5badef0aa7c9_iv -in travis_key.enc -out travis_key -d
+
+before_script:
+    - go get -u -v github.com/spf13/hugo
+
+script:
+    - git clone https://github.com/rcoedo/hugo-steam-theme ./themes/hugo-steam-theme
+    - hugo
+
+deploy:
+  provider: azure_web_apps
+  on: master
+  verbose: true
+
+after_success:
+    - echo "rahulrai.in" > ./public/CNAME
+    - ./scripts/deploy.sh
