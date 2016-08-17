@@ -1,16 +1,21 @@
 language: go
+
 go:
     - "1.5.1"
+
 env:
 before_script:
     - go get -u -v github.com/spf13/hugo
-script:
     - cd Sites/rahulrai
+
+script:
     - hugo
+
 deploy:
   provider: azure_web_apps
   on: master
   verbose: true
+
 after_success:
     - echo "rahulrai.in" > ./public/CNAME
     - ./scripts/deploy.sh
