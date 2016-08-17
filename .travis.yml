@@ -19,5 +19,4 @@ deploy:
   verbose: true
 
 after_success:
-    - echo "rahulrai.in" > ./public/CNAME
-    - ./scripts/deploy.sh
+    - echo "Deployed rahulrai.in"
