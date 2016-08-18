@@ -1,8 +1,11 @@
 language: go
 
+sudo: required
+
 install: 
     - go get -v github.com/spf13/hugo
     - gem install dpl
+    - sudo apt-get install ncftp
 
 script:
     - hugo --theme=hugo_theme_robust -v
@@ -12,5 +15,4 @@ branches:
     - master
 
 after_success:
-    - git remote add azure https://rahulrai:TestCredentials@mysimpleapp1.scm.azurewebsites.net:443/mysimpleapp1.git        
-    - git push azure master --force --verbose -u
+    - ncftpput -R -v -u "rahulrai" -p "TestCredentials" ftp://waws-prod-sn1-043.ftp.azurewebsites.windows.net /site /public
