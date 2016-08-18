@@ -13,8 +13,6 @@ before_deploy:
 
 deploy:
   provider: azure_web_apps
-  on: 
-    branch: master
   verbose: true
   local-dir: public
   skip_cleanup: true
