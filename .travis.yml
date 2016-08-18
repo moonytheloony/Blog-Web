@@ -11,6 +11,10 @@ script:
 before_deploy:
     - git add public/*
 
+branches:
+  only:
+    - master
+
 deploy:
   provider: azure_web_apps
   verbose: true
