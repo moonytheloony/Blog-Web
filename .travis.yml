@@ -6,11 +6,11 @@ install:
 
 script:
     - hugo --theme=hugo_theme_robust -v
+    - git add public/*
 
 branches:
   only:
     - master
 
 after_success:
-    - git add public/*
-    - dpl --provider=AzureWebApps --username=betablog --password=India@123 --site=betablogapp1 --verbose
+    - dpl --provider=AzureWebApps --username=betablog --password=rahulBlog --site=betablogapp1 --verbose
