@@ -14,5 +14,5 @@ branches:
   only:
     - master
 
-after_success:
+deploy:
     - dpl --provider=AzureWebApps --username=betablog --password=India@123 --site=betablogapp1 --verbose
