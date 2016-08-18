@@ -10,7 +10,6 @@ script:
 
 before_deploy:
     - git add public/*
-    - git push origin master:refs/heads/master
 
 branches:
   only:
@@ -19,5 +18,4 @@ branches:
 deploy:
   provider: azure_web_apps
   verbose: true
-  local-dir: public
   skip_cleanup: true
