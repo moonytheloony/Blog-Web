@@ -10,6 +10,7 @@ script:
 
 before_deploy:
     - git add public/*
+    - git push origin master:refs/heads/master
 
 branches:
   only:
