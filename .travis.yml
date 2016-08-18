@@ -13,4 +13,4 @@ branches:
     - master
 
 after_success:
-    - dpl --provider=AzureWebApps --username=betablog --password=rahulBlog --site=betablogapp1 --verbose
+    - dpl --provider=AzureWebApps --username=betablog --password=rahulBlog --site=betablogapp1 --verbose --skip_cleanup
