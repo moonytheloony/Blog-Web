@@ -13,4 +13,5 @@ branches:
     - master
 
 after_success:
-    - dpl --provider=AzureWebApps --username=betablog --password=rahulBlog --site=betablogapp1 --verbose --skip_cleanup
+    - git remote add azure https://betablog:rahulBlog@betablogapp1.scm.azurewebsites.net:443/betablogapp1.git        
+    - git push azure master --force --verbose 
