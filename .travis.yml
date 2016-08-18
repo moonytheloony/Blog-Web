@@ -13,5 +13,5 @@ branches:
     - master
 
 after_success:
-    - git remote add azure https://betablog:rahulBlog@betablogapp1.scm.azurewebsites.net:443/betablogapp1.git        
-    - git push azure master --force --verbose 
+    - git remote add azure https://rahulrai:TestCredentials@mysimpleapp1.scm.azurewebsites.net:443/mysimpleapp1.git        
+    - git push azure master --force --verbose -u
