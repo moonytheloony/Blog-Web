@@ -15,4 +15,4 @@ branches:
     - master
 
 after_success:
-    - ncftpput -R -v -u "rahulrai" -p "TestCredentials" ftp://waws-prod-sn1-043.ftp.azurewebsites.windows.net /site /public
+    - ncftpput -R -v -u "mysimpleapp1\rahulrai" -p "TestCredentials" ftp://waws-prod-sn1-043.ftp.azurewebsites.windows.net /site/wwwroot /public
