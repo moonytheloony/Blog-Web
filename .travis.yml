@@ -6,7 +6,7 @@ install:
 
 script:
     - hugo --theme=hugo_theme_robust -v
-    - git add public/*
+    - git add *
 
 branches:
   only:
