@@ -1,6 +1,8 @@
 language: go
 
-install: go get -v github.com/spf13/hugo
+install: 
+    - go get -v github.com/spf13/hugo
+    - gem install dpl
 
 script:
     - hugo --theme=hugo_theme_robust -v
@@ -12,8 +14,5 @@ branches:
   only:
     - master
 
-deploy:
-  provider: azure_web_apps
-  verbose: true
-  local-dir: public
-  skip_cleanup: true
+after_success:
+    - dpl --provider=AzureWebApps --username=betablog --password=India@123 --site=betablogapp1 --verbose
