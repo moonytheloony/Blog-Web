@@ -1,8 +1,5 @@
 language: go
 
-before_install:
-    - cd Sites/rahulrai
-
 install: go get -v github.com/spf13/hugo
 
 script:
@@ -18,4 +15,5 @@ branches:
 deploy:
   provider: azure_web_apps
   verbose: true
+  local-dir: public
   skip_cleanup: true
