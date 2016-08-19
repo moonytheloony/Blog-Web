@@ -5,7 +5,7 @@ install:
     - rm -rf $deploy_dir || exit 0
 
 script:
-    - hugo --theme=hugo_theme -v
+    - hugo --theme=$hugo_theme -v
 
 branches:
   only:
