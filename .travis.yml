@@ -1,14 +1,5 @@
 language: go
 
-env:
-  global:
-    - secure: VXTS//6oqj6GlApXbDrZFqD1e/itw8bu9r1wdhx5Hux/lid1GV4wOuWBVXTH+OR/jMsIb3+35GhiQnKODCTw0yp4Y7vEins6MRBYyd7b3qqNcurhfNZHjD0LIgBqFuEp3DOnRhkgpi3q+HY+Lfq/cWb/wGt33KEnpaFPrjUgPu0W84f2mu+3e7CGY5+NHkrgQ3W0FgYxbNHPB0tHwF/gX5CKRvm7y5ct8RZYEQ+mKmLCdPjWsxI28xSb936ojnPF4RrgeKhHTaOqkUxsYBboiceYyiSWtuh07hg2L2MpIoMfzO4bvXHoe6Fovh7V4ewQD7kjqblbV4eRDsEU17moEp39etuOIlz3ORkvgZFN9MPPsH0mwQG6Hj+QnNleQdDgXPYvjLfK5VRgodAbXiYIkvz8otmxeTo4ANvdu7psErBuf+POdX5SNum7JyrhuCPGfAcJzB3zdwFvCU6HFty6cSBxVyIs7MnxNFMEc94t1kxgsBAsUkd9jA8VJ7jcCkLOp3BOSKN4aP+7L1z8iwwfLS5w9USVDFvRj0CLpROzDxwnjIlNUsduVwSG4SO+RM09keHqaCfYWPA3h1gmCv9DGwFWseKhxrjfdfJgtPeq13uhRoiYnFXmraaT/wOMAmJXHgp5uiWlWtwCKvQBsxlzFiB8nC5kaaxWH252VQ3Bh5Q=
-    - git_deploy_dir: public
-    - git_deploy_branch: master
-    - username: "travis"
-    - email: "rahulrai@live.com"
-    - target_repo: https://rahulrai:TestCredentials@mysimpleapp1.scm.azurewebsites.net:443/mysimpleapp1.git
-
 install: 
     - go get -v github.com/spf13/hugo
     - rm -rf $deploy_dir || exit 0
@@ -22,4 +13,4 @@ branches:
 
 after_success:
     - cp .travis.yml $git_deploy_dir
-    - bash travisdeploy.sh --verbose --message "auto commited by Travis "
+    - bash travisdeploy.sh --message "Travis auto commit "

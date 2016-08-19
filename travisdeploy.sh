@@ -23,8 +23,8 @@ Variables:
 
   git_deploy_dir      Folder path containing the files to deploy.
   git_deploy_branch   Commit deployable files to this branch.
-  GIT_DEPLOY_REPO     Push the deploy branch to this repository.
-
+  target_repo     Push the deploy branch to this repository.
+  append_commit_hash Requires hash to append with each commit?
 These variables have default values defined in the script. The defaults can be
 overridden by environment variables. Any environment variables are overridden
 by values set in a '.env' file (if it exists), and in turn by those set in a
@@ -59,7 +59,7 @@ parse_args() {
 			commit_message=$2
 			shift 2
 		elif [[ $1 = "-n" || $1 = "--no-hash" ]]; then
-			GIT_DEPLOY_APPEND_HASH=false
+			append_commit_hash = false
 			shift
 		else
 			break
@@ -81,7 +81,7 @@ parse_args() {
 	repo=${target_repo:-origin}
 
 	#append commit hash to the end of message by default
-	append_hash=${GIT_DEPLOY_APPEND_HASH:-true}
+	append_hash=${append_commit_hash:-true}
 }
 
 main() {
