@@ -22,4 +22,4 @@ branches:
 
 after_success:
     - cp .travis.yml $deploy_dir
-    - bash travisdeploy.sh --verbose --message "commited by travis "
+    - bash travisdeploy.sh --verbose --message "auto commited by Travis "
