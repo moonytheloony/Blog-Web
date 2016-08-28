@@ -1,19 +1,33 @@
-baseurl = "http://betablogweb.azurewebsites.net/"
-languageCode = "en-us"
-title = "Rahul on Technology and Things That Don't Matter"
+baseurl                 = "http://replace-this-with-your-hugo-site.com/"
+languageCode            = "en-us"
+title                   = "Hugo Phlat Theme"
+theme                   = "hugo-phlat-theme"
 
-#Hugo Defaults Override
-disableHugoGeneratorInject = true
-enableEmoji = true
-disablePathToLower = true
-theme = "hugo-phlat-theme"
+[permalinks]
+    post                = "/:year/:month/:slug/"
+    page                = "/:slug/"
 
-[blackfriday]
-	hrefTargetBlank = true
+[taxonomies]
+    tag                 = "tags"
+    category            = "categories"
 
+# The header menu will appear as an inline-list at the top right of the page
+[[menu.header]]
+    name                = "Home"
+    weight              = 1
+    url                 = "/"
 
+[[menu.header]]
+    name                = "About"
+    weight              = 3
+    url                 = "/about/"
 
-#Theme Variables
+# The footer menu will appear as an inline-list at the bottom left of the footer found at the bottom of the screen
+[[menu.footer]]
+    name                = "Privacy Policy"
+    weight              = 1
+    url                 = "/privacy-policy/"
+
 [params]
     keywords            = ["default", "keywords", "if", "no", "front", "matter"]
     description         = "A description that will appear as a default if front matter does not exist"
@@ -37,36 +51,3 @@ theme = "hugo-phlat-theme"
     email               = ""
     pinterest           = ""
     wordpress           = ""
-
-[permalinks]
-    post = "/:year/:month/:slug/"
-    page = "/:slug/"
-
-[taxonomies]
-    tag = "tags"
-    category = "categories"
-
-[[menu.header]]
-    name = "Home"
-    weight = 1
-    url = "/"
-
-[[menu.header]]
-    name = "Resources"
-    weight = 2
-    url = "/resources/"
-
-[[menu.header]]
-    name = "Contact"
-    weight = 3
-    url = "/contact/"
-
-[[menu.footer]]
-    name = "Privacy Policy"
-    weight = 1
-    url = "/privacy-policy/"
-
-[[menu.footer]]
-    name = "Sponsors"
-    weight = 2
-    url = "/sponsors/"
