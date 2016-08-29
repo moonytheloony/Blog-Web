@@ -1,6 +1,6 @@
 baseurl = "http://betablogweb.azurewebsites.net/"
 languageCode = "en-us"
-title = "Rahul on Cloud and Tech"
+title = "My Take on Cloud"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
 #Hugo Defaults Override
