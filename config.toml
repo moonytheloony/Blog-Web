@@ -1,22 +1,26 @@
 baseurl = "http://betablogweb.azurewebsites.net/"
 languageCode = "en-us"
-title = "Rahul on Technology and Things That Don't Matter"
+title = "Rahul on Cloud and Tech"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
 #Hugo Defaults Override
 disableHugoGeneratorInject = true
 enableEmoji = true
 disablePathToLower = true
 theme = "hugo-phlat-theme"
+paginate = 1
 
 [blackfriday]
 	hrefTargetBlank = true
 
-
+[author]
+    name = "Rahul Rai"
+    email = "rahulrai@rahulrai.in"
 
 #Theme Variables
 [params]
-    keywords            = ["default", "keywords", "if", "no", "front", "matter"]
-    description         = "A description that will appear as a default if front matter does not exist"
+    keywords            = ["Azure", "Cloud"]
+    description         = "Let's explore this cool tech."
     google_analytics    = "UA-XXXXX-YY"
     google_adsense      = "ca-pub-XXXXXX"
     disqus              = "shortname"
@@ -39,7 +43,7 @@ theme = "hugo-phlat-theme"
     wordpress           = ""
 
 [permalinks]
-    post = "/:year/:month/:slug/"
+    post = "/post/:slug"
     page = "/:slug/"
 
 [taxonomies]
