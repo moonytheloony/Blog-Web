@@ -22,7 +22,7 @@ paginate = 1
     keywords            = ["Azure", "Cloud"]
     description         = "Let's explore this cool tech."
     google_analytics    = "UA-XXXXX-YY"
-    google_adsense      = "ca-pub-XXXXXX"
+    google_adsense      = "Not Supported"
     disqus              = "shortname"
     google_webmaster    = ""
     bing_webmaster      = ""
@@ -44,26 +44,26 @@ paginate = 1
 
 [permalinks]
     post = "/post/:slug"
-    page = "/:slug/"
+    page = "/:slug"
 
 [taxonomies]
     tag = "tags"
     category = "categories"
 
 [[menu.header]]
-    name = "Home"
+    name = "Blog"
     weight = 1
     url = "/"
 
 [[menu.header]]
-    name = "Resources"
+    name = "Blog Archive"
     weight = 2
-    url = "/resources/"
+    url = "/archive/"
 
 [[menu.header]]
-    name = "Contact"
+    name = "Profile"
     weight = 3
-    url = "/contact/"
+    url = "/profile/"
 
 [[menu.footer]]
     name = "Privacy Policy"

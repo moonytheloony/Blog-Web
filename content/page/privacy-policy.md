@@ -5,6 +5,7 @@ description = "description"
 draft = false
 tags = ["tag1", "tag2"]
 title = "Privacy Policy"
+slug = "privacy-policy"
 +++
 
 Privacy policy here.

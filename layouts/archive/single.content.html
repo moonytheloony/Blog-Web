@@ -1,0 +1,21 @@
+<div class="row">
+   <div class="col-md-12 content-card">
+      <h1>{{ .Title }}</h1>
+      {{ range (where .Site.Pages "Type" "post") }}
+      <div class="row">
+         <div class="col-sm-2 text-left" >
+            <h2>{{ .Date | dateFormat "2006"}}</h2>
+            <small>
+            <time>
+            {{ .Date | dateFormat "Jan" }} {{ .Date | dateFormat "2" }}
+            </time>
+            </small>
+         </div>
+         <div class="col-sm-10 text-left" >
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+         </div>
+      </div>
+      <hr/>
+      {{ end }}
+   </div>
+</div>
