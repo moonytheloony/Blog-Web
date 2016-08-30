@@ -65,6 +65,11 @@ paginate = 1
     weight = 3
     url = "/profile/"
 
+[[menu.header]]
+    name = "RSS"
+    weight = 4
+    url = "/profile/"
+
 [[menu.footer]]
     name = "Privacy Policy"
     weight = 1

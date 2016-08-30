@@ -1,0 +1,28 @@
+.profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+    border-color: #ffffff;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+.profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-usertitle-name {
+    color: #337AB7;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+    text-transform: initial;
+    color: #337AB7;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
