@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-    {{ partial "head.html" . }}
-    <body>
-        {{ partial "navigation/navigation.html" . }}
-        <div id="top" class="container">
-            <div class="row" id="content-main">
-                <div class="col-md-8">
-                    {{ .Render "single.content" }}
-                </div>
-                <div class="col-md-4">
-                    {{ partial "widgets/organizedsidebar.html" .}}
-                </div>
+   {{ partial "head.html" . }}
+   <body>
+      {{ partial "navigation/navigation.html" . }}
+      <div id="top" class="container">
+         <div class="row" id="content-main">
+            <div class="col-md-8">
+               {{ .Render "single.content" }}
             </div>
-        </div>
-        {{ partial "footer.html" . }}
-        {{ partial "foot.html" . }}
-        <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.4.2/dist/showdown.min.js"></script>
-          <script>
-            var converter = new showdown.Converter(),
-            text = $.ajax({ url: "https://raw.githubusercontent.com/moonytheloony/Blog-Web/master/blobs/summary.md", async: false }).responseText,
-            html = converter.makeHtml(text);
-            $("#profileSummary").html(html);
-        </script>
-    </body>
+            <div class="col-md-4">
+               {{ partial "widgets/organizedsidebar.html" .}}
+            </div>
+         </div>
+      </div>
+      {{ partial "footer.html" . }}
+      {{ partial "foot.html" . }}
+      <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.4.2/dist/showdown.min.js"></script>
+      <script>
+         var converter = new showdown.Converter(),
+         text = $.ajax({ url: "https://raw.githubusercontent.com/moonytheloony/Blog-Web/master/blobs/summary.md", async: false }).responseText,
+         html = converter.makeHtml(text);
+         $("#profileSummary").html(html);
+      </script>
+   </body>
 </html>
