@@ -19,7 +19,7 @@
           <script>
             var converter = new showdown.Converter(),
             target = $("#targetDiv"),
-            text = $.ajax({ url: "http://localhost/webpath/graphing/sample_data.txt", async: false }).responseText,
+            text = $.ajax({ url: "https://raw.githubusercontent.com/moonytheloony/Blog-Web/master/blobs/Summary.md", async: false }).responseText,
             html = converter.makeHtml(text);
             $("#targetDiv").html(html);
         </script>
