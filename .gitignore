@@ -1,3 +1,5 @@
 # Igonre everything
 public/
+node_modules
 *.ini
+node_modules/
