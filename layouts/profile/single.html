@@ -19,5 +19,13 @@
         </div>
         {{ partial "footer.html" . }}
         {{ partial "foot.html" . }}
+        <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.4.2/dist/showdown.min.js"></script>
+          <script>
+            var converter = new showdown.Converter(),
+            target = $("#targetDiv"),
+            text = '#hello, markdown!',
+            html = converter.makeHtml(text);
+            $("#targetDiv").html(html);
+        </script>
     </body>
 </html>
