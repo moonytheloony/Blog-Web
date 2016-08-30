@@ -68,7 +68,7 @@ paginate = 1
 [[menu.header]]
     name = "RSS"
     weight = 4
-    url = "/profile/"
+    url = "/post/index.xml"
 
 [[menu.footer]]
     name = "Privacy Policy"
