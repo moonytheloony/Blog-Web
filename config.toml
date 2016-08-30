@@ -11,7 +11,7 @@ theme = "hugo-phlat-theme"
 paginate = 1
 
 [blackfriday]
-	hrefTargetBlank = true
+	hrefTargetBlank = false
 
 [author]
     name = "Rahul Rai"
