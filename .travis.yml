@@ -1,18 +1,18 @@
 language: go
 
 install: 
-    - go get -v github.com/spf13/hugo
-    - rm -rf $deploy_dir || exit 0
-
-script:
     - npm install gulp
     - npm install gulp-cssmin
     - npm install gulp-rename
     - npm install event-stream
     - npm install gulp-htmlmin
-    - gulp
-    - hugo -v
-    - gulp
+    - go get -v github.com/spf13/hugo
+    - rm -rf $deploy_dir || exit 0
+
+script:
+    - gulp minifyStylesheets
+    - hugo
+    - gulp minifyHtml
 
 branches:
   only:
