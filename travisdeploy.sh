@@ -8,23 +8,23 @@ Deploy generated files to a git branch.
 
 Options:
 
-  -h, --help               Show this help information.
-  -v, --verbose            Increase verbosity. Useful for debugging.
-  -e, --allow-empty        Allow deployment of an empty directory.
-  -m, --message MESSAGE    Specify the message used when committing on the
-                           deploy branch.
-  -n, --no-hash            Don't append the source commit's hash to the deploy
-                           commit's message.
-  -c, --config-file PATH   Override default & environment variables' values
-                           with those in set in the file at 'PATH'. Must be the
-                           first option specified.
+-h, --help               Show this help information.
+-v, --verbose            Increase verbosity. Useful for debugging.
+-e, --allow-empty        Allow deployment of an empty directory.
+-m, --message MESSAGE    Specify the message used when committing on the
+deploy branch.
+-n, --no-hash            Don't append the source commit's hash to the deploy
+commit's message.
+-c, --config-file PATH   Override default & environment variables' values
+with those in set in the file at 'PATH'. Must be the
+first option specified.
 
 Variables:
 
-  git_deploy_dir      Folder path containing the files to deploy.
-  git_deploy_branch   Commit deployable files to this branch.
-  target_repo     Push the deploy branch to this repository.
-  append_commit_hash Requires hash to append with each commit?
+git_deploy_dir      Folder path containing the files to deploy.
+git_deploy_branch   Commit deployable files to this branch.
+target_repo     Push the deploy branch to this repository.
+append_commit_hash Requires hash to append with each commit?
 These variables have default values defined in the script. The defaults can be
 overridden by environment variables. Any environment variables are overridden
 by values set in a '.env' file (if it exists), and in turn by those set in a
@@ -106,7 +106,7 @@ main() {
 	if [ $append_hash = true ]; then
 		commit_message="$commit_message"$'\n\n'"generated from commit $commit_hash"
 	fi
-		
+	
 	previous_branch=`git rev-parse --abbrev-ref HEAD`
 
 	if [ ! -d "$deploy_directory" ]; then
@@ -130,7 +130,7 @@ main() {
 
 	# check if deploy_branch exists locally
 	if git show-ref --verify --quiet "refs/heads/$deploy_branch"
-	then incremental_deploy
+		then incremental_deploy
 	else initial_deploy
 	fi
 
@@ -155,12 +155,12 @@ incremental_deploy() {
 	set -o errexit
 	case $diff in
 		0) echo No changes to files in $deploy_directory. Skipping commit.;;
-		1) commit+push;;
-		*)
-			echo git diff exited with code $diff. Aborting. Staying on branch $deploy_branch so you can debug. To switch back to master, use: git symbolic-ref HEAD refs/heads/master && git reset --mixed >&2
-			return $diff
-			;;
-	esac
+1) commit+push;;
+*)
+echo git diff exited with code $diff. Aborting. Staying on branch $deploy_branch so you can debug. To switch back to master, use: git symbolic-ref HEAD refs/heads/master && git reset --mixed >&2
+return $diff
+;;
+esac
 }
 
 commit+push() {
