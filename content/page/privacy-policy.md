@@ -6,6 +6,7 @@ draft = false
 tags = ["tag1", "tag2"]
 title = "Privacy Policy"
 slug = "privacy-policy"
+type = "page"
 +++
 
 Privacy policy here.
