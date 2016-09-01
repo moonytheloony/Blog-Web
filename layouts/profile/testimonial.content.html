@@ -1,7 +1,7 @@
 {{ range $.Site.Data.profile.testimonials }}
 <div class="container content">
    <div class="row">
-      <div class="col-sm-7">
+   <div class="col-sm-7">
          <div class="testimonial">
             {{if (eq .isFeatured true)}}
             <div class="featured text-right">
@@ -19,12 +19,12 @@
                      <span>{{ .title }},</span>
                      {{ end }}
                      {{ .organization }}
-                     </span>
-                  </p>
-               </div>
+                  </span>
+               </p>
             </div>
          </div>
       </div>
    </div>
+</div>
 </div>
 {{ end }}

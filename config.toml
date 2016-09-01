@@ -44,7 +44,7 @@ paginate = 1
 
 [permalinks]
     post = "/post/:slug"
-    page = "/:slug"
+    other = "/:slug"
 
 [taxonomies]
     tag = "tags"
