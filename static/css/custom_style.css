@@ -91,3 +91,6 @@
     padding-right: 10px;
     border-bottom: 0px;
 }
+.modal-dialog{
+    width: 320px;
+}
