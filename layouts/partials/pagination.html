@@ -1,19 +1,20 @@
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 {{ if gt $paginator.TotalPages 1 }}
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-4" style="text-align: left; padding-left: 0px">
-                    {{ if $paginator.HasPrev }}
-                        <a class="btn btn-default" href="{{ $paginator.Prev.URL }}" role="button" style="border-radius: 0px; display: block">Newer</a>
-                    {{ end }}
-                </div>
-                <div class="col-md-4 col-md-offset-4" style="text-align: right; padding-right: 0px">
-                    {{ if $paginator.HasNext }}
-                        <a class="btn btn-default" href="{{ $paginator.Next.URL }}" role="button" style="border-radius: 0px; display: block">Older</a>
-                    {{ end }}
-                </div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4" style="text-align: left; padding-left: 0px">
+                {{ if $paginator.HasPrev }}
+                <a class="btn btn-default" href="{{ $paginator.Prev.URL }}" role="button" style="border-radius: 0px; display: block"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Newer</a>
+                {{ end }}
+            </div>
+            <div class="col-md-4 col-md-offset-4" style="text-align: right; padding-right: 0px">
+                {{ if $paginator.HasNext }}
+                <a class="btn btn-default" href="{{ $paginator.Next.URL }}" role="button" style="border-radius: 0px; display: block">Older&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right"></i></a>
+                {{ end }}
             </div>
         </div>
     </div>
+</div>
 {{ end }}
+
