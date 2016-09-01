@@ -82,3 +82,12 @@
 .arrownAlign {
     margin: 0 0 5px 5px
 }
+
+.btn {
+    border-radius: 0;
+}
+.modal-header {
+    height: 0px;
+    padding-right: 10px;
+    border-bottom: 0px;
+}
