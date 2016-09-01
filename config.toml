@@ -56,26 +56,26 @@ paginate = 1
     url = "/"
 
 [[menu.header]]
-    name = "Blog Archive"
+    name = "blog archive"
     weight = 2
     url = "/archive/"
 
 [[menu.header]]
-    name = "Profile"
+    name = "profile"
     weight = 3
     url = "/profile/"
 
 [[menu.header]]
-    name = "RSS"
+    name = "curriculum vitae"
     weight = 4
+    url = "/cv/"
+
+[[menu.header]]
+    name = "RSS"
+    weight = 5
     url = "/post/index.xml"
 
 [[menu.footer]]
-    name = "Privacy Policy"
+    name = "Disclaimer"
     weight = 1
-    url = "/privacy-policy/"
-
-[[menu.footer]]
-    name = "Sponsors"
-    weight = 2
-    url = "/sponsors/"
+    url = "/disclaimer/"
