@@ -28,6 +28,8 @@ paginate = 1
     bing_webmaster      = ""
     alexa               = ""
     favicon             = ""
+    resourcesBaseUrl    = "https://rahulrai.blob.core.windows.net/resources/"
+    contentBaseUrl      = ""
 
 # Social media icons and links that appear in the footer
 [social]
@@ -51,12 +53,12 @@ paginate = 1
     category = "categories"
 
 [[menu.header]]
-    name = "Blog"
+    name = "blog"
     weight = 1
     url = "/"
 
 [[menu.header]]
-    name = "blog archive"
+    name = "archive"
     weight = 2
     url = "/archive/"
 
@@ -66,16 +68,16 @@ paginate = 1
     url = "/profile/"
 
 [[menu.header]]
-    name = "curriculum vitae"
+    name = "contact"
     weight = 4
-    url = "/cv/"
+    url = "/contact/"
 
 [[menu.header]]
-    name = "RSS"
+    name = "rss"
     weight = 5
     url = "/post/index.xml"
 
 [[menu.footer]]
-    name = "Disclaimer"
+    name = "DISCLAIMER & AFFILIATIONS"
     weight = 1
     url = "/disclaimer/"
