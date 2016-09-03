@@ -9,6 +9,7 @@ Don't forget to subscribe to **https://rahulrai.in**.
 
 ## Submitting a Testimonial
 To submit a testimonial, follow the following steps.
+
 1. Fork the repo.
 2. Navigate to /data/profile/testimonials.
 3. Create a new TOML file and give it the same name as your name. Populate the following properties in your file:
