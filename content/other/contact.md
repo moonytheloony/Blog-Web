@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "contact"
+title = "Contact"
 slug = "contact"
 type = "contact"
 +++

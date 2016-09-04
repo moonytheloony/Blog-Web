@@ -1,8 +1,29 @@
 <div class="row">
 	<div class="col-md-12 content-card">
 		<h1>{{ .Title }}</h1>
-		<a href="#contact">Contact Me</a> for a Pass Key
-
-		
+		<div class="container-fluid text-center">
+			<div class="row text-center">
+				<div class="col-xs-3 text-center" id="link_other">
+					{{ with .Site.Social.facebook }}
+					<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/128/fb.png" alt="facebook" class="img-responsive" /><br/><br/>FOLLOW</a>
+					{{ end }}
+				</div>
+				<div class="col-xs-3 text-center" id="link_other">
+					{{ with .Site.Social.linkedin }}
+					<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/128/linkedin.png" alt="linkedin" class="img-responsive" /><br/><br/>CONNECT</a>
+					{{ end }}
+				</div>
+				<div class="col-xs-3 text-center">
+					{{ with .Site.Social.email }}
+					<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/128/email.png" alt="email" class="img-responsive" data-toggle="tooltip" title="{{ . }}" /><br/><br/>MAIL</a>
+					{{ end }}
+				</div>
+				<div class="col-xs-3 text-center">
+					{{ with .Site.Social.email }}
+					<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/128/skype.png" alt="email" class="img-responsive" /><br/><br/>CALL</a>
+					{{ end }}
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
