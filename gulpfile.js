@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var cssmin = require('gulp-cssmin');
 var es = require('event-stream');
 var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
 
 gulp.task('minifyStylesheets', function() {
 	return es.merge(
@@ -12,4 +13,10 @@ gulp.task('minifyStylesheets', function() {
 
 gulp.task('minifyHtml', function() {
 	return gulp.src('public/**/*.html').pipe(htmlmin({collapseWhitespace: true})).pipe(gulp.dest('public'));
+});
+
+gulp.task('minifyScripts', function() {
+	return es.merge(
+		gulp.src('static/js/*.js').pipe(uglify()).pipe(gulp.dest('static/js/')),
+		gulp.src('themes/hugo-phlat-theme/static/js/*.js').pipe(uglify()).pipe(gulp.dest('static/js/')));
 });

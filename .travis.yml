@@ -6,11 +6,13 @@ install:
     - npm install gulp-rename
     - npm install event-stream
     - npm install gulp-htmlmin
+    - npm install gulp-uglify
     - go get -v github.com/spf13/hugo
     - rm -rf $deploy_dir || exit 0
 
 script:
     - gulp minifyStylesheets
+    - gulp minifyScripts
     - hugo
     - gulp minifyHtml
 

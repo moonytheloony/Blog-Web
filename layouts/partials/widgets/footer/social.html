@@ -1,39 +1,22 @@
-<div class="col-md-4 col-xs-6">
-    <div id="contact">
-        <ul class="list-inline social-media">
-            {{ with .Site.Social.twitter }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-twitter fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.googleplus }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-google-plus-square fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.facebook }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-facebook fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.linkedin }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.youtube }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-youtube fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.paypal }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-paypal fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.instagram }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-instagram fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.wordpress }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-wordpress fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.pinterest }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-pinterest fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.email }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-envelope fa-lg"></i></a></li>
-            {{ end }}
-            {{ with .Site.Social.reddit }}
-            <li><a target="_blank" href="{{ . }}"><i class="fa fa-reddit fa-lg"></i></a></li>
-            {{ end }}
-        </ul>
+<div class="col-md-4 col-xs-6 text-right">
+    <div class="row">
+        {{ with .Site.Social.twitter }}
+        <a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/twitter.png" alt="twitter" class="img-responsive" /></a>
+        {{ end }}
+        {{ with .Site.Social.facebook }}
+        <a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/fb.png" alt="facebook" class="img-responsive" /></a>
+        {{ end }}
+        {{ with .Site.Social.linkedin }}
+        <a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/linkedin.png" alt="linkedin" class="img-responsive" /></a>
+        {{ end }}
+        {{ with .Site.Social.msdn }}
+        <a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/Microsoft.png" alt="MSDN" class="img-responsive" /></a>
+        {{ end }}
+        {{ with .Site.Social.github }}
+        <a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/github.png" alt="GITHub" class="img-responsive" /></a>
+        {{ end }}
+        {{ with .Site.Social.email }}
+        <a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/email.png" alt="email" class="img-responsive" data-toggle="tooltip" title="{{ . }}" /></a>
+        {{ end }}
     </div>
 </div>

@@ -94,3 +94,6 @@
 .modal-dialog{
     width: 320px;
 }
+.inlineDisplay{
+    display: inline-block;
+}

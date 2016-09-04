@@ -28,21 +28,17 @@ paginate = 1
     bing_webmaster      = ""
     alexa               = ""
     favicon             = ""
-    resourcesBaseUrl    = "https://rahulrai.blob.core.windows.net/resources/"
+    resourcesBaseUrl    = "https://rahulrai.blob.core.windows.net/resources"
     contentBaseUrl      = ""
 
 # Social media icons and links that appear in the footer
 [social]
-    twitter             = "https://www.twitter.com/NAME_HERE"
-    googleplus          = "https://plus.google.com/NAME_HERE"
-    linkedin            = "https://www.linkedin.com/in/NAME_HERE"
-    youtube             = "https://www.youtube.com/users/NAME_HERE"
-    paypal              = "https://paypal.me/NAME_HERE"
-    instagram           = ""
-    reddit              = ""
-    email               = ""
-    pinterest           = ""
-    wordpress           = ""
+    twitter             = "https://twitter.com/MoonyTheLoony"
+    linkedin            = "https://in.linkedin.com/in/rahulrahul"
+    email               = "rahulrai@rahulrai.in"
+    facebook            = "https://www.facebook.com/moonytheloony"
+    msdn                = "https://social.msdn.microsoft.com/profile/rahul.rai/"
+    github              = "https://github.com/moonytheloony"
 
 [permalinks]
     post = "/post/:slug"
