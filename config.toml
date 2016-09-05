@@ -75,6 +75,6 @@ paginate = 1
     url = "/post/index.xml"
 
 [[menu.footer]]
-    name = "DISCLAIMER & AFFILIATIONS"
+    name = "DISCLAIMER"
     weight = 1
     url = "/disclaimer/"
