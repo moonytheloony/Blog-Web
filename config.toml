@@ -39,7 +39,7 @@ paginate = 1
     facebook            = "https://www.facebook.com/moonytheloony"
     msdn                = "https://social.msdn.microsoft.com/profile/rahul.rai/"
     github              = "https://github.com/moonytheloony"
-    skype               = "skype:rahul.rai1986?call"
+    skype               = "rahul.rai1986?call"
 
 [permalinks]
     post = "/post/:slug"

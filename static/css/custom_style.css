@@ -3,11 +3,6 @@
     margin: 0 auto;
     width: 40%;
     height: 40%;
-    border-color: #fff;
-    -webkit-border-radius: 50%!important;
-    -moz-border-radius: 50%!important;
-    -ms-border-radius: 50%!important;
-    border-radius: 50%!important
 }
 .profile-usertitle {
     text-align: center;

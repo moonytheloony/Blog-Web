@@ -19,8 +19,8 @@
 					{{ end }}
 				</div>
 				<div class="col-xs-3 text-center">
-					{{ with .Site.Social.email }}
-					<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/128/skype.png" alt="email" class="img-responsive" /><br/><br/>CALL</a>
+					{{ with .Site.Social.skype }}
+					<a target="_blank" href="skype:{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/128/skype.png" alt="skype" class="img-responsive" /><br/><br/>CALL</a>
 					{{ end }}
 				</div>
 			</div>
