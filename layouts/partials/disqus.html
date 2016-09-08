@@ -1,5 +1,4 @@
-{{ if eq .Type "post" }}
-{{ with .Site.Params.disqus }}
+{{ if eq .Type "post" }} {{ with .Site.Params.disqus }}
 <div class="row">
     <div class="col-md-12 content-card">
         <div id="disqus_thread"></div>
@@ -10,10 +9,10 @@
                     return;
                 }
 
-                var disqus_url = '{{ .Permalink }}';
+                var disqus_url = [location.protocol, '//', location.host, location.pathname].join('');;
                 var disqus_identifier = 'window.location.pathname';
-                var dsq = document.createElement('script'); 
-                dsq.type = 'text/javascript'; 
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
                 dsq.async = true;
                 var disqus_shortname = '{{ . }}';
                 dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -23,5 +22,4 @@
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </div>
 </div>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}

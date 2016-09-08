@@ -1,4 +1,4 @@
-# Igonre everything
+# ignore everything
 public/
 node_modules
 *.ini
