@@ -27,7 +27,7 @@ paginate = 1
     google_webmaster    = ""
     bing_webmaster      = ""
     alexa               = ""
-    favicon             = ""
+    favicon             = "https://rahulrai.blob.core.windows.net/resources/siteIcon.png"
     resourcesBaseUrl    = "http://cdn.rahulrai.in/resources"
     contentBaseUrl      = ""
 

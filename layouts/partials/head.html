@@ -12,7 +12,7 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit .Site.Params.keywords "," }}{{ end }}' /> {{ with .Params.author }}
     <meta name="author" content="{{ . }}" /> {{ end }} {{ with .Site.Params.favicon }}
-    <link rel="icon" type="image/png" href="{{ . }}" sizes="196x196" /> {{ end }} {{ if .RSSlink }}
+    <link rel="icon" type="image/png" href="{{ . }}" sizes="72X72" /> {{ end }} {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" /> {{ end }}
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
