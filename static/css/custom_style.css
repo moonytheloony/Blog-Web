@@ -11,25 +11,30 @@
     -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.06);
 }
+
 .profile-userpic img:hover {
     -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
+
 .profile-usertitle {
     text-align: center;
     margin-top: 20px
 }
+
 .profile-usertitle-name {
     color: #337AB7;
     font-size: 18px;
     margin-bottom: 7px
 }
+
 .profile-usertitle-job {
     text-transform: initial;
     color: #337AB7;
     font-size: 15px;
     margin-bottom: 2px
 }
+
 .featured {
     color: gold;
     font-size: 25px;
@@ -37,6 +42,7 @@
     top: 10px;
     right: 10px
 }
+
 .testimonial {
     margin: 0;
     background: #F5F5F5;
@@ -49,6 +55,7 @@
     font-style: italic;
     word-wrap: break-word
 }
+
 .testimonial:after,
 .testimonial:before {
     content: "\201C";
@@ -58,25 +65,30 @@
     color: #999;
     font-style: normal
 }
+
 .testimonial:before {
     top: 0;
     left: 10px
 }
+
 .testimonial:after {
     content: "\201D";
     right: 10px;
     bottom: -.5em
 }
+
 .testimonial-author {
     color: #e6400c;
     font-size: 16px;
     font-weight: 600
 }
+
 .testimonials-post {
     color: #656565;
     font-size: 15px;
     font-weight: 500
 }
+
 .arrow-down {
     width: 0;
     height: 0;
@@ -85,6 +97,7 @@
     border-top: 15px solid #F5F5F5;
     margin: 0 0 5px 10px
 }
+
 .arrownAlign {
     margin: 0 0 5px 5px
 }
@@ -92,17 +105,25 @@
 .btn {
     border-radius: 0;
 }
+
 .modal-header {
     height: 0px;
     padding-right: 10px;
     border-bottom: 0px;
 }
-.modal-dialog{
+
+.modal-dialog {
     width: 320px;
 }
-.inlineDisplay{
+
+.inlineDisplay {
     display: inline-block;
 }
-.noMarginBottom{
+
+.noMarginBottom {
     margin-bottom: 0px!important;
+}
+
+.content-card {
+    padding: 25px!important;
 }

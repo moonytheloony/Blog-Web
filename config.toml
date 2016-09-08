@@ -8,7 +8,7 @@ disableHugoGeneratorInject = true
 enableEmoji = true
 disablePathToLower = true
 theme = "hugo-phlat-theme"
-paginate = 1
+paginate = 15
 
 [blackfriday]
 	hrefTargetBlank = false
