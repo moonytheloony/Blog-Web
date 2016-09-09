@@ -1,14 +1,14 @@
-<figure {{ with .Get "class" }}class="{{.}}" {{ end }}>
-    {{ with .Get "src"}}<a href="{{ .Site.contentBaseUrl }}{{ . }}" target="_blank" title="Click to Expand">{{ end }}
-        <img src="{{ .Site.contentBaseUrl }}{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
-    {{ if .Get "src"}}</a>{{ end }} {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
-    <figcaption>{{ if isset .Params "title" }}
-        <h4>{{ .Get "title" }}</h4>{{ end }} {{ if or (.Get "caption") (.Get "attr")}}
-        <p>
-            {{ .Get "caption" }} {{ with .Get "attrlink"}}<a href="{{ . }}"> {{ end }}
-            {{ .Get "attr" }}
-        {{ if .Get "attrlink"}}</a> {{ end }}
-        </p> {{ end }}
-    </figcaption>
-    {{ end }}
-</figure>
+<div class="row">
+    <div class="col-xs-12">
+        <figure>
+            <a href="{{ .Site.Params.contentBaseUrl }}{{ .Get "src" }}" target="_blank">
+                <img src="{{ .Site.Params.contentBaseUrl }}{{ .Get "src" }}" alt="{{ .Get "alt" }}" title="{{ .Get "alt" }}" style="border: 1px solid black; width: 60%!important; height: 60%;display: block;margin-left: auto;margin-right: auto;" />
+            </a>
+        </figure>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 text-center">
+        <b>{{ .Get "alt" }}</b> - <a href="{{ .Site.Params.contentBaseUrl }}{{ .Get "src" }}" target="_blank"><i class="glyphicon glyphicon-zoom-in"></i> Full Image</a>
+    </div>
+</div>
