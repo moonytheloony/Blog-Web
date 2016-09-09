@@ -1,4 +1,4 @@
-<head>
+﻿<head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-Frame-Options" content="deny" />
@@ -16,8 +16,13 @@
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" /> {{ end }}
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/vs.min.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/phlat.css" />
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom_style.css?{{ .Now.Unix }}" />
+    <script async src="/js/jquery-2.2.1.min.js"></script>
+    <script async src=/js/main.js></script>
+    <script async src="/js/bootstrap.min.js"></script>
+    <script async src="/js/highlight.min.js"></script>
+    <script async defer src="{{ .Site.Params.resourcesBaseUrl }}/highlight.pack.js"></script>
 </head>

@@ -1,14 +1,22 @@
 {{ range $key, $value := .Site.Taxonomies }}
-    {{ if eq $key "categories" }}
+{{ if eq $key "categories" }}
+<div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Recent {{ $key | pluralize }}</h5>
+        <ul class="list-unstyled posts-recent">
+            {{ range first 5 $value.ByCount }}
+            <li><a href="{{ $.Site.BaseURL}}{{ $key | pluralize }}/{{ .Name | urlize }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
         <div class="row">
-            <div class="col-md-11 col-md-offset-1 card">
-                <h5>Recent {{ $key | pluralize }}</h5>
-                <ul class="list-unstyled posts-recent">
-                    {{ range first 5 $value.ByCount }}
-                        <li><a href="{{ $.Site.BaseURL}}{{ $key | pluralize }}/{{ .Name | urlize }}">{{ .Name }}</a></li>
-                    {{ end }}
-                </ul>
+            <div class="col-xs-6 text-center">
+                <a href="/categories"><span class="glyphicon btn-glyphicon glyphicon-folder-open img-circle text-primary"></span>All Categories</a>
+            </div>
+            <div class="col-xs-6 text-center">
+                <a href="/tags"><span class="glyphicon btn-glyphicon glyphicon-tags img-circle text-primary"></span>All Tags</a>
             </div>
         </div>
-    {{ end }}
+    </div>
+</div>
+{{ end }}
 {{ end }}
