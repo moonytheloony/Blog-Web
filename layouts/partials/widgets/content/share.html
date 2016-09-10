@@ -1,0 +1,9 @@
+{{ if eq .Type "post" }}
+<ul class="list-inline share" style="margin-top: 15px; margin-left: 0px">
+    <li class="facebook-share" style="margin: 0 2px 0 0;"><a target="_blank" href="http://www.facebook.com/sharer.php?u={{ .Permalink }}"><i class="fa fa-facebook fa-lg"></i>Facebook</a></li>
+    <li class="twitter-share" style="margin: 0 2px 0 0;"><a target="_blank" href="https://twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}"><i class="fa fa-twitter fa-lg"></i>Twitter</a></li>
+    <li class="reddit-share" style="margin: 0 2px 0 0;"><a target="_blank" href="http://reddit.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}"><i class="fa fa-reddit fa-lg"></i>Reddit</a></li>
+    <li class="linkedin-share" style="margin: 0 2px 0 0;"><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</a></li>
+    <li class="stumbleupon-share"><a target="_blank" href="http://www.stumbleupon.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}"><i class="fa fa-stumbleupon fa-lg"></i>StumbleUpon</a></li>
+</ul>
+{{ end }}
