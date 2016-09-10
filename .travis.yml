@@ -15,7 +15,7 @@ script:
     - gulp minifyScripts
     - hugo
     - gulp minifyHtml
-    - cp Web.config /public/Web.config
+    - cp Web.config public/Web.config
 
 branches:
   only:
