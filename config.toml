@@ -27,9 +27,9 @@ paginate = 15
     google_webmaster    = ""
     bing_webmaster      = ""
     alexa               = ""
-    favicon             = "http://cdn.rahulrai.in/resources/siteIcon.png"
-    resourcesBaseUrl    = "http://cdn.rahulrai.in/resources"
-    contentBaseUrl      = "http://cdn.rahulrai.in/media"
+    favicon             = "https://rahulrai.azureedge.net/resources/siteIcon.png"
+    resourcesBaseUrl    = "https://rahulrai.azureedge.net/resources"
+    contentBaseUrl      = "https://rahulrai.azureedge.net/media"
 
 # Social media icons and links that appear in the footer
 [social]
