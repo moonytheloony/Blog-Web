@@ -3,14 +3,18 @@
     <div class="col-md-12 content-card">
         <div id="disqus_thread"></div>
         <script async defer>
-            (function() {
+            (function () {
                 if (window.location.hostname == "localhost") {
                     document.write("Disqus comments are unavailable while serving on localhost or 127.0.0.1");
                     return;
                 }
 
-                var disqus_url = [location.protocol, '//', location.host, location.pathname].join('');;
-                var disqus_identifier = 'window.location.pathname';
+                var protocolAndPath = [location.protocol, '//', location.host, location.pathname].join('');
+                protocolAndPath = protocolAndPath[0] === '/' ? protocolAndPath.substr(1) : protocolAndPath;
+                var disqus_url = protocolAndPath;
+                var path = window.location.pathname;
+                path = path[0] === '/' ? path.substr(1) : path;
+                var disqus_identifier = path;
                 var dsq = document.createElement('script');
                 dsq.type = 'text/javascript';
                 dsq.async = true;
