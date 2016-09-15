@@ -19,27 +19,26 @@ paginate = 15
 
 #Theme Variables
 [params]
-    keywords            = ["Azure", "Cloud"]
-    description         = "Let's explore this cool tech."
-    google_analytics    = "UA-XXXXX-YY"
-    google_adsense      = ""
-    disqus              = "rahulrai"
-    google_webmaster    = ""
-    bing_webmaster      = ""
-    alexa               = ""
-    favicon             = "https://rahulrai.azureedge.net/resources/siteIcon.png"
-    resourcesBaseUrl    = "https://rahulrai.blob.core.windows.net/resources"
-    contentBaseUrl      = "https://rahulrai.azureedge.net/media"
+    keywords = ["Azure", "Cloud"]
+    description = "Let's explore this cool tech."
+	heapAnalytics = "737236920"
+    disqus = "rahulrai"
+    google_webmaster = ""
+    bing_webmaster = ""
+    alexa = ""
+    favicon = "https://rahulrai.azureedge.net/resources/siteIcon.png"
+    resourcesBaseUrl = "https://rahulrai.blob.core.windows.net/resources"
+    contentBaseUrl = "https://rahulrai.azureedge.net/media"
 
 # Social media icons and links that appear in the footer
 [social]
-    twitter             = "https://twitter.com/MoonyTheLoony"
-    linkedin            = "https://in.linkedin.com/in/rahulrahul"
-    email               = "mailto:rahulrai@rahulrai.in"
-    facebook            = "https://www.facebook.com/moonytheloony"
-    msdn                = "https://social.msdn.microsoft.com/profile/rahul.rai/"
-    github              = "https://github.com/moonytheloony"
-    skype               = "rahul.rai1986?call"
+    twitter = "https://twitter.com/MoonyTheLoony"
+    linkedin = "https://in.linkedin.com/in/rahulrahul"
+    email = "mailto:rahulrai@rahulrai.in"
+    facebook = "https://www.facebook.com/moonytheloony"
+    msdn = "https://social.msdn.microsoft.com/profile/rahul.rai/"
+    github = "https://github.com/moonytheloony"
+    skype = "rahul.rai1986?call"
 
 [permalinks]
     post = "/post/:slug"
