@@ -138,3 +138,8 @@ pre {
     margin-right: 4px;
     border: 1px solid #337AB7;
 }
+
+.little-padding {
+    padding-left: 5px;
+    padding-right: 5px!important;
+}
