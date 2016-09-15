@@ -2,20 +2,20 @@
 {{ if eq $key "categories" }}
 <div class="row">
     <div class="col-md-11 col-md-offset-1 card">
-        <h5>Recent {{ $key | pluralize }}</h5>
-        <ul class="list-unstyled posts-recent">
-            {{ range first 5 $value.ByCount }}
-            <li><a href="{{ $.Site.BaseURL}}{{ $key | pluralize }}/{{ .Name | urlize }}">{{ .Name }}</a></li>
-            {{ end }}
-        </ul>
         <div class="row">
-            <div class="col-xs-6 text-center">
-                <a href="/categories"><span class="glyphicon btn-glyphicon glyphicon-folder-open img-circle text-primary"></span>All Categories</a>
+            <div class="col-xs-7">
+                <h5>{{ $key | pluralize }}</h5>
             </div>
-            <div class="col-xs-6 text-center">
-                <a href="/tags"><span class="glyphicon btn-glyphicon glyphicon-tags img-circle text-primary"></span>All Tags</a>
+            <div class="col-xs-5 text-right">
+                <a href="/categories"><span class="glyphicon btn-glyphicon glyphicon-folder-open img-circle text-primary"></span></a>
+                <span style="padding-left: 10px">
+                    <a href="/tags"><span class="glyphicon btn-glyphicon glyphicon-tags img-circle text-primary"></span></a>
+                </span>
             </div>
         </div>
+        {{ range first 5 $value.ByCount }}
+        <h5><span class="label label-warning posts-recent"><a href="{{ $.Site.BaseURL}}{{ $key | pluralize }}/{{ .Name | urlize }}">{{ .Name }}</a></span></h5>
+        {{ end }}
     </div>
 </div>
 {{ end }}

@@ -1,21 +1,22 @@
 <div class="col-md-10 col-xs-10 text-right">
-    <div class="row" style="padding-right: 10px">
+    <div class="row">
         {{ with .Site.Social.twitter }}
-        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/twitter.png" alt="twitter" class="img-responsive" /></a>
+        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><span class="fa fa-twitter img-circle text-primary fa-2x"></span></a>
         {{ end }}
         {{ with .Site.Social.facebook }}
-        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/fb.png" alt="facebook" class="img-responsive" /></a> {{ end }}
+        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><span class="fa  fa-facebook img-circle text-primary fa-2x"></span></a>
+        {{ end }}
         {{ with .Site.Social.linkedin }}
-        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/linkedin.png" alt="linkedin" class="img-responsive" /></a>
+        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><span class="fa  fa-linkedin img-circle text-primary fa-2x"></span></a>
         {{ end }}
         {{ with .Site.Social.msdn }}
-        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/Microsoft.png" alt="MSDN" class="img-responsive" /></a>
+        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><span class="fa  fa-windows img-circle text-primary fa-2x"></span></a>
         {{ end }}
         {{ with .Site.Social.github }}
-        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/github.png" alt="GITHub" class="img-responsive" /></a>
+        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><span class="fa  fa-github img-circle text-primary fa-2x"></span></a>
         {{ end }}
         {{ with .Site.Social.email }}
-        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><img src="{{ $.Site.Params.resourcesBaseUrl }}/48/email.png" alt="email" class="img-responsive" data-toggle="tooltip" title="{{ . }}" /></a>
+        &nbsp;<a target="_blank" href="{{ . }}" class="inlineDisplay"><span class="fa  fa-envelope img-circle text-primary fa-2x"></span></a>
         {{ end }}
     </div>
 </div>

@@ -4,13 +4,20 @@
             {{ partial "widgets/footer/links.html" . }} {{ partial "widgets/footer/social.html" . }}
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <p>Copyright &copy;&nbsp;
+            <div class="col-md-6 col-xs-6" >
+                <p>
+                    &copy;&nbsp;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script>&nbsp;<b>Rahul Rai</b> for <a href="/">rahulrai.in</a></p>
-                <span>With <i class="glyphicon glyphicon-heart" style="color: red"></i> <a href="http://azure.microsoft.com/en-us/" target="_blank">Microsoft Azure App Services</a>, <a href="http://github.com" target="_blank">GitHub</a>, <a href="https://gohugo.io/" target="_blank">Hugo</a> &amp; <a href="https://www.facebook.com/neha.bharadwaj2" target="_blank">NR</a>. <a href="https://github.com/nraboy/hugo-phlat-theme" target="_blank">Phlat Theme</a> by <a href="http://www.nraboy.com" target="_blank">Nic Raboy</a>.
-                </span>
+                    </script>&nbsp;<b>Rahul Rai</b> (<a href="/">rahulrai.in</a>)
+                </p>
+                <p style="text-overflow: ellipsis;">
+                    Built with <a href="https://gohugo.io/" target="_blank">Hugo</a>. Customized with <a href="https://github.com/nraboy/hugo-phlat-theme" target="_blank">Phlat Theme</a>.
+                </p>
+            </div>
+            <div class="col-md-6 col-xs-6 text-right">
+                <a href="https://azure.microsoft.com/" target="_blank" class="inlineDisplay"><img class="img-responsive" src="{{ .Site.Params.resourcesBaseUrl }}/AzureLogo.png" alt="Microsoft Azure Logo" /></a>
+                <a href="https://heapanalytics.com/?utm_source=badge" target="_blank" class="inlineDisplay"><img class="img-responsive" style="max-width: 108px; max-height: 41px" src="//heapanalytics.com/img/badge.png" alt="Heap | Mobile and Web Analytics" /></a>
             </div>
         </div>
     </div>

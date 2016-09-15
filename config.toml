@@ -28,7 +28,7 @@ paginate = 15
     bing_webmaster      = ""
     alexa               = ""
     favicon             = "https://rahulrai.azureedge.net/resources/siteIcon.png"
-    resourcesBaseUrl    = "https://rahulrai.azureedge.net/resources"
+    resourcesBaseUrl    = "https://rahulrai.blob.core.windows.net/resources"
     contentBaseUrl      = "https://rahulrai.azureedge.net/media"
 
 # Social media icons and links that appear in the footer
