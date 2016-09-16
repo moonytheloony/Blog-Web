@@ -1,11 +1,11 @@
-<div id="back-to-top" class="hidden">
-    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-        <i class="glyphicon glyphicon-chevron-up"></i> Scroll Up
+<div id="back-to-top" class="hidden" style="z-index: 100;">
+    <a href="#top" style="display: inline;" onclick="$('html,body').animate({ scrollTop: 0 }, 'slow');return false;">
+        <i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i>
     </a>
 </div>
 <script defer>hljs.initHighlightingOnLoad();</script>
 <script>
-    if(($(window).height() + 100) < $(document).height()) {
+    if (($(window).height() + 100) < $(document).height()) {
         $('#back-to-top').removeClass('hidden').affix({
             offset: {
                 top: 100
