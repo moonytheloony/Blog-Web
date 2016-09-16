@@ -1,4 +1,5 @@
 +++
+author = "Rahul Rai"
 categories = ["x", "y"]
 date = "2016-05-10T17:35:39+10:00"
 draft = false
@@ -6,7 +7,7 @@ tags = ["x", "y"]
 title = "Integrating Azure Machine Learning With Azure Stream Analytics to Predict Customer Churn"
 type = "post"
 +++
-I covered building IoT Analytics Architecture prototype authored by [David Crook](https://channel9.msdn.com/Niners/DrCrook) from Microsoft in one of my [previous posts](http://rahulrai.in/post/building-the-azure-iot-analytics-architecture-prototype). David graciously provided some great feedback on the architecture model and asked me to explore yet another aspect of his architecture, that is to take intelligent decisions on the streams of incoming data based on [Azure Machine Learning](https://azure.microsoft.com/en-in/services/machine-learning/) based predictive models. Let's see how we can integrate MAML with Stream Analytics and extend David's IoT analytics architecture in this post.
+I covered building IoT Analytics Architecture prototype authored by [David Crook](https://channel9.msdn.com/Niners/DrCrook) from Microsoft in one of my [previous posts](http://rahulrai.in/post/building-the-azure-iot-analytics-architecture-prototype). David graciously provided some great feedback on the architecture model and asked me to explore yet another aspect of his architecture, that is to take intelligent decisions on the streams of incoming data based on [Azure Machine Learning](https://azure.microsoft.com/en-in/services/machine-learning/) based predictive models. In this post, let's see how we can integrate MAML with Stream Analytics and extend David's IoT analytics architecture.
 
 Businesses need to have an effective strategy for managing [customer churn](https://en.wikipedia.org/wiki/Customer_attrition) because it costs more to attract new customers than to retain existing ones. Customer churn can take different forms, such as switching to a competitor's service, reducing the time spent using the service, reducing the number of services used, or switching to a lower-cost service. Companies in the retail, media, telecommunication, and banking industries use churn modeling to create better products, services, and experiences that lead to a higher customer retention rate.
 
