@@ -29,7 +29,7 @@ We will build a simple Azure Cloud Service project with ELMAH integrated into it
 
 ## Code
 
-Download the source code of this sample by clicking on the button.  {{< sourceCode src="https://github.com/moonytheloony/persistentfilelogging">}}
+Download the source code of this sample by clicking on the button below.  {{< sourceCode src="https://github.com/moonytheloony/persistentfilelogging">}}
 
 ## Let's Start
 
