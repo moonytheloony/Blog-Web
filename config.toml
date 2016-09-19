@@ -11,6 +11,11 @@ paginate = 15
 [blackfriday]
 	hrefTargetBlank = false
 
+[sitemap]
+	changefreq = "always"
+	priority = 1
+	filename = "sitemap"
+
 [author]
     name = "Rahul Rai"
     email = "rahulrai@rahulrai.in"
