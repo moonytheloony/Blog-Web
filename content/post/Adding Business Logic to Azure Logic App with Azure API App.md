@@ -6,7 +6,7 @@ draft = false
 tags = ["", ""]
 title = "Adding Business Logic to Azure Logic App with Azure API App"
 type = "post"
-slug = "automate your life with microsoft flow"
+slug = "adding-business-logic-to-azure-logic-app-with-azure-api-app"
 +++
 
 I hope you had a chance to watch or attend [AzureCon](https://azure.microsoft.com/en-us/azurecon/) lately. If you watch the keynotes, you would be overwhelmed by tons of great announcements that were made. All the sessions are available [on demand](https://azure.microsoft.com/en-us/azurecon/) and are classified by level and industry role. I hope the sessions prove to be a great learning experience for you. I also hope to work with a few of the new features and write about them for us to use. 
