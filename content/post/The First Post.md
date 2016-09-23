@@ -15,7 +15,7 @@ Finally, my custom blogging platform is ready and raring to go. I will try to wr
 
 First, the technology stack:
 
-*   [Microsoft Azure Web App](http://azure.microsoft.com/en-us/) for MVC UI.
+*   [Microsoft Azure Web App](http://azure.microsoft.com/en-us/) for MVC based user interface.
 *   [Microsoft Azure Table Storage](https://azure.microsoft.com/en-in/documentation/articles/storage-table-design-guide/) for storing blog content.
 *   [Microsoft Azure Blob Storage](https://azure.microsoft.com/en-in/documentation/articles/storage-dotnet-how-to-use-blobs/) for storing some platform resources and all media content of blog.
 *   [Microsoft Azure Search Service](http://azure.microsoft.com/en-in/services/search/) for enabling search on the content.
