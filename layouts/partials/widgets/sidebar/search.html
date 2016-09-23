@@ -1,0 +1,15 @@
+﻿<div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Search</h5>
+        <form id="cse-search-box" action="http://google.com/cse" method="get" accept-charset="UTF-8" target="_blank" class="search-form">
+            <input type="hidden" name="cx" value="{{ .Site.Params.googleSearchId }}" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <div class="input-group">
+                <input class="form-control" type="text" name="q" size="31" placeholder="Google Site Search" />
+                <span class="input-group-btn">
+                    <button class="btn btn-custom" name="sa" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
