@@ -1,12 +1,12 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "automation"]
 date = "2016-05-16T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["http header", "logic", "facebook", "ifttt", "condition", "post", "automation", "swagger", "api", "graph", "social"]
 title = "Automate Your Life with Microsoft Flow"
 type = "post"
-slug = "automate your life with microsoft flow"
+slug = "automate-your-life-with-microsoft-flow"
 +++
 
 Microsoft recently launched its own variant of [IFTTT](https://ifttt.com/) named [Microsoft Flow](https://flow.microsoft.com). Using Flow, you can create and deploy workflows that connect various apps and services. They are very similar to [Azure Logic Apps](/post/adding-business-logic-to-azure-logic-app-with-azure-api-app) and use the same grammar to define conditions (as we will soon see). Currently what sets both the services apart is the fact that Flow has a subset of functionalities of Azure Logic Apps available to it and comes with ready to use templates which are easy to deploy. Many of the common usage scenarios of Flow don’t even require any knowledge of programming.

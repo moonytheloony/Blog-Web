@@ -1,9 +1,9 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "networking", "application gateway"]
 date = "2015-11-05T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["vm", "virtual machine", "load balancer", "layer 7", "layer 4", "osi", "iso", "request routing", "arr", "cookie", "ssl", "vnet", "virtual network"]
 title = "Hands-on with Microsoft Azure Application Gateway"
 type = "post"
 slug = "hands-on-with-microsoft-azure-application-gateway"

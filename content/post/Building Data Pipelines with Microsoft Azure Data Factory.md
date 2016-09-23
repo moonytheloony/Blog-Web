@@ -1,9 +1,9 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "data", "data factory"]
 date = "2015-10-25T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["github", "sample", "linked service", "etl", "gateway", "json", "sql", "file", "copy activity", "dataset", "table"]
 title = "Building Data Pipelines with Microsoft Azure Data Factory"
 type = "post"
 slug = "building-data-pipelines-with-microsoft-azure-data-factory"

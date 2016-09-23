@@ -1,9 +1,9 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["tools", "gadgets", "productivity"]
 date = "2016-01-25T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["azure", "dhl", "duty", "jabra", "phone"]
 title = "Review of Jabra Speak 410 Speakerphone - A Not So Necessary Utility"
 type = "post"
 slug = "review-of-jabra-speak-410-speakerphone---a-not-so-necessary-utility"
@@ -45,6 +45,6 @@ There are five touch points on the panel, two for volume control, one to mute th
 
 ## Do You Absolutely Need It?
 
-If the sound quality of your laptop is average and you are mulling over buying an (bit expensive) add on speakerphone, then yes you should consider investing in this device. Jabra speakerphone will also prove to be useful if your team huddles around your system to join a standup call or a meeting as the sound is pretty loud. I personally prefer to keep my conversations to myself and have a laptop with decent sound quality, so I will keep it in my bag just to flaunt it!!
+If the sound quality of your laptop is average and you are mulling over buying an (bit expensive) add on speakerphone, then yes, you should consider investing in this device. Jabra speakerphone will also prove to be useful if your team huddles around your system to join a standup call or a meeting as the sound is pretty loud. I personally prefer to keep my conversations to myself and have a laptop with decent sound quality, so I will keep it in my bag just to flaunt it!!
 
 {{< subscribe >}}

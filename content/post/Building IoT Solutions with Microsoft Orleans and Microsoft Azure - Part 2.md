@@ -1,9 +1,9 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "iot", "orleans"]
 date = "2015-09-20T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["actor", "github", "internet of things", "silo", "storage", "worker role", "cluster", "azure storage", "device", "distributed system", "grain", "experiment", "sample", "aggregator", "decode", "microservice", "web role", "http amqp", "color", "host", "office"]
 title = "Building IoT Solutions with Microsoft Orleans and Microsoft Azure - Part 2"
 type = "post"
 slug = "building-iot-solutions-with-microsoft-orleans-and-microsoft-azure---part-2"
@@ -15,7 +15,7 @@ This is the last article in the series of developing IoT solutions using [Micros
 
 ## Source Code
 
-You can download the source code of this experiment from my [GITHub](https://github.com/moonytheloony) repository located here. {{< sourceCode src="https://github.com/moonytheloony/orleans" >}}
+You can download the source code of this experiment from my [GitHub](https://github.com/moonytheloony) repository located here. {{< sourceCode src="https://github.com/moonytheloony/orleans" >}}
 
 ## Scenario
 
@@ -78,7 +78,7 @@ Fire up Visual Studio and create a solution. Next, create the following projects
 	* **Purpose**: Web role for hosting Orleans client.
 	* **References**: OrleansInterfaces	
 
-Build the solution to restore nuget packages in the solution. On building the solution, Orleans will generate a lot of proxy code for your grains in **orleans.codegen.cs** file, which you can find in the **Properties** folder of **OrleansInterfaces** and **OrleansClasses** projects. Once you have these classes setup, we are now ready to start writing code inside each of these projects. Note that some classes, such as [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) etc., have been left out for the sake of keeping this blog post short. You can find the source code of this experiment on my GITHub repository [here](https://github.com/moonytheloony/orleans).
+Build the solution to restore nuget packages in the solution. On building the solution, Orleans will generate a lot of proxy code for your grains in **orleans.codegen.cs** file, which you can find in the **Properties** folder of **OrleansInterfaces** and **OrleansClasses** projects. Once you have these classes setup, we are now ready to start writing code inside each of these projects. Note that some classes, such as [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) etc., have been left out for the sake of keeping this blog post short. You can find the source code of this experiment on my GitHub repository [here](https://github.com/moonytheloony/orleans).
 
 ## Creating Orleans Grain Interfaces
 

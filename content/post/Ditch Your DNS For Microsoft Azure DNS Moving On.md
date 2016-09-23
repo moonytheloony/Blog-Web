@@ -1,11 +1,12 @@
 +++
 author = "Rahul Rai"
-categories = ["azure", "identity"]
+categories = ["azure", "dns"]
 date = "2016-06-04T17:04:47+10:00"
 draft = false
-tags = ["identity", "active directory"]
+tags = ["webapp", "name server", "domain name", "dottk", "free", "nagarro", "cname", "external", "custom", "route 53", "comic", "zone", "rahulrai"]
 title = "Ditch Your DNS For Microsoft Azure DNS & Moving On"
 type = "post"
+slug = "ditch-your-dns-for-microsoft-azure-dns--amp--moving-on"
 +++
 
 This is my last post as Associate Architect at [Nagarro](http://www.nagarro.com/us/en). I would be moving to a new location and a new position very soon and therefore, I won’t be posting much for about a month. I'll have a lot more to say about the new organization that I would be joining once I get there, but for now, let me just say that everyone I've met at this new place has seemed smart and passionate. I'm very excited to join the team. Of course, I would miss the fantastic people at Nagarro and my laptop, which powers at least five of my peripherals at any point of time and helps me write and publish this blog.

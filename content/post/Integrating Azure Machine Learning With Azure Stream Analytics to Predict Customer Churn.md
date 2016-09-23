@@ -1,11 +1,12 @@
 +++
 author = "Rahul Rai"
-categories = ["x", "y"]
+categories = ["azure", "machine learning", "iot"]
 date = "2016-05-10T17:35:39+10:00"
 draft = false
-tags = ["x", "y"]
+tags = ["azure storage", "azure blob storage", "internet of things", "iot hub", "ml", "machine learning", "stream analytics", "cortana", "dataset", "function", "predictive", "maml", "train", "score", "binary classification", "container"]
 title = "Integrating Azure Machine Learning With Azure Stream Analytics to Predict Customer Churn"
 type = "post"
+slug = "integrating-azure-machine-learning-with-azure-stream-analytics-to-predict-customer-churn"
 +++
 I covered building IoT Analytics Architecture prototype authored by [David Crook](https://channel9.msdn.com/Niners/DrCrook) from Microsoft in one of my [previous posts](/post/building-the-azure-iot-analytics-architecture-prototype). David graciously provided some great feedback on the architecture model and asked me to explore yet another aspect of his architecture, that is to take intelligent decisions on the streams of incoming data based on [Azure Machine Learning](https://azure.microsoft.com/en-in/services/machine-learning/) based predictive models. In this post, let's see how we can integrate MAML with Stream Analytics and extend David's IoT analytics architecture.
 

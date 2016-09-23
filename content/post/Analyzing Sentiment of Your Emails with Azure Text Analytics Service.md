@@ -1,11 +1,12 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "machine learning"]
 date = "2015-11-21T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["office", "office 365", "github", "ml", "cortana", "add in", "outlook", "machine learning", "happy mail finder"]
 title = "Analyzing Sentiment of Your Emails with Azure Text Analytics Service"
 type = "post"
+slug = "analyzing-sentiment-of-your-emails-with-azure-text-analytics-service"
 +++
 
 [Azure Machine Learning](https://azure.microsoft.com/en-us/services/machine-learning/) allows data scientists to build and deploy predictive models. I am currently reading [Predictive Analytics with Microsoft Azure Machine Learning](http://www.apress.com/9781484204467), which in my opinion is a great resource to get started with ML. If you are a developer and don't really want to invest in learning ML, you can use [Azure ML web services](https://gallery.cortanaanalytics.com/browse/?categories=[%22Machine%20Learning%20API%22]) published by Microsoft and other publishers in the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). There are several interesting APIs, such as speech, face recognition and computer vision, available that you can use in your applications. Today, I will use [Text Analytics Service](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-apps-text-analytics/), which is one of Azure ML web services available in the Cortana Analytics Gallery, to build an Outlook add-in that parses the subject of an email and classifies the email as one of :smile: :neutral_face: :angry:

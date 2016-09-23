@@ -1,26 +1,26 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azrue", "api management"]
 date = "2016-03-21T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["blob", "console", "decode", "aws", "amazon", "apiphany", "jwt", "json web token", "rest", "operation", "http header", "unix", "token"]
 title = "Building Azure API Management Proxy for Azure Storage"
 type = "post"
 slug = "building-azure-api-management-proxy-for-azure-storage"
 +++
 
-Microsoft acquired [Apiphany](http://techcrunch.com/2013/10/23/microsoft-acquires-apiphany-an-api-management-service-to-integrate-with-windows-azure/), backed it up with Azure compute and storage and has now made it available to users as API Management service. [Azure API Management](https://azure.microsoft.com/en-in/services/api-management/) is a reliable, secure and scalable way to publish, consume and manage APIs running on the Microsoft Azure platform.  Azure API Management provides all essential tools required for end-to-end management of APIs.  It ensures optimal performance of the APIs, tracks and enforces usage, authentication, and more.
+Microsoft acquired [Apiphany](http://techcrunch.com/2013/10/23/microsoft-acquires-apiphany-an-api-management-service-to-integrate-with-windows-azure/), backed it up with Azure compute and storage and has now made it available to users as API Management service. [Azure API Management](https://azure.microsoft.com/en-in/services/api-management/) is a reliable, secure and scalable way to publish, consume and manage APIs running on the Microsoft Azure platform. Azure API Management provides all essential tools required for end-to-end management of APIs. It ensures optimal performance of the APIs, tracks and enforces usage, authentication, and more.
 
 Recently, I was reading about AWS API Gateway (a service similar to Azure API Management) which has [out of the box support](https://aws.amazon.com/blogs/compute/using-amazon-api-gateway-as-a-proxy-for-dynamodb/) for interacting with your AWS resources. I really liked the idea behind having an API front end for your resources. I will quote the reasons for which you may want to do so verbatim from the AWS blog post (replacing AWS with Azure of course!).
 
 1.  You might want to enable your application to integrate with very specific functionality that an Azure service provides, without the need to manage access keys and secret keys that Azure APIs require.
-2.  There may be application-specific restrictions you’d like to place on the API calls being made to the Azure services that you would not be able to enforce if clients integrated with the Azure APIs directly.
+2.  There may be application-specific restrictions you'd like to place on the API calls being made to the Azure services that you would not be able to enforce if clients integrated with the Azure APIs directly.
 3.  You may get additional value out of using a different HTTP method from the method that is used by the Azure service. For example, creating a GET request as a proxy in front of an Azure API that requires an HTTP POST so that the response will be cached.
 4.  You can accomplish the above things without having to introduce a server-side application component that you need to manage or that could introduce increased latency.
 
 ## Scenario
 
-We want to implement an API to download private blobs from Azure storage in a secure manner. The API user needs to be authenticated and should be authorized to access the resources. We don’t want to host a custom application that might introduce latency and whose resources such as memory and scalability need to be managed.
+We want to implement an API to download private blobs from Azure storage in a secure manner. The API user needs to be authenticated and should be authorized to access the resources. We don't want to host a custom application that might introduce latency and whose resources such as memory and scalability need to be managed.
 
 We will build this API using Azure API Management and use JWT token to authenticate and authorize the user. This approach not only abstracts the underlying service (Azure storage REST API) that serves the data (you can later switch the data provider to AWS S3 without modifying the clients) but also provides low latency access to your storage resources.
 
@@ -44,7 +44,7 @@ Once your API is created, it is time to add operations to the API. To [add a GET
 
 {{< img src="/Add Operation To API_4.png" alt="Add Operation To API" >}}
 
-Since the Get Blob operation in Azure Blob Storage REST API works with GET HTTP verb and we don’t intend to translate it, we have specified GET as the HTTP verb for the operation. Next, in the **URL template** field, specify a placeholder based URL fragment which denotes the container and the blob that we need to access. Since, the [Get Blob operation](https://msdn.microsoft.com/en-in/library/azure/dd179440.aspx) of Azure Blob storage REST API expects the request to arrive in a similar URL format, therefore we need not supply a **Rewrite URL template**. Specify a **display name** for the operation and click **Save**.
+Since the Get Blob operation in Azure Blob Storage REST API works with GET HTTP verb and we don't intend to translate it, we have specified GET as the HTTP verb for the operation. Next, in the **URL template** field, specify a placeholder based URL fragment which denotes the container and the blob that we need to access. Since, the [Get Blob operation](https://msdn.microsoft.com/en-in/library/azure/dd179440.aspx) of Azure Blob storage REST API expects the request to arrive in a similar URL format, therefore we need not supply a **Rewrite URL template**. Specify a **display name** for the operation and click **Save**.
 
 ## Defining The Policy
 

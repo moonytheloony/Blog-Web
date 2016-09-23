@@ -1,12 +1,12 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "storage"]
 date = "2016-05-04T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["azure storage", "cloud service", "file", "github", "storage", "webapp", "website", "mount", "file share", "smb"]
 title = "Analyze ELMAH Logs of Your Cloud Services on Your Desktop in Real-Time With Azure Files"
 type = "post"
-slug = "analyze elmah logs of your cloud services on your desktop in real time with azure files"
+slug = "analyze-elmah-logs-of-your-cloud-services-on-your-desktop-in-real-time-with-azure-files"
 +++
 
 [Azure File storage](https://azure.microsoft.com/en-in/documentation/articles/storage-dotnet-how-to-use-files/) is a lesser used and lesser known features of Azure storage. Azure File storage offers shared storage for applications using the standard SMB 2.1 or SMB 3.0 protocol. Microsoft Azure virtual machines, cloud services, and on-premises clients can share file data across application components via mounted shares or via File storage API. The most popular use cases of Azure File storage revolve around migrating existing applications to the cloud that use standard file system APIs such as `WriteFile` or `ReadFile`. Microsoft Azure File storage service lets you access SMB shares in the cloud without having to configure Windows Server virtual machines first, set up their networking and then create file shares. Since high availability and fault tolerance are taken care of by Azure, your applications can reliably read files from and write files to a shared storage (in several scenarios this helps existing applications become stateless). Azure File storage can act as cloud [NAS](https://en.wikipedia.org/wiki/Network-attached_storage) since it supports SMB protocols.

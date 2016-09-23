@@ -1,11 +1,12 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "iot", "analytics"]
 date = "2016-04-27T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["azure", "github", "webjob", "stream analytics", "service bus", "gateway", "device", "azure function", "function", "data lake", "iot hub", "power bi", "sensor", "resource group", "policy", "shared access", "simulator"]
 title = "Building The Azure IoT Analytics Architecture Prototype"
 type = "post"
+slug = "building-the-azure-iot-analytics-architecture-prototype"
 +++
 
 Recently I was going through some IoT ([Internet of Things](https://en.wikipedia.org/wiki/Internet_of_Things)) videos on [Channel9](https://channel9.msdn.com/Azure). [David Crook](https://channel9.msdn.com/Niners/DrCrook) did a small [whiteboard session](https://channel9.msdn.com/Blogs/raw-tech/IOT-Analytics-Architecture-Whiteboard-with-David-Crook) on IoT analytics architecture which I really liked. Your clients are going to, if not already, demand analytics in each and every IoT engagement that you might already be working on or will pursue in the future. It makes sense to have a prototype handy to lock down your architecture and to build client demonstrations. Let's see how complex or easy it is to take David's whiteboard to reality. I encourage you to watch [the video](https://channel9.msdn.com/Blogs/raw-tech/IOT-Analytics-Architecture-Whiteboard-with-David-Crook) entirely so that you are clear about the architecture and the resources involved in building the prototype.
@@ -169,7 +170,7 @@ Next, select **IoT Hub** as an input source.
 
 {{< img src="/Stream Analytics Input Stream is IoT Hub.png" alt="Stream Analytics Input Stream is IoT Hub" >}}
 
-Next, give an alias to your input (this name will be referenced in the query that we will write next) and select the IoT Hub instance, that we previously configured, from the list of IoT Hub instances in your subscription. Select one of the configured consumer groups that will  be used by this job. The following is how this setting looks for me.
+Next, give an alias to your input (this name will be referenced in the query that we will write next) and select the IoT Hub instance, that we previously configured, from the list of IoT Hub instances in your subscription. Select one of the configured consumer groups that will be used by this job. The following is how this setting looks for me.
 
 {{< img src="/Stream Analytics IoT Hub Settings.png" alt="Stream Analytics IoT Hub Settings" >}}
 

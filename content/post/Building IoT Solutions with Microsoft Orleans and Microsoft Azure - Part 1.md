@@ -1,9 +1,9 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "iot", "orleans"]
 date = "2015-09-15T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["first", "github", "worker", "internet of things", "grain", "silo", "actor", "distributed system", "cluster", "device", "pluralsight"]
 title = "Building IoT Solutions with Microsoft Orleans and Microsoft Azure - Part 1"
 type = "post"
 slug = "building-iot-solutions-with-microsoft-orleans-and-microsoft-azure---part-1"
@@ -84,7 +84,7 @@ In the second part of this series, we will build a small sample in which we will
 
 ## Credits
 
-*   [Orleans GITHub Site](https://dotnet.github.io/orleans/)
+*   [Orleans GitHub Site](https://dotnet.github.io/orleans/)
 
 *   [Pluralsight](http://www.pluralsight.com/courses/microsoft-orleans-introduction)
 

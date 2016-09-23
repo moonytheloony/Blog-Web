@@ -1,9 +1,9 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "search"]
 date = "2016-02-18T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["device", "documentdb", "job", "findcab", "universal windows platform", "index", "event hub", "bing map", "cab", "geospatial", "stream analytics", "uwp", "gps", "postman", "voice command", "cortana"]
 title = "Hire a Cab Using Cortana and Azure Search"
 type = "post"
 slug = "hire-a-cab-using-cortana-and-azure-search"

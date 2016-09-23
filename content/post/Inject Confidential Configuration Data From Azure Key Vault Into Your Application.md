@@ -1,9 +1,9 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "key vault"]
 date = "2016-01-23T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["github", "webapp", "website", "app setting", "connection string", "configurationmanager", "active directory ad", "config", "hardware security module hsm", "settings", "handler"]
 title = "Inject Confidential Configuration Data From Azure Key Vault Into Your Application"
 type = "post"
 slug = "inject-confidential-configuration-data-from-azure-key-vault-into-your-application"

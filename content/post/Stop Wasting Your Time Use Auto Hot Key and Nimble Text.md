@@ -3,10 +3,10 @@ author = "Rahul Rai"
 categories = ["tools", "productivity"]
 date = "2016-08-04T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["ahk", "caps lock", "lync", "skype", "sydney", "tool", "nimble text"]
 title = "Stop Wasting Your Time Use Auto Hot Key and Nimble Text"
 type = "post"
-slug = "stop wasting your time use auto hot key and nimble text"
+slug = "tools--stop-wasting-your-time-use-auto-hot-key-and-nimble-text"
 +++
 
 My long hiatus is over. I have completed my move to [Sydney, AU](http://www.sydney.com.au/) and I have started working with [Readify](http://readify.net/) as a Consultant. Sydney is a beautiful city and is endowed with attractions that I am yet to explore. Time is precious and no one wants to do mundane stuff. Using productivity tools, we can get mundane stuff done fast so that we can spend more time doing finer things such as watching more cat videos. Earlier, whenever I used to come across any productivity tool, I used to ask myself that whether investing my time to configure the tool or write scripts for it is worth the seconds that it saves daily? Definitely yes, apart from saving time daily, productivity tools free your mind to work on other stuff. If you often get stuck in the same dilemma, here is a picture for us to learn from.

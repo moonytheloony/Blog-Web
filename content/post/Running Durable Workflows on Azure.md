@@ -1,11 +1,12 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "cloud services", "workflow"]
 date = "2016-01-08T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["azure blob storage", "github", "worker role", "table", "windows workflows", "wf", "instance store", "monitoring store", "service bus", "queue", "bookmark"]
 title = "Running Durable Workflows on Azure"
 type = "post"
+slug = "running-durable-workflows-on-azure"
 +++
 
 This post took a while to see the daylight. I was working on my code submission for [Azure Search for Search contest](https://azure.microsoft.com/en-us/blog/azure-search-search-for-search-contest/) and there were tons of things to catch up on. However, if you are a Windows Workflows developer and are working out ways to host your workflows on Azure or want to transfer control of business logic to your clients using Workflows, I will make up for the delay. Let's get started!!

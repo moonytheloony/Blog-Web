@@ -1,9 +1,9 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "webapp"]
 date = "2015-07-30T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["first blog", "github", "msdn", "first", "redis", "documentdb", "search"]
 title = "The First Post"
 type = "post"
 slug = "the-first-post"
@@ -22,9 +22,9 @@ First, the technology stack:
 *   [Microsoft Azure DocumentDb](http://azure.microsoft.com/en-in/services/documentdb/) for capturing inputs from my site audience such as for Testimonials.
 *   [Microsoft Azure Redis Cache](http://azure.microsoft.com/en-in/services/cache/) for storing sessions and cache data.
 *   Analytics through [Google](http://www.google.co.in/analytics/) and [AppInsight](https://azure.microsoft.com/en-us/documentation/articles/app-insights-get-started/).
-*   [GITHub](https://github.com/moonytheloony) for source control.
+*   [GitHub](https://github.com/moonytheloony) for source control.
 
-Before I say anything else, I would like to say that you can find the whole source code available on my [GITHub](https://github.com/moonytheloony) account. I would use [MSDN](https://social.msdn.microsoft.com/profile/rahul.rai/) and [GITHub](https://github.com/moonytheloony) to post samples and you are free to use them, though, I would not mind link backs and comments as tokens of appreciation :)
+Before I say anything else, I would like to say that you can find the whole source code available on my [GitHub](https://github.com/moonytheloony) account. I would use [MSDN](https://social.msdn.microsoft.com/profile/rahul.rai/) and [GitHub](https://github.com/moonytheloony) to post samples and you are free to use them, though, I would not mind link backs and comments as tokens of appreciation :)
 
 Another point I would like to make here is that the whole infrastructure is running on low billing tiers, so if the quota gets consumed, you might encounter error pages. I will add capacity based on resource usage and whatever my budget can support. There will never be a donate button or advertisements on this site ever.
 

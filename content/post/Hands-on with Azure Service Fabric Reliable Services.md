@@ -1,9 +1,9 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "service fabric"]
 date = "2016-04-06T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["microservice", "actor", "cluster", "github", "queue", "website", "webapp", "worker role", "machine learning", "ml", "rest", "cloud service", "twitter", "dictionary", "reliable collection", "text analytics", "tweet analytics", "partition", "proxy", "manager"]
 title = "Hands-on with Azure Service Fabric Reliable Services"
 type = "post"
 slug = "hands-on-with-azure-service-fabric-reliable-services"

@@ -1,9 +1,9 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "webapp", "api app"]
 date = "2015-10-13T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["email", "connector", "biztalk", "one drive", "web api", "office 365"]
 title = "Adding Business Logic to Azure Logic App with Azure API App"
 type = "post"
 slug = "adding-business-logic-to-azure-logic-app-with-azure-api-app"

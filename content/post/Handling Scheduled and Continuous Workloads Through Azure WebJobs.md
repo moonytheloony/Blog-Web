@@ -1,9 +1,9 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["automation", "azure"]
+categories = ["azure", "webapp", "web jobs"]
 date = "2015-08-26T17:04:47+10:00"
 draft = false
-tags = ["", ""]
+tags = ["github", "virtual machine", "vm", "storage", "webjob", "job", "mail", "worker role", "worker", "cron", "webapp", "website", "email", "visual studio", "continuous deployment", "cd", "console", "trigger", "scm", "jobhost"]
 title = "Handling Scheduled and Continuous Workloads Through Azure WebJobs"
 type = "post"
 slug = "handling-scheduled-and-continuous-workloads-through-azure-webjobs"

@@ -3,10 +3,10 @@ author = "Rahul Rai"
 categories = ["azure", "identity"]
 date = "2016-08-26T17:04:47+10:00"
 draft = false
-tags = ["identity", "active directory"]
+tags = ["token", "owin", "credentials", "resource", "authorization", "oauth"]
 title = "Hybrid Identity Solution with Azure AD and Azure AD B2C"
 type = "post"
-slug = "hybrid identity solution with azure ad and azure ad b2c"
+slug = "hybrid-identity-solution-with-azure-ad-and-azure-ad-b2c"
 +++
 
 I am going to retire the current stack of technologies used in this blog in favor of more recent technologies, mainly because I currently author this blog using [Windows Live Writer](https://www.microsoft.com/en-au/download/details.aspx?id=8621) which is outdated and has lost the love of community. I am also taking this opportunity to create a new technology stack that is much more modular and allows me to focus only on writing. I am also learning cool new stuff which might be useful to all of us. I am  super happy with a few components that I currently use and I would be reusing the things that are working well. The entire source code of this blog is available in my [GitHub repository](https://github.com/moonytheloony/rahulrai) from where you can happily copy and paste stuff. You can also read about how I built the existing blog framework (v1) [here](/post/the-first-post). Of course, I would write about how I chose components for my new blogging platform and how you can set one up yourself, so stay tuned (even better, [subscribe](#subscribe)).

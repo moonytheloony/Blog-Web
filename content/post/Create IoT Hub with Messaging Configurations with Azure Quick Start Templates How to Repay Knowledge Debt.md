@@ -1,11 +1,12 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "productivity"]
+categories = ["azure", "iot"]
 date = "2016-06-23T17:04:47+10:00"
 draft = false
-tags = ["ahk", "active directory"]
+tags = ["resource manager", "debt", "blog", "github"]
 title = "Create IoT Hub with Messaging Configurations with Azure Quick Start Templates & How to Repay Knowledge Debt"
 type = "post"
+slug="create-iot-hub-with-messaging-configurations-with-azure-quick-start-templates---how-to-repay-knowledge-debt"
 +++
 
 Okay, this is a bit of self promotion but my ARM template to provision IoT Hub has been merged with the official Azure documentation branch recently. What this means is that now you can visit [this link](https://azure.microsoft.com/en-in/documentation/templates/101-iothub-with-consumergroup-create/ "Click Me.."), click on **Deploy to Azure** button, supply some parameter values and have an IoT Hub provisioned in your subscription. If you want to view the script that is responsible for provisioning the infrastructure, you can view the script in the Azure Quick Start GitHub repository [here](https://github.com/Azure/azure-quickstart-templates/tree/master/101-iothub-with-consumergroup-create "Click Me.."). You can read more about how and why you should use Azure Resource Manager (ARM) for defining and deploying your resources [here](https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/ "Click Me..").
