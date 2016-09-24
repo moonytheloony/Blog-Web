@@ -5,6 +5,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 disableHugoGeneratorInject = true
 enableEmoji = true
 disablePathToLower = true
+disableSitemap = false
 theme = "hugo-phlat-theme"
 paginate = 15
 
