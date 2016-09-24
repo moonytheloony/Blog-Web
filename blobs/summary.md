@@ -1,5 +1,0 @@
-I hold extensive experience of working on cloud and web technologies and currently work with Readify as a Consultant in Sydney, Australia. I am passionate about emerging technologies and their applications to solve business problems. I am a reviewer of and contributor to several publications and open source projects. I have been regularly engaged in large scale and complex IT engagements in lead roles in which I have worked with multiple stakeholders and focus groups to deliver solutions in a cost effective manner.
-
-In my previous employment at Microsoft Services, in addition to my role as a Consultant, I was a Microsoft Azure SME for Microsoft Services worldwide and Microsoft Services India. I have developed and contributed to multiple IP solutions and worked on several field readiness programs.
-
-I possess excellent communication, presentation and organizational skills through which I compile and disseminate knowledge to clients and other technology enthusiasts.

@@ -3,7 +3,11 @@
         <i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i>
     </a>
 </div>
-<script defer>hljs.initHighlightingOnLoad();</script>
+<script defer>
+    if (hljs) {
+        hljs.initHighlightingOnLoad();
+    }
+</script>
 <script>
     if (($(window).height() + 100) < $(document).height()) {
         $('#back-to-top').removeClass('hidden').affix({
