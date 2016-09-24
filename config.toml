@@ -24,7 +24,8 @@ paginate = 15
 [params]
     keywords = ["Azure", "Cloud"]
     description = "Let's explore this cool tech."
-	heapAnalytics = "737236920"
+	heapAnalytics = "2215857163"
+	appInsights = "963f772c-0ccc-4148-8dd0-d592c04d6d7b"
     disqus = "rahulrai"
     google_webmaster = "QCQmaQxL8c2x6yrpUDr91jfBZNSpexndMkeOqZPFlqM"
     bing_webmaster = "F6575BFCC1322FDFE66EA304BDB69F33"
