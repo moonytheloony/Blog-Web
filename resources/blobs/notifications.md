@@ -1,2 +1,2 @@
-## Migration Update
-Sep 24, 2016: I am working on migrating this site.
+#### Migration Update
+Sep 24, 2016: The migration activity is complete. Enjoy the new experience.
