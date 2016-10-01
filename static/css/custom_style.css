@@ -5,14 +5,17 @@
     height: 120px;
     max-width: 100%;
     -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
     border-radius: 50%;
     -webkit-transition: -webkit-box-shadow 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.06);
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.06);
+    -moz-transition: box-shadow 1s ease;
+    -o-transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease;
+    -webkit-box-shadow: 0px 0px 0px 0px #C0C0C0;
+    box-shadow: 0px 0px 0px 0px #C0C0C0;
 }
 
-    .profile-userpic img:hover {
+.profile-userpic img:hover {
         -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
     }
