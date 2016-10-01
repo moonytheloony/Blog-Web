@@ -22,7 +22,7 @@
     <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
     <script async src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script async src=/js/main.js?{{ .Now.Unix }}></script>
-    <script async src="{{ .Site.Params.resourcesBaseUrl }}/highlight.pack.js"></script>
+    <script src="{{ .Site.Params.resourcesBaseUrl }}/highlight.pack.js"></script>
     <script async src="{{ .Site.Params.resourcesBaseUrl }}/jquery.waypoints.min.js"></script>
     {{ if not (in (printf "%#v" .Site.BaseURL) "localhost") }}
     <script type="text/javascript">
