@@ -1,7 +1,7 @@
 # [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/moonytheloony/) Blog-Web 
 **By Rahul Rai**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Gitter Chat](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/moonytheloony/)
 
-Source code for front end of my blog hosted on Azure built on Hugo. If you want to contribute or have any issues chat with me on gitter.
+Source code for my blog hosted on Azure and built on Hugo. If you want to contribute or discuss anything else, then chat with me on Gitter.
 
 Don't forget to subscribe to **https://rahulrai.in**.
 ## Code Health & Metrices
