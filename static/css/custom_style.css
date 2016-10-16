@@ -15,7 +15,7 @@
     box-shadow: 0px 0px 0px 0px #C0C0C0;
 }
 
-.profile-userpic img:hover {
+    .profile-userpic img:hover {
         -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
     }
@@ -144,5 +144,18 @@ pre {
 
 .little-padding {
     padding-left: 5px;
-    padding-right: 5px!important;
+    padding-right: 5px !important;
+}
+
+.title-img {
+    float: left;
+    padding-right: 2px;
+    padding-left: 2px;
+    text-overflow: ellipsis;
+}
+
+.navbar-default .navbar-brand {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
 }
