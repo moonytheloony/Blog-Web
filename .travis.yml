@@ -7,7 +7,7 @@ install:
     - npm install event-stream
     - npm install gulp-htmlmin
     - npm install gulp-uglify
-    - go get -v github.com/spf13/hugo/tree/v0.17
+    - go get -v github.com/moonytheloony/hugo
     - rm -rf $deploy_dir || exit 0
 
 script:
