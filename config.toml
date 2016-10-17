@@ -32,8 +32,8 @@ paginate = 15
     bing_webmaster = "F6575BFCC1322FDFE66EA304BDB69F33"
 	googleSearchId = "017749396232577371525:uclf-xfot8k"
     favicon = "https://rahulrai.azureedge.net/resources/siteIcon.png"
-    resourcesBaseUrl = "https://rahulrai.azureedge.net/resources"
-    contentBaseUrl = "https://rahulrai.azureedge.net/media"
+    resourcesbaseurl = "https://rahulrai.azureedge.net/resources"
+    contentbaseurl = "https://rahulrai.azureedge.net/media"
 	
 # Social media icons and links that appear in the footer
 [social]

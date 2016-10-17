@@ -6,7 +6,7 @@
         <script>
             $(document).ready(function () {
                 var converter = new showdown.Converter(),
-              text = $.ajax({ url: "{{ .Site.Params.resourcesBaseUrl }}/blobs/notifications.md", async: false }).responseText,
+              text = $.ajax({ url: "{{ .Site.Params.resourcesbaseurl }}/blobs/notifications.md", async: false }).responseText,
               html = converter.makeHtml(text);
                 $("#notifications").html(html);
             });
