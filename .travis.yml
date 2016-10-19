@@ -9,8 +9,8 @@ install:
     - npm install event-stream
     - npm install gulp-htmlmin
     - npm install gulp-uglify
-    - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_linux_amd64.tar.gz
-    - tar zxvf hugo_0.17_linux_amd64.tar.gz
+    - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+    - tar zxvf hugo_0.17_Linux-64bit.tar.gz
     - mkdir -p $HOME/bin
     - mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 $HOME/bin/hugo
     - echo $GOPATH
