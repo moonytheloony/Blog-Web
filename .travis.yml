@@ -8,7 +8,7 @@ install:
     - npm install gulp-htmlmin
     - npm install gulp-uglify
     - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz -O /tmp/hugo.tar.gz
-    - tar xvf hugo.tar.gz
+    - tar xvf /tmp/hugo.tar.gz
     - export PATH=$PATH:$PWD/hugo_0.17_linux_amd64
     - rm -rf $deploy_dir || exit 0
 
