@@ -2,5 +2,6 @@
 public/
 node_modules
 *.ini
+*.exe
 node_modules/
 .vscode/
