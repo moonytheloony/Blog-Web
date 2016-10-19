@@ -1,5 +1,7 @@
 language: go
 
+sudo: required
+
 install: 
     - npm install gulp
     - npm install gulp-cssmin
@@ -7,9 +9,12 @@ install:
     - npm install event-stream
     - npm install gulp-htmlmin
     - npm install gulp-uglify
-    - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz -O /tmp/hugo.tar.gz
-    - tar xvf /tmp/hugo.tar.gz
-    - export PATH=$PATH:$PWD/hugo_0.17_linux_amd64/hugo_0.17_linux_amd64
+    - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_linux_amd64.tar.gz
+    - tar zxvf hugo_0.17_linux_amd64.tar.gz
+    - mkdir -p $HOME/bin
+    - mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 $HOME/bin/hugo
+    - echo $GOPATH
+    - export PATH=$PATH:$HOME/bin:$GOPATH/bin
     - rm -rf $deploy_dir || exit 0
 
 script:
