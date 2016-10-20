@@ -1,2 +1,1 @@
-#### Migration Update
-Sep 24, 2016: The site platform has been revamped. Enjoy the new experience.
+Oct 10, 2016: The boring categories sidebar is now replaced with a shiny graph!
