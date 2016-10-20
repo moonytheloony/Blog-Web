@@ -150,12 +150,11 @@ pre {
 .title-img {
     float: left;
     padding-right: 2px;
-    padding-left: 5px;
-    text-overflow: ellipsis;
+    padding-left: 1px;
 }
 
 .navbar-default .navbar-brand {
     color: #555555;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
 }

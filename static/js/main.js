@@ -43,3 +43,15 @@ $(document).ready(function () {
             }
         });
 });
+
+function drawChart(chartArray) {
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(chart);
+
+    function chart() {
+        var data = google.visualization.arrayToDataTable(chartArray);
+        var options = { pieHole: 0.4, legend: 'none' };
+        var chart = new google.visualization.PieChart(document.getElementById("categoryChart"));
+        chart.draw(data, options);
+    }
+};
