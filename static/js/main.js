@@ -1,17 +1,16 @@
 function validateKey() {
-    var inputValue = document.getElementById('passkey').value;
-    var theFrame;
-    if (inputValue.length === "5") {
+    var inputValue = document.getElementById("passkey").value;
+    var theFrame = document.getElementById("my_iframe");
+    if (inputValue.length === 5) {
         var completeUrl =
-            'https://onedrive.live.com/embed?cid=DFF1B4D9CD55ADCA&resid=DFF1B4D9CD55ADCA%2126211&authkey=' +
+            "https://onedrive.live.com/embed?cid=DFF1B4D9CD55ADCA&resid=DFF1B4D9CD55ADCA%2126211&authkey=" +
                 inputValue +
-                'vRhKe6BOaU&em=2';
-        theFrame = document.getElementById("my_iframe");
+                "vRhKe6BOaU&em=2";
         theFrame.src = completeUrl;
-        theFrame.style.display = 'block';
+        theFrame.style.display = "block";
     }
     else {
-        theFrame.style.display = 'none';
+        theFrame.style.display = "none";
     }
 };
 
