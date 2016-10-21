@@ -109,6 +109,32 @@
     border-radius: 0;
 }
 
+.btn-span span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+    .btn-span span:after {
+        font-family: FontAwesome;
+        content: "\f003";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.3s;
+    }
+
+.btn-span:hover span {
+    padding-right: 25px;
+}
+
+    .btn-span:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
 .modal-header {
     height: 0px;
     padding-right: 10px;

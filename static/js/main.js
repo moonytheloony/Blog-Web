@@ -31,6 +31,21 @@ function triggerWaypoint(logEventInHeap) {
 };
 
 $(document).ready(function () {
+    $("a").click(function (e) {
+        var fragment = this.href.split("#")[1] || "";
+        if (fragment === "subscribe") {
+            e.preventDefault();
+            $("#subscribeNewsletterModal").modal("show");
+        }
+        return;
+    });
+    var subscribeFragment = window.location.hash.substr(1);
+    if (subscribeFragment === "subscribe") {
+        $("#subscribeNewsletterModal").modal("show");
+    }
+});
+
+$(document).ready(function () {
     $("#search")
         .submit(function (event) {
             var searchBox = $('[name="q"]');
