@@ -62,13 +62,13 @@ Set-AzureRmKeyVaultAccessPolicy -VaultName 'KeyVaultAppSettings' -ServicePrincip
 
 The last step is to create a module that can read these secrets from Key Vault and add them to the application configuration. Create an MVC or Web Forms project. Create a class named `SettingsProcessor` in the same assembly as your Web Application. Decorate your class with the following attribute which instructs the runtime to execute the `Start` method in `SettingsProcessor` class before the application starts.
 
-~~~C#
+~~~CS
 [assembly: PreApplicationStartMethod(typeof(SettingsProcessor), "Start")]
 ~~~
 
 Next, write the following code in `Start` method to read secrets from Key Vault and plug it into the application configuration sections according to the prefixes. If the name of secret begins with “APPSETTING”, then the secret goes to  the application setting and if the name of secret begins with “SQLCONNSTR”, then the secret goes to the connection strings section of application configuration. The rest of the code is self explanatory.
 
-~~~C# 
+~~~CS 
 public static void Start()
 {
     var keys = KeyVaultHandler.GetKeys();
@@ -94,7 +94,7 @@ public static void Start()
 
 The complete code of `SettingsProcessor` class is listed below.
 
-~~~C# 
+~~~CS 
 [assembly: PreApplicationStartMethod(typeof(SettingsProcessor), "Start")]
 
 namespace KeyVaultAppSettingWebApp
@@ -199,7 +199,7 @@ namespace KeyVaultAppSettingWebApp
 
 We will create a helper class named `KeyVaultHandler` that interacts with Key Vault and gets the list of secrets and their values. The complete code of this class is listed below.
 
-~~~C# 
+~~~CS 
 public static class KeyVaultHandler
 {
     #region Static Fields

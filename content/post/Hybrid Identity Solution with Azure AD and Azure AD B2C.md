@@ -106,7 +106,7 @@ PM> Install-Package Microsoft.Owin.Host.SystemWeb
 
 *   Let's take a look at **Startup.Auth.cs** file that handles authentication for us. We have three instances of `OpenIdConnectAuthenticationMiddleware` (derived from `AuthenticationMiddleware`), one for each B2C policy in the authentication pipeline. We have also initialized three instances of `OpenIdConnectAuthenticationHandler` (derived from `AuthenticationHandler`) with values obtained from `OpenIdConnectAuthenticationOptions`. Since the authentication mechanism is passive, the `InvokeAsync` method in `OpenIdConnectAuthenticationHandler` returns an `AuthenticationTicket` and requests redirection to the resource in case the token is valid. The method `ApplyResponseChallengeAsync` is responsible for getting the  properties of a challenge by accepting its name as parameter and redirecting the user to the appropriate endpoint so that the challenge can be completed (keep this point in mind, we will use this knowledge very soon).
 
-~~~C#
+~~~CS
 app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(SignUpPolicyId));
 app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(ProfilePolicyId));
 app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(SignInPolicyId));
@@ -114,7 +114,7 @@ app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(SignInPolicyId));
 
 *   The following code crates instances of `OpenIdConnectAuthenticationOptions`.
 
-~~~C#
+~~~CS
 private OpenIdConnectAuthenticationOptions CreateOptionsFromPolicy(string policy)
 {
     return new OpenIdConnectAuthenticationOptions
@@ -144,7 +144,7 @@ private OpenIdConnectAuthenticationOptions CreateOptionsFromPolicy(string policy
 
 *   Now let's move to `AccountController` which will help us authenticate the user. Let's focus on `SignIn` action that is triggered when the user clicks on the **Sign In** link on the page.
 
-~~~C#
+~~~CS
 public void SignIn()
 {
     if (!this.Request.IsAuthenticated)
@@ -203,13 +203,13 @@ Let's now move on to integrate Azure AD in this solution. Do remember the point 
 
 *   Let's revisit the **Startup.Auth.cs** file. Here you will find the following statement that injects Azure AD middleware to the authentication pipeline.
 
-~~~C#
+~~~CS
 app.UseOpenIdConnectAuthentication(this.CreateB2EOptions());
 ~~~
 
 *   The `CreateB2EOptions` method supplies necessary values to `OpenIdConnectAuthenticationHandler` through a new instance of `OpenIdConnectAuthenticationOptions`. Note that we have supplied a name to this middleware just as we did to the Azure AD B2C middleware.
 
-~~~C#
+~~~CS
 private OpenIdConnectAuthenticationOptions CreateB2EOptions()
 {
     return new OpenIdConnectAuthenticationOptions
@@ -228,7 +228,7 @@ private OpenIdConnectAuthenticationOptions CreateB2EOptions()
 
 *   Now let's revisit the `AccountController` and check the action that allows an _employee_ to sign in. The code should look very familiar to you as it just raises a challenge for Azure AD middleware to complete.
 
-~~~C#
+~~~CS
 public void EmployeeSignIn()
 {
     if (!this.Request.IsAuthenticated)
@@ -244,7 +244,7 @@ public void EmployeeSignIn()
 
 *   Take a look at another method named `EmployeeClaims` in Home controller that allows access only to users with the role **Employee**. We will invoke this method by accessing [https://localhost:port/Home/EmployeeClaims](https://localhost:port/Home/EmployeeClaims).
 
-~~~C#
+~~~CS
 [Authorize(Roles = "Employee")]
 public ActionResult EmployeeClaims()
 {

@@ -48,7 +48,7 @@ Next, add a Stateless Reliable ASP.net 5 web application to your Service Fabric 
 
 This application would act as the front end for your Stateful Reliable Service. To add the service to your application, right-click on `TweetAnalytics.TweetApp` project and select **Add > New Service Fabric Service**. This action will render a template dialog similar to the previous one. Select Stateful Reliable Service template from the dialog and name it `TweetAnalytics.TweetService`. Once these two projects are in place, we need to add one more project to the solution to enable communication between `TweetAnalytics.Web` and `TweetAnalytics.TweetService`. To enable this communication, add a class library named `TweetAnalytics.Contracts` to the solution and add an interface named `ITweet` that represents the contract of communication between the web application and the stateful service. Note that this interface should extend `IService` interface for the runtime to provide remoting infrastructure to the service contract.
 
-~~~C#
+~~~CS
 namespace TweetAnalytics.Contracts
 {
     using System.Threading.Tasks;
@@ -65,7 +65,7 @@ namespace TweetAnalytics.Contracts
 
     Add `TweetAnalytics.Contracts` as a dependency into `TweetAnalytics.Web` and `TweetAnalytics.TweetService` projects. Implement the interface `ITweet` in `TweetService` class. The following implementation of `SetTweetSubject` in `TweetService` class will clear contents of `scoreDictionary`, which is a `ReliableDictionary` (won't lose data in case of failures) that contains tweet message and sentiment score as a string and decimal pair, and add the search term  as a message to the `topicQueue` which is a `ReliableQueue`.
 
-~~~C#
+~~~CS
 public async Task SetTweetSubject(string subject)
 {
 	if (this.cancellationToken.IsCancellationRequested)
@@ -95,7 +95,7 @@ public async Task SetTweetSubject(string subject)
 
 The implementation of `GetAverageSentimentScore` gets the average score from the `scoreDictionary`. Note that read operations happen on a [snapshot of the collection](https://azure.microsoft.com/en-in/documentation/articles/service-fabric-reliable-services-reliable-collections/#isolation-levels),therefore, it will ignore any updates that happen while you are iterating through the collection.
 
-~~~C#
+~~~CS
 public async Task<TweetScore> GetAverageSentimentScore()
 {
     if (this.cancellationToken.IsCancellationRequested)
@@ -124,7 +124,7 @@ public async Task<TweetScore> GetAverageSentimentScore()
 
 Following is the implementation for `CreateTweetMessages`.
 
-~~~C#
+~~~CS
 private void CreateTweetMessages()
 {
     while (!this.cancellationToken.IsCancellationRequested)
@@ -153,7 +153,7 @@ private void CreateTweetMessages()
 
 Following is the code listing for `ConsumeTweetMessages`.
 
-~~~C#
+~~~CS
 private void ConsumeTweetMessages()
 {
     var tweetQueue = this.StateManager.GetOrAddAsync<IReliableQueue<string>>("tweetQueue").Result;
@@ -178,7 +178,7 @@ private void ConsumeTweetMessages()
 
 The `RunAsync` method spawns the above two methods.
 
-~~~C#
+~~~CS
 protected override async Task RunAsync(CancellationToken token)
 {
     this.cancellationToken = token;
@@ -198,13 +198,13 @@ A great blog post discussing the available partitioning schemes is available [he
 
 We will use the transport provided by the runtime to make the remote call through the proxy provided by the framework. The proxy abstracts the underlying mechanism for remoting and endpoint discovery and enables communication between the services. The `ServiceProxy` requires the interface that is to be remoted, which in our case is the `ITweet` interface, the URI of the service to make the call to and the partition id of the receiver, which could be any static number since we are using a single partition. We can use a helper method to get the URI of the `TweetService` as shown below.
 
-~~~C#
+~~~CS
 private Uri tweetServiceInstance = new Uri(FabricRuntime.GetActivationContext().ApplicationName + "/TweetService");
 ~~~
 
 The controller methods are simple. Let's take a look at the `SetSubject` action which sends the search term to the `TweetService`.
 
-~~~C#
+~~~CS
 public IActionResult SetSubject(string subject)
 {
     var tweetContract = ServiceProxy.Create<ITweet>(this.defaultPartitionID, this.tweetServiceInstance);
