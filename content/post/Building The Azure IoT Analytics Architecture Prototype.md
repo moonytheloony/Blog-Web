@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["azure", "iot", "analytics"]
+categories = ["azure", "internet of things", "analytics"]
 date = "2016-04-27T17:04:47+10:00"
 draft = false
 tags = ["azure", "github", "webjob", "stream analytics", "service bus", "gateway", "device", "azure function", "function", "data lake", "iot hub", "power bi", "sensor", "resource group", "policy", "shared access", "simulator"]

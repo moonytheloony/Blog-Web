@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["azure", "dns"]
+categories = ["azure", "networking"]
 date = "2016-06-04T17:04:47+10:00"
 draft = false
 tags = ["webapp", "name server", "domain name", "dottk", "free", "nagarro", "cname", "external", "custom", "route 53", "comic", "zone", "rahulrai"]

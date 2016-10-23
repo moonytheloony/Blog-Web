@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["azure", "search"]
+categories = ["azure", "web & mobile"]
 date = "2016-02-18T17:04:47+10:00"
 draft = false
 tags = ["device", "documentdb", "job", "findcab", "universal windows platform", "index", "event hub", "bing map", "cab", "geospatial", "stream analytics", "uwp", "gps", "postman", "voice command", "cortana"]

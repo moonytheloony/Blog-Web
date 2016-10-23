@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["azure", "cloud services", "workflow"]
+categories = ["azure", "app service"]
 date = "2016-01-08T17:04:47+10:00"
 draft = false
 tags = ["azure blob storage", "github", "worker role", "table", "windows workflows", "wf", "instance store", "monitoring store", "service bus", "queue", "bookmark"]

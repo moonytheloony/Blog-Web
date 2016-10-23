@@ -1,6 +1,6 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["azure", "key vault"]
+categories = ["azure", "security & identity"]
 date = "2016-01-23T17:04:47+10:00"
 draft = false
 tags = ["github", "webapp", "website", "app setting", "connection string", "configurationmanager", "active directory ad", "config", "hardware security module hsm", "settings", "handler"]

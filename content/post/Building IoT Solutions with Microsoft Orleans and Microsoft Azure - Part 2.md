@@ -1,6 +1,6 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["azure", "iot", "orleans"]
+categories = ["azure", "internet of things"]
 date = "2015-09-20T17:04:47+10:00"
 draft = false
 tags = ["actor", "github", "internet of things", "silo", "storage", "worker role", "cluster", "azure storage", "device", "distributed system", "grain", "experiment", "sample", "aggregator", "decode", "microservice", "web role", "http amqp", "color", "host", "office"]

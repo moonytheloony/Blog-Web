@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["tools", "gadgets", "productivity"]
+categories = ["tools & gadgets"]
 date = "2016-01-25T17:04:47+10:00"
 draft = false
 tags = ["azure", "dhl", "duty", "jabra", "phone"]

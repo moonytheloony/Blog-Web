@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["azure", "identity"]
+categories = ["azure", "security & identity"]
 date = "2016-08-26T17:04:47+10:00"
 draft = false
 tags = ["token", "owin", "credentials", "resource", "authorization", "oauth"]

@@ -1,6 +1,6 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["azure", "webapp", "web jobs"]
+categories = ["azure", "app service"]
 date = "2015-08-26T17:04:47+10:00"
 draft = false
 tags = ["github", "virtual machine", "vm", "storage", "webjob", "job", "mail", "worker role", "worker", "cron", "webapp", "website", "email", "visual studio", "continuous deployment", "cd", "console", "trigger", "scm", "jobhost"]

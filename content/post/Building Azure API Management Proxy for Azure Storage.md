@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["azrue", "api management"]
+categories = ["azure", "app-service"]
 date = "2016-03-21T17:04:47+10:00"
 draft = false
 tags = ["blob", "console", "decode", "aws", "amazon", "apiphany", "jwt", "json web token", "rest", "operation", "http header", "unix", "token"]

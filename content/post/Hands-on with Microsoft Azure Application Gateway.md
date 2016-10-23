@@ -1,6 +1,6 @@
 ﻿+++
 author = "Rahul Rai"
-categories = ["azure", "networking", "application gateway"]
+categories = ["azure", "networking"]
 date = "2015-11-05T17:04:47+10:00"
 draft = false
 tags = ["vm", "virtual machine", "load balancer", "layer 7", "layer 4", "osi", "iso", "request routing", "arr", "cookie", "ssl", "vnet", "virtual network"]

@@ -1,6 +1,6 @@
 +++
 author = "Rahul Rai"
-categories = ["azure", "data", "data factory"]
+categories = ["azure", "analytics"]
 date = "2015-10-25T17:04:47+10:00"
 draft = false
 tags = ["github", "sample", "linked service", "etl", "gateway", "json", "sql", "file", "copy activity", "dataset", "table"]
