@@ -1,1 +1,1 @@
-Oct 10, 2016: The boring categories sidebar is now replaced with a shiny graph!
+I know that mails are not getting rendered without styles and scripts on Windows Phone mail client app. Windows Phone doesn't download external style sheets.

@@ -29,7 +29,18 @@ function triggerWaypoint(logEventInHeap) {
     });
 };
 
+// Render Subscribe Newsletter.
 $(document).ready(function () {
+    $("#subscribeNewsletter").click(function (e) {
+        e.preventDefault();
+        $("#subscribeNewsletterModal").modal("show");
+        return;
+    });
+    $("#subscribeFooterLink").click(function (e) {
+        e.preventDefault();
+        $("#subscribeNewsletterModal").modal("show");
+        return;
+    });
     $("a").click(function (e) {
         var fragment = this.href.split("#")[1] || "";
         if (fragment === "subscribe") {
