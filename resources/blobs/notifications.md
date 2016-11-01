@@ -1,1 +1,1 @@
-I know that mails are not getting rendered without styles and scripts on Windows Phone mail client app. Windows Phone doesn't download external style sheets.
+October 31, 2016: I am upgrading the Tweet Analytics sample at [Hands-on with Azure Service Fabric Reliable Services](https://rahulrai.in/post/hands-on-with-azure-service-fabric-reliable-services/) to the latest Service Fabric SDK.
