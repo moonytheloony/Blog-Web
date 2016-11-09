@@ -71,12 +71,23 @@ $(document).ready(function () {
 
 function drawChart(chartArray) {
     google.charts.load("current", { packages: ["corechart"] });
-    google.charts.setOnLoadCallback(chart);
+    google.charts.setOnLoadCallback(onLoadComplete);
 
-    function chart() {
+    function onLoadComplete() {
         var data = google.visualization.arrayToDataTable(chartArray);
-        var options = { pieHole: 0.4, legend: 'none' };
+        var options = { pieHole: 0.4, legend: "none" };
         var chart = new google.visualization.PieChart(document.getElementById("categoryChart"));
         chart.draw(data, options);
+        google.visualization.events.addListener(chart, "select", onCategorySelected);
+        function onCategorySelected() {
+            var selection = chart.getSelection();
+            for (var i = 0; i < selection.length; i++) {
+                var item = selection[i];
+                if (item.row != null) {
+                    var categoryTag = data.getFormattedValue(item.row, 0);
+                    window.location.href = "/categories/" + categoryTag;
+                }
+            }
+        }
     }
 };
