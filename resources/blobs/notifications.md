@@ -1,1 +1,1 @@
-October 31, 2016: I am upgrading the Tweet Analytics sample at [Hands-on with Azure Service Fabric Reliable Services](https://rahulrai.in/post/hands-on-with-azure-service-fabric-reliable-services/) to the latest Service Fabric SDK.
+November 2, 2016: Reduced the size and improved the appearance of newsletter. Subscribe Now!
