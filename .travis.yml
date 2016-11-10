@@ -23,7 +23,7 @@ script:
     - hugo
     - gulp minifyHtml
     - cp Web.config public/Web.config
-	- cp search.xml public/search.xml
+    - cp search.xml public/search.xml
 
 branches:
   only:
