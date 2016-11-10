@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    {{ partial "head.html" . }}
-    <body>
-        {{ partial "navigation/navigation.html" . }}
-        <div id="top" class="container">
-            <div class="row" id="content-main">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12 content-card">
-                            <h2>404 Page Not Found</h2>
-                            <p>
-                                Sorry, but the page you are looking for could not be found.  Please validate that the URL was entered
-                                correctly and that it exists. You can also search for the article using the search box.
-                            </p>
-                        </div>
+{{ partial "head.html" . }}
+<body>
+    {{ partial "navigation/navigation.html" . }}
+    <div id="top" class="container">
+        <div class="row" id="content-main">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 content-card">
+                        <h2>404 Page Not Found</h2>
+                        <p>
+                            Sorry, but the page you are looking for could not be found.  Please validate that the URL was entered
+                            correctly and that it exists. You can also use the search box to search for articles of your interest.
+                        </p>
+                        <script>
+                            if (heap) {
+                                heap.track("Not Found", { url: window.location.pathname });
+                            }
+                        </script>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    {{ partial "widgets/organizedsidebar.html" .}}
-                </div>
+            </div>
+            <div class="col-md-4">
+                {{ partial "widgets/organizedsidebar.html" .}}
             </div>
         </div>
-        {{ partial "footer.html" . }}
-        {{ partial "foot.html" . }}
-    </body>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "foot.html" . }}
+</body>
 </html>
