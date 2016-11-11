@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0"?>
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>My Take on Cloud</ShortName>
   <Description>My Take on Cloud By Rahul Rai</Description>
+  <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://rahulrai.azureedge.net/resources/siteIcon.png</Image>
   <Url type="text/html" method="GET" template="https://rahulrai.in/search/?q={searchTerms}" />
   <SearchForm>https://rahulrai.in/</SearchForm>
