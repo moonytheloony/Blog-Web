@@ -190,3 +190,33 @@ blockquote {
     color: #555555;
     border-left: 4px solid #c0c0c0;
 }
+
+.corner-ribbon {
+    width: 200px;
+    background: #e6400c;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: 100;
+    text-decoration: none;
+}
+
+    .corner-ribbon a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .corner-ribbon.sticky {
+        position: fixed;
+    }
+
+    .corner-ribbon.bottom-left {
+        top: auto;
+        bottom: 0px;
+        left: -80px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }

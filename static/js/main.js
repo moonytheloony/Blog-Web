@@ -96,6 +96,7 @@ function drawChart(chartArray) {
     }
 };
 
+// Cookie functions
 function createCookie(name, value, days) {
     var expires = "";
     if (days) {
@@ -124,6 +125,7 @@ function readCookie(name) {
 function eraseCookie(name) {
     createCookie(name, "", -1);
 }
+// Cookie Functions End
 
 $(document).ready(function () {
     setTimeout(cookieReminder, 60000);
