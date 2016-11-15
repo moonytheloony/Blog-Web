@@ -56,6 +56,7 @@
     -ms-border-radius: 5px;
     border-radius: 5px;
     font-style: italic;
+    -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
 
@@ -113,6 +114,9 @@
     cursor: pointer;
     display: inline-block;
     position: relative;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -123,6 +127,9 @@
         opacity: 0;
         top: 0;
         right: -15px;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -webkit-transition: 0.3s;
         transition: 0.3s;
     }
 
@@ -191,21 +198,26 @@ blockquote {
     border-left: 4px solid #c0c0c0;
 }
 
+.no-style-anchor {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .no-style-anchor:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
 .corner-ribbon {
     width: 200px;
     background: #CC4444;
     position: fixed;
     text-align: center;
-    line-height: 50px;
-    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 20px;
     z-index: 100;
     text-decoration: none;
 }
-
-    .corner-ribbon a {
-        color: #ffffff;
-        text-decoration: none;
-    }
 
     .corner-ribbon.bottom-left {
         top: auto;
