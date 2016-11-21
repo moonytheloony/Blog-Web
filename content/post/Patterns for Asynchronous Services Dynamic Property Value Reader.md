@@ -11,7 +11,7 @@ Next in our series of patterns, we will discuss a problem that almost all of us 
 
 ## Dynamic Property Value Reader
 #### Example Scenario
-You are building a solution that requires you to parse different properties of objects based on configurations. You cannot possibly create a static parser for all available combinations of configurations, therefore you want to make the property parser configuration driven. However, [reflection](https://msdn.microsoft.com/en-us/library/f7ykdhsy(v=vs.110).aspx) in .net does not offer you the flexibility of accepting a string filter as input and extracting the relevant property value out of an object. Therefore, you need to build a custom property parser that can help you derive values out of objects using a string filter as an input. 
+You are building a solution that requires you to parse different properties of objects based on configurations. You cannot possibly create a static parser for all available combinations of configurations, therefore you want to make the property parser driven through configurations. However, [reflection](https://msdn.microsoft.com/en-us/library/f7ykdhsy(v=vs.110).aspx) in .net does not offer you the flexibility of accepting a string filter as input and extracting the relevant property value out of an object. Therefore, you need to build a custom property parser that can help you derive values out of objects using a string filter as input. 
 
 #### Scenario
 Some scenarios where this pattern is applicable are:
@@ -21,7 +21,7 @@ Some scenarios where this pattern is applicable are:
 3.	You want to maintain readability of the input while parsing deep nested objects.
 
 #### Solution
-In essence, this is a utility function of recursive nature. When given an input, it recursively makes calls to itself to dig deeper into the object if the target object is deeply nested and it can run simple filter conditions on lists, currently only the **equals** operator is supported but you can add support for more operators as per your needs. The beauty of this utility lies in the input that it accepts which can be easily configured and stored in a database or a configuration file.
+In essence, this is a utility function of recursive nature. When given an input, it recursively makes calls to itself to dig deeper into the object if the target object is deeply nested. It can run simple filter conditions on lists for which currently only the **equals** operator is supported. However, you can add support for more operators as per your needs. The beauty of this utility lies in the intuitive string input that it accepts which can be easily configured and stored in a database or a configuration file.
 
 #### Source Code
 You can download the source code of the implementation from my GitHub repository here.
