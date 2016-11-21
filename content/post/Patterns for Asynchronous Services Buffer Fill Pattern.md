@@ -7,7 +7,7 @@ tags = ["distributed computing", "patterns", "webapp", "TPL", "Task Parallel Lib
 title = "Patterns for Asynchronous Services: Buffer Fill Pattern"
 type = "post"
 +++
-Most of the times when working on distributed systems that involve asynchronous communication, you need to solve certain common problems. In this six part series, I would walk you through some common design challenges and their solutions backed with sample code that you can refer to while working on your projects.
+Most of the times when working on distributed systems that involve asynchronous communication, you need to solve certain common problems. In this multi-part series, I would walk you through some common design challenges and their solutions backed with sample code that you can refer to while working on your projects.
 
 ## Buffer Fill Pattern
 #### Example Scenario
