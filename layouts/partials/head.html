@@ -11,6 +11,7 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit .Site.Params.keywords "," }}{{ end }}' /> {{ with .Params.author }}
     <meta name="author" content="{{ . }}" /> {{ end }}
+    <link rel="manifest" href="/manifest.json">
     <link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="My Take on Cloud" />{{ with .Site.Params.favicon }}
     <link rel="icon" type="image/png" href="{{ . }}" sizes="72X72" /> {{ end }} {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/phlat.css" />
     <link rel="stylesheet" href="/css/custom_style.css?{{ .Now.Unix }}" />
+    <script src="//cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="{{ .Site.Params.resourcesbaseurl }}/highlight.pack.js"></script>

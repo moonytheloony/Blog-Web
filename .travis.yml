@@ -24,6 +24,9 @@ script:
     - gulp minifyHtml
     - cp Web.config public/Web.config
     - cp search.xml public/search.xml
+    - cp manifest.json public/manifest.json
+    - cp OneSignalSDKUpdaterWorker.js public/OneSignalSDKUpdaterWorker.js
+    - cp OneSignalSDKWorker.js public/OneSignalSDKWorker.js
 
 branches:
   only:
