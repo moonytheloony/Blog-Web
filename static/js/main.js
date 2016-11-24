@@ -152,7 +152,7 @@ $(document).ready(function () {
         },
         notifyButton: {
             enable: true,
-            size: "small",
+            size: "medium",
             theme: "default",
             position: "bottom-left",
             prenotify: true,
