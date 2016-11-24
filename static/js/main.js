@@ -158,9 +158,13 @@ $(document).ready(function () {
             prenotify: true,
             showCredit: false,
             offset: {
-                bottom: "70px",
+                bottom: "72px",
                 left: "10px",
                 right: "0px"
+            },
+            colors: {
+                'circle.background': "#CC4444",
+                'circle.foreground': "white"
             }
         }
     }]);
