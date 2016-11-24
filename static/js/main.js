@@ -158,8 +158,8 @@ $(document).ready(function () {
             prenotify: true,
             showCredit: false,
             offset: {
-                bottom: "72px",
-                left: "10px",
+                bottom: "18px",
+                left: "65px",
                 right: "0px"
             },
             colors: {
