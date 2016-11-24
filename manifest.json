@@ -1,6 +1,6 @@
 {
-  "name": "OneSignal Example",
-  "short_name": "OneSignalExample",
+  "name": "My Take on Cloud",
+  "short_name": "MyTakeOnCloud",
   "start_url": "/",
   "display": "standalone",
   "gcm_sender_id": "482941778795"

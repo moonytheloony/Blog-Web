@@ -21,7 +21,7 @@ function triggerWaypoint(logEventInHeap) {
             if (logEventInHeap) {
                 heap.track("Read To End", { post: window.location.pathname });
             } else {
-                alert('Event Logged' + window.location.pathname);
+                alert("Event Logged" + window.location.pathname);
             }
 
             this.destroy();
@@ -136,4 +136,32 @@ $(document).ready(function () {
             $("#subscribeNewsletterModal").modal("show");
         }
     }
+});
+
+// One Signal Init
+$(document).ready(function () {
+    var oneSignal = window.OneSignal || [];
+    oneSignal.push(["init", {
+        appId: "566bcde9-7b68-466a-a9ef-0467070e496f",
+        safari_web_id: "web.onesignal.auto.30b8db8e-86b1-4367-8886-055d3d362718",
+        autoRegister: false,
+        welcomeNotification: {
+            "title": "Welcome to My Take on Cloud Blog",
+            "message": "Thank you for subscribing!"
+            // "url": "" /* Leave commented for the notification to not open a window on Chrome and Firefox (on Safari, it opens to your webpage) */
+        },
+        notifyButton: {
+            enable: true,
+            size: "medium",
+            theme: "default",
+            position: "bottom-left",
+            prenotify: true,
+            showCredit: false,
+            offset: {
+                bottom: "70px",
+                left: "10px",
+                right: "0px"
+            }
+        }
+    }]);
 });
