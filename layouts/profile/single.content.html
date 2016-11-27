@@ -1,42 +1,42 @@
 <div class="row">
-	<div class="col-md-12 content-card">
-		<h1>{{ .Title }}</h1>
-		<div id="profileSummary">
-		</div>
-		<hr/>
-		<div class="row noMarginBottom">
-			<div class="col-md-7">
-				<h1>Résumé</h1>
-			</div>
-		</div>	
-		<div class="row noMarginBottom">
-			<div class="col-md-8">
-				<h3><a href="/contact" target="_blank">Contact Me</a> for the pass key</h3>
-			</div>
-		</div>
-		<div class="row noMarginBottom">
-			<div class="col-md-8 col-md-offset-2">
-				<input class="form-control" type="password" id="passkey" placeholder = "Your Pass Key" autocomplete = "off" onkeyup="validateKey()">
-			</div>
-		</div>
-		<div class="row noMarginBottom">
-			<div class="col-md-12">
-				<br/>
-				<iframe id="my_iframe" width="97%" height="500" frameborder="0" scrolling="no" style="display: none;border: 1px solid #000000;"></iframe>
-			</div>
-		</div>
-		<hr/>
-		<div class="row">
-			<div class="col-md-8">
-				<h1>Testimonials</h1>
-			</div>
-			<div class="col-md-4 text-right">
-				<!-- Place this tag where you want the button to render. -->
-				<a class="github-button button" href="https://github.com/moonytheloony/Blog-Web/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/moonytheloony/Blog-Web/network" data-count-api="/repos/moonytheloony/Blog-Web#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork moonytheloony/Blog-Web on GitHub">Fork</a>
-			</div>
-		</div>	
-		{{ .Render "testimonial.content" }}
-	</div>
+    <div class="col-md-12 content-card">
+        <h1>{{ .Title }}</h1>
+        <div id="profileSummary">
+        </div>
+        <hr />
+        <div class="row noMarginBottom">
+            <div class="col-md-7">
+                <h1>Résumé</h1>
+            </div>
+        </div>
+        <div class="row noMarginBottom">
+            <div class="col-md-8">
+                <h3><a href="/contact">Contact Me</a> for the pass key</h3>
+            </div>
+        </div>
+        <div class="row noMarginBottom">
+            <div class="col-md-8 col-md-offset-2">
+                <input class="form-control" type="password" id="passkey" placeholder="Your Pass Key" autocomplete="off" onkeyup="validateKey()">
+            </div>
+        </div>
+        <div class="row noMarginBottom">
+            <div class="col-md-12">
+                <br />
+                <iframe id="my_iframe" width="97%" height="500" frameborder="0" scrolling="no" style="display: none;border: 1px solid #000000;"></iframe>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Testimonials</h1>
+            </div>
+            <div class="col-md-4 text-right">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button button" href="https://github.com/moonytheloony/Blog-Web/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/moonytheloony/Blog-Web/network" data-count-api="/repos/moonytheloony/Blog-Web#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork moonytheloony/Blog-Web on GitHub">Fork</a>
+            </div>
+        </div>
+        {{ .Render "testimonial.content" }}
+    </div>
 </div>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
