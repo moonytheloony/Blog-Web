@@ -148,7 +148,7 @@ $(document).ready(function () {
         welcomeNotification: {
             "title": "Welcome to My Take on Cloud Blog",
             "message": "Thank you for subscribing!"
-            // "url": "" /* Leave commented for the notification to not open a window on Chrome and Firefox (on Safari, it opens to your webpage) */
+            // "url": ""
         },
         notifyButton: {
             enable: true,

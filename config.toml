@@ -69,13 +69,8 @@ paginate = 15
     url = "/profile/"
 
 [[menu.header]]
-    name = "contact"
-    weight = 4
-    url = "/contact/"
-
-[[menu.header]]
     name = "rss"
-    weight = 5
+    weight = 4
     url = "/post/index.xml"
 
 [[menu.footer]]

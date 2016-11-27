@@ -169,10 +169,13 @@ pre {
 }
 
 .btn-glyphicon {
-    padding: 8px;
-    background: #ffffff;
-    margin-right: 4px;
-    border: 1px solid #337AB7;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background: #CC4444;
+    color: #ffffff;
 }
 
 .little-padding {
@@ -188,8 +191,8 @@ pre {
 
 .navbar-default .navbar-brand {
     color: #000;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 blockquote {

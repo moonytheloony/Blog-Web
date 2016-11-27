@@ -3,13 +3,21 @@
         <h5>FEATURED</h5>
         <div id="notifications"></div>
         <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.4.2/dist/showdown.min.js"></script>
-        <script>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1 top">
+                <a target="_blank" href="https://www.linkedin.com/groups/Azure-Service-Fabric-User-Forum-8526708/about"><i class="fa fa-linkedin-square fa-4x inlineDisplay"></i></a>
+            </div>
+            <div class="col-md-8 col-md-offset-1 top">
+                Connect with <b>Azure Service Fabric</b> experts and developers on LinkedIn.
+            </div>
+        </div>
+        <!--<script>
             $(document).ready(function () {
                 var converter = new showdown.Converter(),
               text = $.ajax({ url: "{{ .Site.Params.resourcesbaseurl }}/blobs/notifications.md", async: false }).responseText,
               html = converter.makeHtml(text);
                 $("#notifications").html(html);
             });
-        </script>
+        </script>-->
     </div>
 </div>
