@@ -7,7 +7,7 @@ tags = ["distributed computing", "patterns", "webapp", "TPL", "Task Parallel Lib
 title = "Patterns for Asynchronous Services: Producer-Consumer Pattern"
 type = "post"
 +++
-Let's take our discussion forward to discuss the [Producer and Consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem). According to the definition, the problem describes two processes, the producer and the consumer, who share a common, fixed-size buffer used as a queue. The producer's job is to generate data, put it into the buffer, and start again. At the same time, the consumer is consuming the data (i.e., removing it from the buffer), one piece at a time. The problem is to make sure that the producer won't try to add data into the buffer if it's full and that the consumer won't try to remove data from an empty buffer.
+Let's take our discussion forward to discuss the [Producer and Consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem). According to the definition, the problem describes two processes, the producer and the consumer, who share a common, fixed-size buffer used as a queue. The producer's job is to generate data, put it into the buffer, and start again. At the same time, the consumer is consuming the data (i.e., removing it from the buffer), one record at a time. The problem is to make sure that the producer won't try to add data into the buffer if it's full and that the consumer won't try to remove data from an empty buffer.
 
 ## Producer-Consumer Pattern
 #### Example Scenario
