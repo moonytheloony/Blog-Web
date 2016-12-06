@@ -11,7 +11,7 @@ slug = "the-first-post"
 
 Finally, my custom blogging platform is ready and raring to go. I will try to write as frequently as I can and keep making platform improvements. Since I have been working on building my blogging platform for some time, I think my opening blog should talk about how the platform works.
 
-{{< notice text="September 23, 2016: I have migrated the blog to Hugo, which is a static site generator. Azure WebApps still host this blog. This post will help you setup a beautiful blog using a number of Azure services." >}}{{% /notice %}}
+{{< notice text="September 23, 2016: I have migrated my blog to Hugo, which is a static site generator. Azure WebApps still hosts this blog. This post will help you setup your own beautiful blog using a number of Azure services." >}}{{% /notice %}}
 
 First, the technology stack:
 
