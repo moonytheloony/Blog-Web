@@ -265,5 +265,6 @@ td, th {
 
 .disqusComments {
     max-height: 50vh;
+    height: auto;
     overflow-y: hidden;
 }
