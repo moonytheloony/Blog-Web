@@ -264,5 +264,6 @@ td, th {
 }
 
 .disqusComments {
-    max-height: 1vh;
+    max-height: 50vh;
+    overflow-y: hidden;
 }
