@@ -144,8 +144,10 @@ There are several other plugins and management options available for ElasticSear
 
 > **[Russ Cam](http://forloop.co.uk/blog)** pointed out the differences in deploying the cluster through ARM template (the recommended approach) and through Marketplace:
 
-> With the ARM template, you don't need to ssh into the Kibana VM to change the configuration; when you specify to use an external load balancer, an internal load balancer resource is also deployed and Kibana is configured to use this to communicate with the cluster. ip tables port forwarding rules are set up to allow two different load balancers (internal and external) to communicate with the cluster on different backend ports.
+> With the ARM template, you don't need to ssh into the Kibana VM to change the configuration; when you specify to use an external load balancer, an internal load balancer resource is also deployed and Kibana is configured to use this to communicate with the cluster. IP tables port forwarding rules are set up to allow two different load balancers (internal and external) to communicate with the cluster on different backend ports.
 
-> The template also does not (currently) configure SSL/TLS, so it is recommended to set this up too.
+> The deployment of the internal load balancer for the Kibana VM to use happens whether you deploy an Elasticsearch cluster through the Azure Marketplace or through using the ARM template directly with command line tooling. The Azure Marketplace UI calls the ARM template at the end of the step process, passing it all of the parameters specified in the UI.
+
+> The ARM template also does not (currently) configure SSL/TLS, so it is recommended to set this up too.
 
 {{< subscribe >}}
