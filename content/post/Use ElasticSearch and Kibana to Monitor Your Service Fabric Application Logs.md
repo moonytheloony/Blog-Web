@@ -25,7 +25,7 @@ ElasticSearch cluster uses sharding to distribute data across multiple nodes. Th
 * A **master node** that does not hold index data, but performs cluster management operations, such as maintaining and distributing routing information around the cluster (the list of which nodes contain which shards), determining which nodes are available, relocating shards as nodes appear and disappear, and coordinating recovery after node failure. Multiple nodes can be configured as masters, but only one will actually be elected to perform the master functions. If this node fails, another election takes place and one of the other eligible master nodes will be elected to take over.
 
 ## Provisioning ElasticSearch Cluster on Azure
-You can provision an elasticsearch cluster on Azure using ARM template or Azure Marketplace. The ARM template to provision an ElasticSearch and Kibana cluster is available in Azure quick start templates repo [here](https://github.com/Azure/azure-quickstart-templates/tree/master/elasticsearch). Let's provision an ElasticSearch cluster using the Azure Marketplace template to go through the various configuration options.
+You can provision an elasticsearch cluster on Azure using ARM template or Azure Marketplace. The ARM template to provision an ElasticSearch and Kibana cluster is available in Azure quick start templates repo [here](https://github.com/Azure/azure-quickstart-templates/tree/master/elasticsearch) (a **note** about it is at the end of this post). Let's provision an ElasticSearch cluster using the Azure Marketplace template to go through the various configuration options.
 
 1. In [Azure Management Portal](http://portal.azure.com), search for the term ***elasticsearch***.
 2. On the search results page, select the **ElasticSearch and Kibana** entry.
@@ -141,5 +141,11 @@ Next, let's search for logs containing a specific message in the heap of logs in
 {{< img src="/Search Logs on Kibana.png" alt="Search Logs on Kibana" >}}
 
 There are several other plugins and management options available for ElasticSearch. If you want to explore those in detail, visit the [elastic.co](https://www.elastic.co/guide/index.html) website.
+
+> **[Russ Cam](http://forloop.co.uk/blog)** pointed out the differences in deploying the cluster through ARM template (the recommended approach) and through Marketplace:
+
+> With the ARM template, you don't need to ssh into the Kibana VM to change the configuration; when you specify to use an external load balancer, an internal load balancer resource is also deployed and Kibana is configured to use this to communicate with the cluster. ip tables port forwarding rules are set up to allow two different load balancers (internal and external) to communicate with the cluster on different backend ports.
+
+> The template also does not (currently) configure SSL/TLS, so it is recommended to set this up too.
 
 {{< subscribe >}}
