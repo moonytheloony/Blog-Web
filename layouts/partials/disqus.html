@@ -1,7 +1,7 @@
 {{ if eq .Type "post" }} {{ with .Site.Params.disqus }}
 <div class="row">
     <div class="col-md-12 content-card">
-        <div id="disqus_thread"></div>
+        <div id="disqus_thread" class="disqusComments"></div>
         <script async defer>
             (function () {
                 if (window.location.hostname == "localhost") {
@@ -24,6 +24,26 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        <br />
+        <button id="btnOrganizeDisqusContent" class="btn btn-custom">Expand Comments</button>
     </div>
+    <script async defer>
+        $("#btnOrganizeDisqusContent")
+            .click(function (e) {
+                var expandText = "Expand Comments";
+                var contractText = "Collapse Comments";
+                e.preventDefault();
+                if (this.innerText === expandText) {
+                    $("#disqus_thread").css("max-Height", "none");
+                    this.innerText = contractText;
+                    return;
+                }
+                if (this.innerText === contractText) {
+                    $("#disqus_thread").css("max-Height", "1vh");
+                    this.innerText = expandText;
+                    return;
+                }
+            });
+    </script>
 </div>
 {{ end }} {{ end }}
