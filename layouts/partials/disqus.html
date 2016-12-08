@@ -30,23 +30,5 @@
         <br />
         <button id="btnOrganizeDisqusContent" class="btn btn-custom btn-comments">All Comments</button>
     </div>
-    <script async defer>
-        $("#btnOrganizeDisqusContent")
-            .click(function (e) {
-                var expandText = "All Comments";
-                var contractText = "Few Comments";
-                e.preventDefault();
-                if (this.innerText === expandText) {
-                    $("#disqusCommentBoxOverlay").css({ "height": "auto" });
-                    this.innerText = contractText;
-                    return;
-                }
-                if (this.innerText === contractText) {
-                    $("#disqusCommentBoxOverlay").css({ "height": "50vh" });
-                    this.innerText = expandText;
-                    return;
-                }
-            });
-    </script>
 </div>
 {{ end }} {{ end }}

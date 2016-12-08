@@ -169,3 +169,24 @@ $(document).ready(function () {
         }
     }]);
 });
+
+// Disqus Content Oraganizer.
+$(document)
+    .ready(function () {
+        $("#btnOrganizeDisqusContent")
+            .click(function (e) {
+                var expandText = "All Comments";
+                var contractText = "Few Comments";
+                e.preventDefault();
+                if (this.innerText === expandText) {
+                    $("#disqusCommentBoxOverlay").css({ "height": "auto" });
+                    this.innerText = contractText;
+                    return;
+                }
+                if (this.innerText === contractText) {
+                    $("#disqusCommentBoxOverlay").css({ "height": "50vh" });
+                    this.innerText = expandText;
+                    return;
+                }
+            });
+    });
