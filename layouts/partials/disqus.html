@@ -1,7 +1,10 @@
 {{ if eq .Type "post" }} {{ with .Site.Params.disqus }}
 <div class="row">
     <div class="col-md-12 content-card">
-        <div id="disqus_thread" class="disqusComments"></div>
+        <h2>Your 2 cents</h2>
+        <div id="disqusCommentBoxOverlay" class="disqusComments">
+            <div id="disqus_thread"></div>
+        </div>
         <script async defer>
             (function () {
                 if (window.location.hostname == "localhost") {
@@ -25,21 +28,21 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         <br />
-        <button id="btnOrganizeDisqusContent" class="btn btn-custom">Expand Comments</button>
+        <button id="btnOrganizeDisqusContent" class="btn btn-custom btn-comments">All Comments</button>
     </div>
     <script async defer>
         $("#btnOrganizeDisqusContent")
             .click(function (e) {
-                var expandText = "Expand Comments";
-                var contractText = "Collapse Comments";
+                var expandText = "All Comments";
+                var contractText = "Few Comments";
                 e.preventDefault();
                 if (this.innerText === expandText) {
-                    $("#disqus_thread").css("max-Height", "none");
+                    $("#disqusCommentBoxOverlay").css({ "height": "auto" });
                     this.innerText = contractText;
                     return;
                 }
                 if (this.innerText === contractText) {
-                    $("#disqus_thread").css("max-Height", "50vh");
+                    $("#disqusCommentBoxOverlay").css({ "height": "50vh" });
                     this.innerText = expandText;
                     return;
                 }
