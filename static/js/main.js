@@ -190,3 +190,13 @@ $(document)
                 }
             });
     });
+
+// Apply targeted stylesheets.
+$(document)
+    .ready(function () {
+        var path = window.location.pathname.toLowerCase();
+        if (path.indexOf("/post/") >= 0) {
+            $("head").append('<link rel="stylesheet" href="/css/posts_style.css?v1" type="text/css" />');
+            return;
+        }
+    });
