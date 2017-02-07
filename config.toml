@@ -31,9 +31,9 @@ paginate = 15
     google_webmaster = "QCQmaQxL8c2x6yrpUDr91jfBZNSpexndMkeOqZPFlqM"
     bing_webmaster = "F6575BFCC1322FDFE66EA304BDB69F33"
 	googlesearchid = "017749396232577371525:uclf-xfot8k"
-    favicon = "https://rahulrai.azureedge.net/resources/siteIcon.png"
-    resourcesbaseurl = "https://rahulrai.azureedge.net/resources"
-    contentbaseurl = "https://rahulrai.azureedge.net/media"
+    favicon = "https://cdn.rahulrai.in/resources/siteIcon.png"
+    resourcesbaseurl = "https://cdn.rahulrai.in/resources"
+    contentbaseurl = "https://cdn.rahulrai.in/media"
 	
 # Social media icons and links that appear in the footer
 [social]
