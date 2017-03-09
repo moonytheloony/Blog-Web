@@ -3,7 +3,7 @@ author = "Rahul Rai"
 categories = ["programming", "app-service"]
 date = "2017-01-03T17:04:47+10:00"
 draft = false
-tags = ["nodejs", "azure-sql-database", "webapp", "tedious", "guthub"]
+tags = ["nodejs", "azure-sql-database", "webapp", "tedious", "github"]
 title = "Use Support Backed Tedious Driver for Your Node Applications with SQL Database"
 type = "post"
 +++
