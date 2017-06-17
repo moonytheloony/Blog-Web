@@ -19,7 +19,7 @@ One thing to be cognizant of while selecting an application for the purpose is t
 ## The Code
 
 I understand that you need sample code to refer to (a.k.a copy & paste). Here is the sample application that you can clone or download.
-{{< sourceCode src="https://github.com/moonytheloony/phonebookonservicefabric" >}}
+{{< sourceCode src="https://github.com/rahulrai-in/phonebookonservicefabric" >}}
 
 ## The Tools
 I recommend using Visual Studio to package your application for the ease that it offers. However, you can [manually package your application](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-deploy-existing-app#manually) as well. Either of the approaches will create a folder structure that is similar to the following:

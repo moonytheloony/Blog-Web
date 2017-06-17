@@ -77,7 +77,7 @@ CustomUserData fetchedCustomUserData = fetchedStateData.GetProperty<CustomUserDa
 
 ## Adding Dialog to Blog Bot
 It is time to incorporate our learnings into the demo bot that we started building in the first part of the blog series. In this series, I will create a bot that interacts with the user to take him\her through the contents of my blog. You can download the up to date copy of the source code of the bot from here.
-{{< sourceCode src="https://github.com/moonytheloony/blogbot">}}
+{{< sourceCode src="https://github.com/rahulrai-in/blogbot">}}
 
 Let's begin with creating a Dialog that greets the user and saves his\her name in memory so that it can be reused later in the conversation. In the solution, create a folder named **Dialogs**. This folder will contain all the Dialogs that we will use in our bot. Next, add a class named `HelloDialog` to the folder. Since Dialogs need to be serialized at runtime, apply the `Serializable` attribute to the class. To be processed as a Dialog by the Bot Framework, the `HelloDialog` class should implement the `IDialog` interface. To implement the interface, you would need to specify an implementation of the `StartAsync` method.
 

@@ -33,7 +33,7 @@ Now that we have an understanding of what Data Factory is, it is a good time to 
 
 ## Download The Code Sample
 
-The complete code for the sample we are going to build is available for download here. {{< sourceCode src="https://github.com/moonytheloony/integrationfactory">}}
+The complete code for the sample we are going to build is available for download here. {{< sourceCode src="https://github.com/rahulrai-in/integrationfactory">}}
  At this point you should download a copy of it. Although, I wrote the code using Data Factory SDK for Visual Studio (available by searching for **Microsoft Azure DataFactory Tools for Visual Studio** in extensions gallery), the Data Factory IDE is already embedded in the Azure management portal, therefore using Visual Studio is not a necessity. The IDE provides support for validating the JSON files on build and uploading them to your Data Factory on publish and is good for keeping artifacts in source control, sharing code etc. and therefore should be used for any code that you expect to move to production.
 
 ## Preparing The Database and The Test File

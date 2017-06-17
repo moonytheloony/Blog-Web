@@ -32,7 +32,7 @@ The following diagram of the application will help you visualize the solution th
 
 ## Code
 
-The code for the application is available on my GitHub repository. {{< sourceCode src="https://github.com/moonytheloony/TweetAnalyticsServiceFabric">}}
+The code for the application is available on my GitHub repository. {{< sourceCode src="https://github.com/rahulrai-in/TweetAnalyticsServiceFabric">}}
 
 ## Building The Sample
 

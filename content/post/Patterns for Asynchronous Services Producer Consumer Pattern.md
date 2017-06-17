@@ -78,7 +78,7 @@ private static async void AsynchronousConsumer(ISourceBlock<IList<int>> sourceBl
 
 #### Source Code
 You can download the source code of the implementation from my GitHub repository here.
-{{< sourceCode src="https://github.com/moonytheloony/ProducerConsumerPattern" >}}
+{{< sourceCode src="https://github.com/rahulrai-in/ProducerConsumerPattern" >}}
 
 #### Executing the Sample
 Simply run the sample that you downloaded from the repository. The producer in the program will keep generating random numbers and feeding them to the buffer. The consumer will wait for data to become available and it will process the data in the buffer.

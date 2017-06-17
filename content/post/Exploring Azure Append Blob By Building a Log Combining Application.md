@@ -23,7 +23,7 @@ The objective of building this tool is to collect log files and combine them. Fo
 
 ## How To Make It Work
 
-First, download the sample from here. {{< sourceCode src="https://github.com/moonytheloony/appendblobazure" >}}
+First, download the sample from here. {{< sourceCode src="https://github.com/rahulrai-in/appendblobazure" >}}
 Now, load the downloaded solution in your Visual Studio IDE. Note that I have used C# 6, .net 4 and Storage SDK 5.0 to build this sample, which is a console application, so be wise about your environment settings. Once you have loaded the solution, you would find two projects named **AppendBlobAzureProducer** and **AppendBlobAzureConsumer**. As the name implies, **AppendBlobAzureProducer** project will produce log files in the form of [block blobs](https://msdn.microsoft.com/en-us/library/azure/ee691964.aspx) and add a random log statement into it. In the meanwhile, **AppendBlobAzureConsumer** will keep reading the appended [Append Blob](https://msdn.microsoft.com/en-us/library/azure/ee691964.aspx) file. There are two things to note here:
 
 1.  The consumer never completely downloads the file but instead reads it from a starting offset position, therefore there is no need to download the complete file at any time.

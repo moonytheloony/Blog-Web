@@ -87,6 +87,6 @@ public static void ProcessNewPostQueueMessage(
 
 I would like to point out that you don’t need to keep renewing lease on the message. The SDK handles that automatically if your function takes longer than the time for which SDK has acquired lease on the message. Also, you can get the recent logs on your WebJob dashboard. You would find a link to get to the Azure Web Jobs Dashboard to the right of your job, but the format for the URL to access is this: [https://YOURSITE.scm.azurewebsites.net/azurejobs](https://yoursite.scm.azurewebsites.net/azurejobs). You'll need to enter your same credentials you've used for Azure deployment.
 
-To create a scheduled job you may use the SDK  as a helper utility, however you don’t need a JobHost to host your application, you can simply build a console application and deploy it. You can find source code of my Cleanup WebJob [here](https://github.com/moonytheloony/rahulrai). I encourage you to add this nifty utility to your arsenal when you are building applications for the cloud. Let me know your feedback in the comments section. See you soon!
+To create a scheduled job you may use the SDK  as a helper utility, however you don’t need a JobHost to host your application, you can simply build a console application and deploy it. You can find source code of my Cleanup WebJob [here](https://github.com/rahulrai-in/rahulrai). I encourage you to add this nifty utility to your arsenal when you are building applications for the cloud. Let me know your feedback in the comments section. See you soon!
 
 {{< subscribe >}}

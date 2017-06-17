@@ -88,7 +88,7 @@ The template that we used to provision the ElasticSearch cluster, also provision
 5. You should now be able to access the Kibana UI at "http://[IP of Kibana VM]:5601/". Use your **es_kibana** credentials to login.
 
 ## Pump Logs to ElasticSearch
-If you don't want to follow the steps outlined below, I have already done the work for you. Simply download\clone the application here.{{< sourceCode src="https://github.com/moonytheloony/ElasticSearchTrace">}}
+If you don't want to follow the steps outlined below, I have already done the work for you. Simply download\clone the application here.{{< sourceCode src="https://github.com/rahulrai-in/ElasticSearchTrace">}}
 I post all my samples in GitHub, you can follow my activity on GitHub to see what I am up to :smile:
 
 1. Create a new Service Fabric application and add a stateless service to it.

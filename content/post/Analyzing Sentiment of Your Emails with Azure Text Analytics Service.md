@@ -33,7 +33,7 @@ Finally, to prepare your Visual Studio environment, you would need to install Of
 
 ## Source Code
 
-The entire source code of the application is available on GitHub. {{< sourceCode src="https://github.com/moonytheloony/happymailfinder">}} In a very short time, we will have an Outlook add-in ready that analyzes the sentiment of the subject line of an email and displays an emoticon representing the sentiment. The solution has the following structure (the important files are highlighted).
+The entire source code of the application is available on GitHub. {{< sourceCode src="https://github.com/rahulrai-in/happymailfinder">}} In a very short time, we will have an Outlook add-in ready that analyzes the sentiment of the subject line of an email and displays an emoticon representing the sentiment. The solution has the following structure (the important files are highlighted).
 
 {{< img src="/HappyMailFinder Solution.png" alt="HappyMailFinder Solution" >}}
 

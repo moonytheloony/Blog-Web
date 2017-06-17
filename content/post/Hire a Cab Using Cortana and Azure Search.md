@@ -49,7 +49,7 @@ Before we dig into how this application was built, let's see this application in
 
 ## Source Code
 
-The entire source code for this application is available on GitHub. {{< sourceCode src="https://github.com/moonytheloony/findmeacab">}} You can also find my other code samples on my [GitHub](https://github.com/moonytheloony) repository. Since this is a UWP App, you would need Windows 10 OS installed on the developer machine to debug and deploy the application.
+The entire source code for this application is available on GitHub. {{< sourceCode src="https://github.com/rahulrai-in/findmeacab">}} You can also find my other code samples on my [GitHub](https://github.com/rahulrai-in) repository. Since this is a UWP App, you would need Windows 10 OS installed on the developer machine to debug and deploy the application.
 
 ## Code Walkthrough and Build Instructions
 

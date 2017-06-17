@@ -15,7 +15,7 @@ This is the last article in the series of developing IoT solutions using [Micros
 
 ## Source Code
 
-You can download the source code of this experiment from my [GitHub](https://github.com/moonytheloony) repository located here. {{< sourceCode src="https://github.com/moonytheloony/orleans" >}}
+You can download the source code of this experiment from my [GitHub](https://github.com/rahulrai-in) repository located here. {{< sourceCode src="https://github.com/rahulrai-in/orleans" >}}
 
 ## Scenario
 
@@ -78,7 +78,7 @@ Fire up Visual Studio and create a solution. Next, create the following projects
 	* **Purpose**: Web role for hosting Orleans client.
 	* **References**: OrleansInterfaces	
 
-Build the solution to restore nuget packages in the solution. On building the solution, Orleans will generate a lot of proxy code for your grains in **orleans.codegen.cs** file, which you can find in the **Properties** folder of **OrleansInterfaces** and **OrleansClasses** projects. Once you have these classes setup, we are now ready to start writing code inside each of these projects. Note that some classes, such as [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) etc., have been left out for the sake of keeping this blog post short. You can find the source code of this experiment on my GitHub repository [here](https://github.com/moonytheloony/orleans).
+Build the solution to restore nuget packages in the solution. On building the solution, Orleans will generate a lot of proxy code for your grains in **orleans.codegen.cs** file, which you can find in the **Properties** folder of **OrleansInterfaces** and **OrleansClasses** projects. Once you have these classes setup, we are now ready to start writing code inside each of these projects. Note that some classes, such as [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) etc., have been left out for the sake of keeping this blog post short. You can find the source code of this experiment on my GitHub repository [here](https://github.com/rahulrai-in/orleans).
 
 ## Creating Orleans Grain Interfaces
 
@@ -316,7 +316,7 @@ The cloud worker role needs endpoints to communicate with the client and with ot
 
 {{< img src="/CloudConfigurationEndpoint.png" alt="CloudConfigurationEndpoint" >}}
 
-A configuration file named **OrleansConfiguration** needs to be added to the Worker Role project to help Orleans know the storage account it can use to store and read the state data and also specify the Liveness type. You can find the configuration file that is used in the experiment [here](https://github.com/moonytheloony/orleans/blob/master/OrleansWorker/OrleansConfiguration.xml).
+A configuration file named **OrleansConfiguration** needs to be added to the Worker Role project to help Orleans know the storage account it can use to store and read the state data and also specify the Liveness type. You can find the configuration file that is used in the experiment [here](https://github.com/rahulrai-in/orleans/blob/master/OrleansWorker/OrleansConfiguration.xml).
 
 Add the other classes and MVC view to see the experiment in action. You are now all set to deploy the solution to Microsoft Azure. Hit publish and see the magic for yourself (or run it on local emulator)!
 

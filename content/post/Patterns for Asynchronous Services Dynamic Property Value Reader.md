@@ -25,7 +25,7 @@ In essence, this is a utility function of recursive nature. When given an input,
 
 #### Source Code
 You can download the source code of the implementation from my GitHub repository here.
-{{< sourceCode src="https://github.com/moonytheloony/DynamicPropertyValueReader" >}}
+{{< sourceCode src="https://github.com/rahulrai-in/DynamicPropertyValueReader" >}}
 
 #### Executing the Sample
 Download the sample and open it in your Visual Studio. To test this function, I have created a complex object with nested lists and objects through this code:

@@ -38,14 +38,14 @@ The new design uses a couple of Azure components such as [WebApps](https://azure
 ## The Process
 I write my blogs in [Markdown](https://en.wikipedia.org/wiki/Markdown) and save the supporting images in a local folder which is mapped to [OneDrive](https://onedrive.live.com/about/en-us/). I then sync the images to Azure Blob Storage using [Cloudberry](http://www.cloudberrylab.com/free-microsoft-azure-explorer.aspx). An Azure CDN instance picks up the images and resources from the blob storage and pushes them to CDN PoP (points of presence) ([see how](https://azure.microsoft.com/en-us/documentation/articles/cdn-create-new-endpoint/)). A WebJob detects that images have been uploaded to the storage account ([see how](https://azure.microsoft.com/en-us/documentation/articles/websites-dotnet-webjobs-sdk-storage-blobs-how-to/)). The WebJob then downloads those images, optimizes them, pushes them back to the storage and purges the appropriate CDN endpoint so that the optimized content becomes available for delivery by the CDN.
 
-Next, I push my blog post to GitHub from where Travis is notified of the changes. I use a [custom script](https://github.com/moonytheloony/Blog-Web/blob/master/travisdeploy.sh) to git push only the new or updated files to my Azure WebApp. This saves me from the pain of deploying everything to my WebApp on every single push. Also, Hugo does not, by default, build the posts that are marked as `draft`, which helps me push my in-progress blog posts to GitHub without affecting the existing deployment. Later on, when I am ready, I just need to set the `draft` property of the post to **false** to make the post public.
+Next, I push my blog post to GitHub from where Travis is notified of the changes. I use a [custom script](https://github.com/rahulrai-in/Blog-Web/blob/master/travisdeploy.sh) to git push only the new or updated files to my Azure WebApp. This saves me from the pain of deploying everything to my WebApp on every single push. Also, Hugo does not, by default, build the posts that are marked as `draft`, which helps me push my in-progress blog posts to GitHub without affecting the existing deployment. Later on, when I am ready, I just need to set the `draft` property of the post to **false** to make the post public.
 
 I have integrated a third-party mailing system to the blog that detects the changes in the [RSS feed](/post/index.xml) of this blog and sends an email to my subscribers. I took great pains to make sure that the data of my subscribers stay safe. I :heart: my subscribers and therefore, I am paying [MailerLite](https://www.mailerlite.com/) to keep my subscriber list safe :moneybag: and to keep my subscribers happy.
 
 {{% notice %}}Want me to write about how the Travis CI custom build script works? [Let me know](/contact) or comment below.{{% /notice %}}
 
 ## The Code
-As always, the code is available for you to use in your projects or blogs for **FREE**. Do send me a note of appreciation if it did help you.{{< sourceCode src="https://github.com/moonytheloony/Blog-Web" >}}
+As always, the code is available for you to use in your projects or blogs for **FREE**. Do send me a note of appreciation if it did help you.{{< sourceCode src="https://github.com/rahulrai-in/Blog-Web" >}}
 
 ## Improving Efficiency
 Several factors make this blog efficient at delivery:

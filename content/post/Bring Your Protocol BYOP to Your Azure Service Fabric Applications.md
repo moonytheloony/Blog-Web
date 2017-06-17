@@ -46,7 +46,7 @@ The majority of applications doesn't need to have fine-grained control over inte
 ## The Sample Application
 We are going to build a Service Fabric Application that consists of a single Microservice that communicates with the clients using AMQP. Advanced Message Queuing Protocol ([AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)) is a very popular protocol for device to server and server to server communication in IoT applications. For building the sample, we are going to use a popular AMQP library named [AMQP.Net Lite](https://github.com/Azure/amqpnetlite) which takes care of the protocol and the implementation for us. We are going to use the [{{< coloredText color="red" text="peer-peer" >}} sample](https://github.com/Azure/amqpnetlite/tree/master/Examples/PeerToPeer) to build a server application (a Microservice) and a test client (a console application).
 
-You can download the source code of this sample from here: {{< sourceCode src="https://github.com/moonytheloony/amqpservice" >}}
+You can download the source code of this sample from here: {{< sourceCode src="https://github.com/rahulrai-in/amqpservice" >}}
 We are going to build this sample from scratch (not the [install-tools-and-sdk](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-get-started/) kind of scratch) so that you can follow along. However, I would be leaving out the non essentials bits of code to keep this article directed towards the objective.
 
 ### The Server: Service Fabric Application

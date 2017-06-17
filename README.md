@@ -1,11 +1,11 @@
-# [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/moonytheloony/) Blog-Web 
-**By Rahul Rai**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Gitter Chat](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/moonytheloony/)
+# [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/rahulrai-in/) Blog-Web 
+**By Rahul Rai**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Gitter Chat](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/rahulrai-in/)
 
 Source code for my blog hosted on Azure and built on Hugo. If you want to contribute or discuss anything else, then chat with me on Gitter.
 
 Don't forget to subscribe to **[My Take on Cloud](https://rahulrai.in)**.
 ## Code Health & Metrices
-[![Build Status](https://travis-ci.org/moonytheloony/Blog-Web.svg?branch=master)](https://travis-ci.org/moonytheloony/Blog-Web)
+[![Build Status](https://travis-ci.org/rahulrai-in/Blog-Web.svg?branch=master)](https://travis-ci.org/rahulrai-in/Blog-Web)
 
 ## Submitting a Testimonial
 To submit a testimonial, follow the following steps.

@@ -14,7 +14,7 @@ In this series
 2. [Adding Dialogs and State to your bot](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-2/)
 {{% /notice %}}
 
-I decided to spend some time learning the [Microsoft Bot Framework](https://dev.botframework.com/). I am going to write a series of blog posts to share with you what I learn so that we can go through this learning exercise together. This is the first post in the series with a few more to go. You might want to stay in the loop, so remember to subscribe to my mailing list and keep visiting this site to check out new content.
+I decided to spend some time learning the [Microsoft Bot Framework](https://dev.botframework.com/). I am going to write a series of blog posts to share with you what I learn so that we can go through this learning exercise together. This is the first post in the series with a few more to go. You might want to stay in the loop, so remember to [subscribe](#subscribe) to my mailing list and keep visiting this site to check out new content.
 
 ## What is a Bot?
 A bot is an application that performs an automated task. There are several bots with which we interact daily such as [Siri](https://www.apple.com/au/ios/siri/) and [Cortana](https://en.wikipedia.org/wiki/Cortana_(software)). Bots are a part of the natural evolution of communication that is shifting from email to chat, texts, and tweets.  

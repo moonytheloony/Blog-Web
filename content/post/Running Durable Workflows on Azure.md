@@ -29,7 +29,7 @@ The big buckets of functionality required to host durable Workflow Services are:
 
 ### Need Code?
 
-As always the sample that I have used is available for download here. {{< sourceCode src="https://github.com/moonytheloony/workflowonazure">}} I post all code samples on my [GitHub](https://github.com/moonytheloony) account for you to use.
+As always the sample that I have used is available for download here. {{< sourceCode src="https://github.com/rahulrai-in/workflowonazure">}} I post all code samples on my [GitHub](https://github.com/rahulrai-in) account for you to use.
 
 ### What We Will Build
 
@@ -37,7 +37,7 @@ We will build a very simple workflow host that can trigger a workflow on receivi
 
 ### Let's Get Down To Business
 
-I would not be able to demonstrate writing the whole code here. Therefore, I propose that you download the [sample](https://github.com/moonytheloony/workflowonazure) and let me walk you through the code.
+I would not be able to demonstrate writing the whole code here. Therefore, I propose that you download the [sample](https://github.com/rahulrai-in/workflowonazure) and let me walk you through the code.
 
 *   Create a Cloud Project, select Azure Cloud Service template and then select Worker Role with Service Bus Queue Template. This is the template that I used in **WorkflowOnAzure** cloud service project. Now, I will walk you through the other projects in the solution.
 

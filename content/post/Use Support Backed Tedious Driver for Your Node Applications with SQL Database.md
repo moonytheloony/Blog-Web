@@ -13,7 +13,7 @@ I don't know [how popular Node.js still is](https://www.quora.com/Is-Node-js-dec
 Tedious is a Node package that provides an implementation of the TDS protocol, which is used to interact with instances of Microsoft's SQL Server. Since Tedious is built entirely using Javascript, it is platform independent and can connect to SQL instances deployed on cloud or on premise. It has a lively community that is actively contributing to it and addresses feedback promptly. The best thing about Tedious is that [Microsoft actively contributes to it](https://channel9.msdn.com/Events/Connect/2016/160) and keeps it at par with the latest features rolled out to SQL server. It is even better than other packages because it is backed by Microsoft support.
 
 ## Sample
-We will build a sample that uses Tedious to fetch data from Microsoft Azure SQL database. You can download the sample from GitHub by clicking on the button below. {{< sourceCode src="https://github.com/moonytheloony/Tedious-PhoneBook">}}
+We will build a sample that uses Tedious to fetch data from Microsoft Azure SQL database. You can download the sample from GitHub by clicking on the button below. {{< sourceCode src="https://github.com/rahulrai-in/Tedious-PhoneBook">}}
 
 ## Objective
 We will build a very simple application that fetches names and phone numbers from a table in SQL database and renders the data on page. 

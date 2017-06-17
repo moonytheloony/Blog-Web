@@ -28,7 +28,7 @@ We will save configuration data in Key Vault and build a settings provider that 
 
 ## Source Code
 
-The code used in this sample is available here. {{< sourceCode src="https://github.com/moonytheloony/keyvaultappsetting">}}
+The code used in this sample is available here. {{< sourceCode src="https://github.com/rahulrai-in/keyvaultappsetting">}}
 
 ## Provision an Application in Azure AD
 

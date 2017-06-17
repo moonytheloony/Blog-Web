@@ -17,7 +17,7 @@ Following is a high-level design of the system that was presented by David on th
 
 ## Code
 
-The code for this sample application is available on my GitHub repository. {{< sourceCode src="https://github.com/moonytheloony/iotanalyticsarchitecture">}}
+The code for this sample application is available on my GitHub repository. {{< sourceCode src="https://github.com/rahulrai-in/iotanalyticsarchitecture">}}
 
 ## Deploying the Resources
 
@@ -222,7 +222,7 @@ The first query will try to find a two-minute window during which the average wi
 
 ## Building The Simulators
 
-At this point, we need to build a simulator that sends messages to the IoT Hub. However, we don't need to build one entirely from scratch. Here is a [link](https://azure.microsoft.com/en-in/documentation/articles/iot-hub-csharp-csharp-getstarted/) that you can use to create a simulator. You can also find the exact same simulator documented in the article available in the [code](https://github.com/moonytheloony/iotanalyticsarchitecture) that I wrote for this sample. The following three applications are available in the sample solution:
+At this point, we need to build a simulator that sends messages to the IoT Hub. However, we don't need to build one entirely from scratch. Here is a [link](https://azure.microsoft.com/en-in/documentation/articles/iot-hub-csharp-csharp-getstarted/) that you can use to create a simulator. You can also find the exact same simulator documented in the article available in the [code](https://github.com/rahulrai-in/iotanalyticsarchitecture) that I wrote for this sample. The following three applications are available in the sample solution:
 
 *   **CreateDeviceIdentity**, which creates a device identity and associated security key to connect your simulated device.
 *   **ReadDeviceToCloudMessages**, which displays the telemetry sent by your simulated device.
