@@ -13,6 +13,7 @@ body {
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+    border: 2px solid #337AB7;
     -webkit-transition: -webkit-box-shadow 0.3s ease;
     -moz-transition: box-shadow 0.3s ease;
     -o-transition: box-shadow 0.3s ease;

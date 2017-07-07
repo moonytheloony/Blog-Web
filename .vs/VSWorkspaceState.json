@@ -4,8 +4,14 @@
     "\\content",
     "\\content\\post",
     "\\layouts",
-    "\\resources"
+    "\\layouts\\contact",
+    "\\layouts\\partials",
+    "\\layouts\\partials\\navigation",
+    "\\layouts\\partials\\widgets",
+    "\\layouts\\partials\\widgets\\sidebar",
+    "\\layouts\\profile",
+    "\\layouts\\shortcodes"
   ],
-  "SelectedNode": "\\content\\post\\Launch of Microservices with Azure.md",
+  "SelectedNode": "\\layouts\\partials\\widgets\\sidebar\\primetime.html",
   "PreviewInSolutionExplorer": false
 }
