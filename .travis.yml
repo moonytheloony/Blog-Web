@@ -9,7 +9,6 @@ install:
     - npm install --g event-stream
     - npm install --g gulp-htmlmin
     - npm install --g gulp-uglify
-    - npm link gulp
     - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
     - tar zxvf hugo_0.17_Linux-64bit.tar.gz
     - mkdir -p $HOME/bin
