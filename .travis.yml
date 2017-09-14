@@ -3,12 +3,12 @@ language: go
 sudo: required
 
 install: 
-    - npm install gulp
-    - npm install gulp-cssmin
-    - npm install gulp-rename
-    - npm install event-stream
-    - npm install gulp-htmlmin
-    - npm install gulp-uglify
+    - npm install --global gulp
+    - npm install --global gulp-cssmin
+    - npm install --global gulp-rename
+    - npm install --global event-stream
+    - npm install --global gulp-htmlmin
+    - npm install --global gulp-uglify
     - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
     - tar zxvf hugo_0.17_Linux-64bit.tar.gz
     - mkdir -p $HOME/bin
