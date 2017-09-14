@@ -8,9 +8,13 @@ install:
     - npm install --g gulp-cssmin
     - npm install --save-dev gulp-cssmin
     - npm install --g gulp-rename
+    - npm install --save-dev gulp-rename
     - npm install --g event-stream
+    - npm install --save-dev event-stream
     - npm install --g gulp-htmlmin
+    - npm install --save-dev gulp-htmlmin
     - npm install --g gulp-uglify
+    - npm install --save-dev gulp-uglify
     - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
     - tar zxvf hugo_0.17_Linux-64bit.tar.gz
     - mkdir -p $HOME/bin
