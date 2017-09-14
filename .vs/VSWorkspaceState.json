@@ -3,15 +3,9 @@
     "",
     "\\content",
     "\\content\\post",
-    "\\layouts",
-    "\\layouts\\contact",
-    "\\layouts\\partials",
-    "\\layouts\\partials\\navigation",
-    "\\layouts\\partials\\widgets",
-    "\\layouts\\partials\\widgets\\sidebar",
-    "\\layouts\\profile",
-    "\\layouts\\shortcodes"
+    "\\static",
+    "\\static\\css"
   ],
-  "SelectedNode": "\\layouts\\partials\\widgets\\sidebar\\primetime.html",
+  "SelectedNode": "\\content\\post\\Building Bots with The Microsoft Bot Framework Part 3.md",
   "PreviewInSolutionExplorer": false
 }
