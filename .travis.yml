@@ -6,6 +6,7 @@ install:
     - npm install --g gulp
     - npm install --save-dev gulp
     - npm install --g gulp-cssmin
+    - npm install --save-dev gulp-cssmin
     - npm install --g gulp-rename
     - npm install --g event-stream
     - npm install --g gulp-htmlmin
