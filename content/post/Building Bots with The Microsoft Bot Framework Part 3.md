@@ -57,6 +57,7 @@ There are seven attributes supported by the Bot Fx. They are:
 `[Template(TemplateUsage.EnumSelectOne, "Please select a value for {&}", ChoiceStyle=ChoiceStyleOptions.PerLine)]`. 
 Just like `EnumSelectOne` template, there are several other templates that you can override. [Here is a list](http://bit.ly/2rX0YiR) of all the templates that you can use.
 7. **Terms**: This attribute lets you define alternate text for input. For example, for a volume field, you may want to enable the user to enter l, liter, ltr. etc. each of which should select the Litre option. You can apply a `Terms` attribute to allow the user to do that, e.g.,
+
 ~~~CS
 public enum Volume
 {
