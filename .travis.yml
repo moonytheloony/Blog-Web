@@ -4,6 +4,7 @@ sudo: required
 
 install: 
     - npm install --g gulp
+    - npm install --save-dev gulp
     - npm install --g gulp-cssmin
     - npm install --g gulp-rename
     - npm install --g event-stream
