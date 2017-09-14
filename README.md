@@ -1,5 +1,5 @@
 # [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/rahulrai-in/) Blog-Web 
-**By Rahul Rai**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Gitter Chat](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/rahulrai-in/)
+**By Rahul Rai**
 
 Source code for my blog hosted on Azure and built on Hugo. If you want to contribute or discuss anything else, then chat with me on Gitter.
 
