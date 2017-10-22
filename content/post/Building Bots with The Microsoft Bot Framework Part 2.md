@@ -13,6 +13,7 @@ In this series
 1. [Introduction](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-1/)
 2. [Adding Dialogs and State to your bot](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-2/)
 3. [Using Form Flow](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-3/)
+4. [Adding intelligence to your bot using LUIS](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-4/)
 {{% /notice %}}
 
 Welcome to the second post in my blog series on Building Bots with The Microsoft Bot Framework. In today's post, we will learn how we can build a stateful bot that can carry out a meaningful conversation with the user. We will also find out how Dialogs can add reusability to our bots.
