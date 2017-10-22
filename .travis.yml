@@ -3,6 +3,7 @@ language: go
 sudo: required
 
 install: 
+    - sudo apt-get install git
     - npm install --g gulp
     - npm install --save-dev gulp
     - npm install --g gulp-cssmin
