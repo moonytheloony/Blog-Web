@@ -10,6 +10,10 @@
             {{ $categoryCount := .Params.categories | len }}
             <li><i class="fa fa-folder"></i>{{ range $index, $value := .Params.categories }}<a href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ $value }}</a>{{ if lt (add $index 1) $categoryCount }}, {{ end }}{{ end }}</li>
             {{ end }}
+            <li><i class="fa fa-clock-o" data-toggle="tooltip" title="attribution"></i>{{ .ReadingTime }} minutes</li>
+            {{ with .Params.attribution }}
+            <li><i style="color: gold" class="fa fa-star" data-toggle="tooltip" title="attribution"></i>{{ safeHTML . }}</li>
+            {{ end }}
         </ul>
         {{ end }}
         {{ partial "widgets/content/share.html" . }}

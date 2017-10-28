@@ -2,9 +2,9 @@
 author = "Rahul Rai"
 categories = ["azure", "bot-framework"]
 date = "2017-10-22T17:04:47+10:00"
-draft = false
+draft = true
 tags = ["bot", "azure", "learning"]
-title = "Building Bots with The Microsoft Bot Framework - Part 4"
+title = "Building Bots with The Microsoft Bot Framework - Part 5"
 type = "post"
 attribution = "Reviewer: <b><a style='color:#33A6DC;' href='https://luizbon.com/blog/'>Luiz Bon</a></b>"
 +++
@@ -15,12 +15,18 @@ In this series
 2. [Adding Dialogs and State to your bot](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-2/)
 3. [Using Form Flow](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-3/)
 4. [Adding intelligence to your bot using LUIS](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-4/)
+5. [Publishing your bot]()
 {{% /notice %}}
 
-Welcome to the fourth post in my blog series on Building Bots with The Microsoft Bot Framework. In this article, we will see how we can configure [LUIS](https://www.luis.ai/) to bring Natural Language Processing capabilities to our application. LUIS uses **Intents**, **Entities**, and **Utterances** to build its NLP models. We will discuss these aspects below.
+Welcome to the final post in my blog series on Building Bots with The Microsoft Bot Framework. In this article, we will see how we can deploy our bot to various channels.
 
-## What is LUIS?
-[LUIS](https://www.luis.ai/) is the acronym for **L**anguage **U**nderstanding **I**ntelligent **S**ervice. It utilizes machine learning to give your bot natural language processing capabilities. By converting user requests in natural language to actionable bot commands, LUIS acts as a translator for your bot. To realize the importance of LUIS to a bot, consider the blog bot that we have been building till now. We utilized a regular expression to kick off the appropriate conversation based on user input. Only when the user says "Hi" do we kick off the Hello dialog. In the real world, the `HelloDialog` should be kicked off for all synonyms of the word "Hi" such as "Hello" or "Hola". LUIS accepts words as input and using NLP features tries to guess the intent of the input so that the bot can take appropriate action.
+## Get Started
+Sign in to the [bot developer portal](https://dev.botframework.com/) and sign in with your Microsoft account. Click on the **My Bots** option and then on the **Create** button.
+
+{{< img src="/Create Bot On Portal.png" alt="Create Bot On Portal" >}}
+
+In the dialog that follows, select the option
+
 
 ## LUIS Verbs: Intents
 LUIS intents are the actions that your bot should take. For example, in our bot the two intents are saying "Hello" to the user, and accepting comments on a particular aspect of the blog. By telling LUIS our intents, we can train LUIS to take a guess at what bot action the user input should map to. LUIS utilizes active learning techniques and can ask from developer what intent should be matched with user input if it is unsure of mapping the user input to an intent.

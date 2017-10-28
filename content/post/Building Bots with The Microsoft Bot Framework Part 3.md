@@ -6,6 +6,7 @@ draft = false
 tags = ["bot", "azure", "learning"]
 title = "Building Bots with The Microsoft Bot Framework - Part 3"
 type = "post"
+attribution = "Reviewer: <b><a style='color:#33A6DC;' href='https://luizbon.com/blog/'>Luiz Bon</a></b>"
 +++
 {{% notice %}}
 In this series
