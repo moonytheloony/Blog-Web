@@ -18,7 +18,7 @@ In this series
 5. [Publishing your bot]()
 {{% /notice %}}
 
-Welcome to the final post in my blog series on Building Bots with The Microsoft Bot Framework. In this article, we will see how we can deploy our bot to various channels.
+Welcome to the final post in my series of blogs on Building Bots with The Microsoft Bot Framework. In this article, we will see how we can deploy our bot to various channels.
 
 ## Get Started
 Sign in to the [bot developer portal](https://dev.botframework.com/) and sign in with your Microsoft account. Click on the **My Bots** option and then on the **Create** button.

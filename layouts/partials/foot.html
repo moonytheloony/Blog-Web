@@ -8,4 +8,7 @@
 </script>
 <script>
     if (($(window).height() + 100) < $(document).height()) { $('#back-to-top').removeClass('hidden').affix({ offset: { top: 100 } }); }
+
+    var pattern = Trianglify({ width: window.outerWidth, height: document.body.scrollHeight, x_colors: 'YlOrRd', cell_size: 35 });
+    document.body.style['background-image'] = 'url(' + pattern.png() + ')';
 </script>
