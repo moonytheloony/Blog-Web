@@ -11,7 +11,6 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit .Site.Params.keywords "," }}{{ end }}' /> {{ with .Params.author }}
     <meta name="author" content="{{ . }}" /> {{ end }}
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
     <link rel="manifest" href="/manifest.json">
     <link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="My Take on Cloud" />{{ with .Site.Params.favicon }}
     <link rel="icon" type="image/png" href="{{ . }}" sizes="72X72" /> {{ end }} {{ if .RSSlink }}
