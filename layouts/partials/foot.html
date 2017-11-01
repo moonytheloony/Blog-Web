@@ -11,6 +11,6 @@
     if (($(window).height() + 100) < $(document).height()) { $('#back-to-top').removeClass('hidden').affix({ offset: { top: 100 } }); }
 
     // Trianglify
-    var pattern = Trianglify({ width: window.outerWidth, height: document.body.scrollHeight, x_colors: 'RdYlBu', cell_size: 100, variance: 1 });
+    var pattern = Trianglify({ width: document.body.getBoundingClientRect().width, height: document.body.getBoundingClientRect().height, x_colors: 'RdYlBu', cell_size: 100, variance: 1 });
     document.body.style['background-image'] = 'url(' + pattern.png() + ')';
 </script>
