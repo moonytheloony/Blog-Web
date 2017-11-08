@@ -1,9 +1,9 @@
-<div class="panel panel-info">
+<div class="panel contentInfoBox">
     <div class="panel-heading">
         {{ if len .Inner }}
-            {{ .Inner }}
+        {{ .Inner }}
         {{ else }}
-            {{ .Get "text" }}
+        {{ .Get "text" }}
         {{end}}
     </div>
 </div>

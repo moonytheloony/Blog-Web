@@ -257,3 +257,16 @@ blockquote {
     height: 50vh;
     overflow-y: hidden;
 }
+
+.contentInfoBox {
+    background-color: #5bc0de;
+    color: white;
+}
+
+    .contentInfoBox:hover {
+        background: #40516f;
+    }
+
+    .contentInfoBox a {
+        color: white;
+    }
