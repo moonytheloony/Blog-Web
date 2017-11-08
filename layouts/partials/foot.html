@@ -13,4 +13,9 @@
     // Trianglify
     var pattern = Trianglify({ width: document.body.getBoundingClientRect().width, height: document.body.getBoundingClientRect().height, x_colors: 'RdYlBu', cell_size: 100, variance: 1 });
     document.body.style['background-image'] = 'url(' + pattern.png() + ')';
+    window.addEventListener("resize",
+        function (event) {
+            var pattern = Trianglify({ width: document.body.getBoundingClientRect().width, height: document.body.getBoundingClientRect().height, x_colors: 'RdYlBu', cell_size: 100, variance: 1 });
+            document.body.style['background-image'] = 'url(' + pattern.png() + ')';
+        });
 </script>
