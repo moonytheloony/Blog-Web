@@ -1,8 +1,8 @@
 ﻿+++
 author = "Rahul Rai"
 categories = ["azure", "bot-framework"]
-date = "2017-10-22T17:04:47+10:00"
-draft = true
+date = "2017-11-10T17:04:47+10:00"
+draft = false
 tags = ["bot", "azure", "learning"]
 title = "Building Bots with The Microsoft Bot Framework - Part 5"
 type = "post"
@@ -15,191 +15,51 @@ In this series
 2. [Adding Dialogs and State to your bot](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-2/)
 3. [Using Form Flow](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-3/)
 4. [Adding intelligence to your bot using LUIS](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-4/)
-5. [Publishing your bot]()
+5. [Publishing your bot](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-5/)
 {{% /notice %}}
 
-Welcome to the final post in my series of blogs on Building Bots with The Microsoft Bot Framework. In this article, we will see how we can deploy our bot to various channels.
+Welcome to the final post in my series of blogs on Building Bots with The Microsoft Bot Framework. Till now we were building our bot and adding features to it. In this article, we will be publishing our bot and later chat with our bot on Skype.
 
-## Get Started
-Sign in to the [bot developer portal](https://dev.botframework.com/) and sign in with your Microsoft account. Click on the **My Bots** option and then on the **Create** button.
+## Deploy Your Bot
+The bot that we have built till now is a small web application that communicates with the client using the REST protocol. From Visual Studio, right click on the **BlogBot** project and select **Publish**. Follow the wizard to publish your bot application to an Azure WebApp. You can follow the steps mentioned [here](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-dotnet#publish-to-azure) to help you with the process.
+
+## Register Your Bot 
+We now need to register our bot so that users can interact with it. Now, browse to the [bot developer portal](https://dev.botframework.com/) and sign in with your Microsoft account. To create a new bot, click on the **My Bots** option and then on the **Create** button.
 
 {{< img src="/Create Bot On Portal.png" alt="Create Bot On Portal" >}}
 
-In the dialog that follows, select the option
+In the prompt that follows, select the "Register an existing bot built using Bot Builder SDK" option. Now, you will be presented a form to fill up your bot profile. Enter a display name (the name you will see in your chats with the bot), a unique bot handle, and a description that users can see to know more about your bot.
 
+{{< img src="/Register Your Bot.png" alt="Register Your Bot" >}}
 
-## LUIS Verbs: Intents
-LUIS intents are the actions that your bot should take. For example, in our bot the two intents are saying "Hello" to the user, and accepting comments on a particular aspect of the blog. By telling LUIS our intents, we can train LUIS to take a guess at what bot action the user input should map to. LUIS utilizes active learning techniques and can ask from developer what intent should be matched with user input if it is unsure of mapping the user input to an intent.
+In the **Configuration** section, enter the channel endpoint of your bot, that is the host URL including the "/api/messages" part. Next, click the **Create Microsoft App ID and Password** button, which will take you to the page where you can create credentials that the clients can use to communicate with your bot. Obtain Application Id and Password from the wizard and paste them in the `appSettings` section of the web.config file of your bot.
 
-## LUIS Nouns: Entities
-Entities are the things that a bot acts on. The entities are used to enhance an intent. For example consider our bot's intent of accpeting comments from users on certain aspects of the blog. A user may directly ask the bot to post a comment on the profile aspect by saying something like: "Comment on profile aspect of blog with message: The profile needs an update". In this statement the intent is to post a comment and the entities are **the profile aspect** and **the actual message** that the user wants to post. Entities are of two types:
-
-{{< img src="/Entity Types.png" alt="Entity Types" >}}
-
-1. **Hierarchical Entities**: A hierarchical entity maintains heriditary relationships with other entities. For exxample, a car entityt which has sedan and hatchback child entities. 
-2. **Composite Entities**: A composite entity is made up of multiple disjoint entities which can be combined into a single entity. For example, in the command "comment on profile aspect" we have two entities, "comment" identifies the action and "profile aspect" identifies the aspect of the blog. Using composite entities, LUIS can better identify the user commands and pass the information to your bot.
-
-## LUIS Sentences: Utterances
-Utterances are combinations of Intents and Entities that help LUIS conclude the user commands. For example, if a user says that they want to post feedback for the blog, LUIS should infer that to post a feedback means to comment on something. By using utterances, we can help LUIS learn that the word feedback should map to the comment intent. Using utterances gives the user the flexibility to choose various words to communicate the intent.
-
-## Configuring LUIS
-Now we will add Entities, Intents, and Utterances to LUIS so that we can use it in our bot. Navigate to the [LUIS portal](htttp://luis.ai) and log in with your Microsoft account. Click on the **New App** button to create a new application. Supply an application name and set the culture to **English** and leave the other fields blank.
-
-{{< img src="/Create LUIS App.png" alt="Create LUIS App" >}}
-
-Let's start by creating a new intent. Our bot has two separate intents, one to greet the user and another to receive comment on an aspect of the blog. Let's create the intent to greet the user.
-
-Click on **Intents** and then **Add Intent** to launch the intent creation wizard. Add an intent name and then click on **Submit** to create it.
-
-{{< img src="/Create Intent.png" alt="Create Intent" >}}
-
-After creating this intent, we will be presented with the intent details page where we can add Utterances (bot sentences) and Entities (bot actions). Let's add a new utterance by typing "Hi", pressing Enter and then clicking on **Save**.
-
-{{< img src="/Adding Utterances.png" alt="Adding Utterances" >}}
-
-After adding any aspect to LUIS, you need to train it to make it understand the data. Although LUIS keeps training itself often, you can make it train itself on demand by clicking on **Train & Test** and then click the **Train Application** button. You can later test the intent by typing in "Hi" and viewing the results.
-
-{{< img src="/Train and Test The Intent.png" alt="Train and Test The Intent" >}}
-
-You can see that LUIS correctly mapped the text to the "Hello Intenet" by assigning it a score of 1. However, if you try to enter a related word such as "Hello", LUIS is not so sure about the intent it should map the word to. LUIS can utilize active learning to keep learning new words and their associated intents. To apply this technique, we'd need to publish our application. Click on the **Publish App** button. You can start with setting **BootstrapKey** in the **Endpoint Key** field for testing purposes. Choose and slot to deploy your app to and finally click **Publish**.
-
-{{< img src="/Publish LUIS App.png" alt="Publish LUIS App" >}}
-
-Note the **Endpoint URL** generated for your application. You can pass an expression in the `q` parameter of the query string to evaluate it. Let's send "Hello" to the endpoint.
-
-{{< img src="/Testing the API Endpoint.png" alt="Testing the API Endpoint" >}}
-
-You can see that LUIS tried to guess the intent but wasn't very accurate with the mapping. Click the **Dashboard** button and switch to **Suggested utterances** tab. Here you can select the utterances passed to the API and map them to the **Hello Intent**.
-
-{{< img src="/Suggested Utterances.png" alt="Suggested Utterances" >}}
-
-Now you can again test the endpoint to see improved scores for the intent mapping.
-
-## Adding Entities to LUIS
-Now we will create an intent with an entity. Our bot accepts comments on two aspects of the blog: profile and article. The user should be able to ask the bot the aspect they can comment on. To cater to this requirement, let's start with creating an entity named "Blog Aspect Entity". Click on **Entities** and then on **Add Custom Entity** button which will launch an entity creation dialog where you can configure the name and the type of the entity. Select **Entity Type** as *Simple*.
-
-{{< img src="/Create New Entity.png" alt="Create New Entity" >}}
-
-Now, in the LUIS console create a new intent named "Blog Aspects". Add an utterance: "can I comment on profile?" to the intent. Left click on the term "profile" and map it to *Blog Aspect Entity*.
-
-{{< img src="/Map Utterance to Entity.png" alt="Map Utterance to Entity" >}}
-
-Click on **Save** to save the utterance. There are several prebuilt entities available in the *Entities* panel from where you can add entity types that can identify attributes such as age, date, and dimension. Train your model and test it with an utterance such as: "Can I comment on articles?". You will see that LUIS correctly identifies that the utterance maps to *Blog Aspect* intent.
-
-**List** is another essential entity type. Remember how we configured the words "Hi" and "Hello" for the **Hello Intent**? There is a much easier way to supply synonyms of a word to LUIS through entities of type **List**. Let's create a list to see how it works. Click on **Entities** and then click on **Add Custom Entity**, enter the name of the entity as *Greetings* and select the type of entity as *List*. In the next form, enter the canonical word as "Hi" and supply a comma-separated list of similar words such as the one below. Click on **Add** to save the list. Train your model again.
-
-{{< img src="/Phrase List.png" alt="Phrase List" >}}
-
-Now if you enter one of the words that you supplied in the list in the test console, LUIS would correctly map it to the **Hello Intent**.
-
-## Connecting LUIS to Bot
-To connect LUIS to your bot, you require a LUIS App Id and LUIS	API Key. YOu can get these two values from the LUIS console. To get the LUIS App ID, navigate to the dashboard and copy the App Id.
-To get the API Key, click on **Publish App** and copy the subscription key from one of the listed endpoints.
-
-~~~
-https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/APPID?subscription-key=SUBSCRIPTION-KEY&timezoneOffset=0&verbose=true&q=
-~~~
-Let's configure our **Blog Bot** to work with the intents that we configured in LUIS. You can download the code sample from here if you get lost somewhere.
-
-{{< sourceCode src="https://github.com/rahulrai-in/blogbot/tree/LuisDemo">}}
-
-In the solution, navigate to the **Dialogs** folder and add a new class named `LUISTestDialog` to it. We'll make this class inherit from the `LuisDialog<BlogComment>` class. To connect this Dialog to the LUIS model, add the `LuisModel` attribute to this class. Your class should look something like the following.
-
-~~~cs
-[Serializable]
-[LuisModel("MODEL ID", "SUBSCRIPTION KEY")]
-public class LUISTestDialog : LuisDialog<BlogComment>
-{
-	...
-}
+~~~xml
+<add key="MicrosoftAppId" value="Your Application Id" />
+<add key="MicrosoftAppPassword" value="Your Application Password" />
 ~~~
 
-Next, we'll first start with adding the none intent, i.e., when no intent is detected for the user input. Create a method named `NoIntentFound` and post a message to the user to notify them that LUIS failed to identify an intent.
+At this point, you would need to redeploy your bot so that credentials take effect immediately. Finally, in the bot developer website, click on the **Register** button to complete the registration process.
 
-~~~cs
-[LuisIntent("")]
-public async Task NoIntentFound(IDialogContext context, LuisResult result)
-{
-    await context.PostAsync("LUIS could not find a matching intent.");
-    context.Wait(this.MessageReceived);
-}
-~~~
+Your newly provisioned bot will be available under **My bots** section of the portal. Clicking on your bot name from the list will take you to your bot's dashboard. Here, you can see that two channels, Skype, and web chat, have been automatically provisioned for you.
 
-Next, let's handle the case when LUIS maps the user input to the **Hello Intent** that we previously configured. Create a new method named `HelloIntent` and decorate it with the `LuisIntent` attribute. When the intent is matched, we will invoke the `HelloDialog` dialog that we previously built. Once the call completes, we will let a callback method conclude the conversation.
+## Testing Your Bot on The Skype Channel
+Click on the Skype channel on the channels tab to launch your bot on Skype channel.
 
-~~~cs
-[LuisIntent("Hello Intent")]
-public async Task HelloIntent(IDialogContext context, LuisResult result)
-{
-    context.Call(new HelloDialog(), Callback);
+{{< img src="/Skype Bot Channel.png" alt="Skype Bot Channel" >}}
 
-    async Task Callback(IDialogContext dialogContext, IAwaitable<object> dialogResult)
-    {
-        await dialogContext.PostAsync("Hello dialog concludes.");
-        dialogContext.Wait(this.MessageReceived);
-    }
-}
-~~~
+You can now talk to your bot on Skype. Let's try to carry out the `BlogComment` conversation with the bot.
 
-Let's finally handle the **Blog Aspects** intent, which has entities mapped to utterances. Create a method named `CanCommentOn` and transfer control to the `BlogComment` model form if we do have an entity that we can cater to.
+{{< img src="/Chatting With Bot on Skype Channel.png" alt="Chatting With Bot on Skype Channel" >}}
 
-~~~cs
-[LuisIntent("Blog Aspects")]
-public async Task CanCommentOn(IDialogContext context, LuisResult result)
-{
-    foreach (var entity in result.Entities.Where(e => e.Type == "Blog Aspect Entity"))
-    {
-        var name = entity.Entity.ToLowerInvariant();
-        if (name == "blog" || name == "profile")
-        {
-            await context.PostAsync($"Yes you can comment on {name}. Launching the form now...");
-            var blogCommentForm = FormDialog.FromForm(BlogComment.BuildForm, FormOptions.PromptInStart);
-            context.Call(blogCommentForm, Continue);
+When you are ready to deploy the bot for broader consumption, you can submit it for review to Microsoft by clicking on the **Publish** option inside the channel.
 
-            async Task Continue(IDialogContext dialogContext, IAwaitable<BlogComment> dialogResult)
-            {
-                await dialogContext.PostAsync($"Thank you for submitting your request.");
-                dialogContext.Wait(this.MessageReceived);
-            }
+## What About Other Channels?
+Channels differ from each other concerning features that they provide. For example, the Facebook messenger channel supports cards and carousels to display content. You can use `ChannelData` property, which is a dynamic list of properties and data specific to a channel or key-value pairs, to utilize the capabilities of an individual channel. You can read more about `ChannelData` and how to use it to implement channel-specific functionality [here](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-channeldata).
 
-            return;
-        }
-    }
+## Credits
+Hope you had fun going through the various articles and building bots along with me. I would like to thank **[Luiz Bon](https://luizbon.com/blog/)**, my friend and colleague from [Readify](http://readify.net), who guided me with his expertise and took the time to go through all the articles in this series.
 
-    await context.PostAsync("Not an available option");
-    context.Wait(this.MessageReceived);
-}
-~~~
-
-Now, that we are done handling all the intents that we have in LUIS, let's set this dialog to trigger when a request comes to the bot. Open the `MessagesController` class and trigger the `LUISTestDialog` when a message is received.
-
-~~~cs
-if (activity.Type == ActivityTypes.Message)
-{
-    // We will invoke the dialog here.
-    await Conversation.SendAsync(activity, () => { return Chain.From(() => new LUISTestDialog()); });
-}
-~~~
-
-## Demo
-Okay, now we are done setting up the LUIS dialog and connecting it to the bot API. Let's test our bot with different inputs.
-
-Let's first the behavior of our bot with input that triggers the **Hello Intent** intent.
-
-{{< img src="/LUIS Hello Dialog.png" alt="LUIS Hello Dialog" >}}
-
-Now, let's see if our bot can react to the **Blog Aspects** intent.
-
-{{< img src="/LUIS Blog Aspects Dialog.png" alt="LUIS Blog Aspects Dialog" >}}
-
-Finally, the case when the bot is not able to make out the intent.
-
-{{< img src="/LUIS Unknown Intent.png" alt="LUIS Unknown Intent" >}}
-
-Before I conclude our discussion of adding intelligence to your bot, I would like to draw your attention to the fact that you can train your LUIS model with live user input by navigating to the [LUIS portal](https://luis.ai) and mapping user input to intents. For instance, you can see that the input that I previously sent to the bot is now available on the dashboard for mapping.
-
-{{< img src="/Training LUIS with User Input.png" alt="Training LUIS with User Input" >}}
-
-Hope you enjoyed reading this post. I will soon be back with the concluding post of this series. Happy coding!
+My friend and colleague from Microsoft, **[Ankit Vijay](https://ankitvijay.net)**, built a similar tutorial series on the bot framework which uses an alternate approach to building bots using the QnA Maker Service. You can find his blogs [here](https://ankitvijay.net/category/bot/).
 
 {{< subscribe >}}

@@ -259,14 +259,52 @@ blockquote {
 }
 
 .contentInfoBox {
-    background-color: #5bc0de;
+    background-color: #40516f;
     color: white;
 }
 
     .contentInfoBox:hover {
-        background: #40516f;
+        background-color: #5B618A;
     }
 
     .contentInfoBox a {
         color: white;
     }
+
+.subscribeBox {
+    background-color: #00A99D;
+    color: white;
+}
+
+    .subscribeBox a {
+        color: white;
+    }
+
+.animatedSpan {
+    font-size: 22px;
+    background: url(https://cdn.rahulrai.in/resources/animated_text_fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 50s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+    .animatedSpan a:hover {
+        text-decoration: none;
+    }
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

@@ -15,6 +15,7 @@ In this series
 2. [Adding Dialogs and State to your bot](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-2/)
 3. [Using Form Flow](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-3/)
 4. [Adding intelligence to your bot using LUIS](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-4/)
+5. [Publishing your bot](/post/Building-Bots-with-The-Microsoft-Bot-Framework---Part-5/)
 {{% /notice %}}
 
 Welcome to the fourth post in my blog series on Building Bots with The Microsoft Bot Framework. In this article, we will see how we can configure [LUIS](https://www.luis.ai/) to bring Natural Language Processing capabilities to our application. LUIS uses **Intents**, **Entities**, and **Utterances** to build its NLP models. We will discuss these aspects below.
