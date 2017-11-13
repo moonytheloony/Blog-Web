@@ -280,21 +280,14 @@ blockquote {
         color: white;
     }
 
-.animatedSpan {
+.titleSpan a {
     font-size: 22px;
-    background: url(https://cdn.rahulrai.in/resources/animated_text_fill.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-    /* Animate Background Image */
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 50s linear infinite;
-    /* Activate hardware acceleration for smoother animations */
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
+    color: #EE5100 !important;
 }
 
-    .animatedSpan a:hover {
+    .titleSpan a:hover {
         text-decoration: none;
+        color: #EE5100 !important;
     }
 
 /* Animate Background Image */
