@@ -24,7 +24,7 @@ paginate = 15
 #Theme Variables
 [params]
     keywords = ["Azure", "Cloud"]
-    description = "Exploring azure sample by sample."
+    description = "My Take on Cloud."
 	heapanalytics = "2215857163"
 	appinsights = "963f772c-0ccc-4148-8dd0-d592c04d6d7b"
     disqus = "rahulrai"
@@ -69,8 +69,13 @@ paginate = 15
     url = "/profile/"
 
 [[menu.header]]
-    name = "rss"
+    name = "publications"
     weight = 4
+    url = "/publications/"
+
+[[menu.header]]
+    name = "rss"
+    weight = 5
     url = "/post/index.xml"
 
 [[menu.footer]]
