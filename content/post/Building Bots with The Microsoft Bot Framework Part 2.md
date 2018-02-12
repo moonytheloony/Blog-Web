@@ -28,6 +28,14 @@ A Dialog is a piece of conversation that has its own state. By breaking down the
 In this Dialog chain, we have a series of Dialogs that are linked to each other to form a conversation. The **Introduction Dialog** saves the name of the user as a state object, which can later be used by other Dialogs to personalize the communication.
 
 ## Creating a Dialog & Saving State
+{{% notice %}}
+Persisting state in memory has several restrictions such as those of size of the object and therefore it is not recommended for production use. There are two state providers implemented by [Azure Extensions](https://github.com/Microsoft/BotBuilder-Azure) which you can use namely:
+
+1. [Cosmos DB State Provider](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-state-azure-cosmosdb): To persist bot state in Cosmos DB.
+2. [Azure Table Storage State Provider](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-state-azure-table-storage): To persist bot state in Azure Table Storage.
+
+You can additionally, write your state provider to persist state data by following [this sample](https://blog.botframework.com/2017/07/26/saving-state-sql-dotnet/) from the Bot Fx Team.
+{{% /notice %}}
 A Dialog should implement the `IDialog` interface, which is present in the **Microsoft.Bot.Builder.Dialogs** namespace. Since Dialog objects need to be serialized at runtime, therefore they must use the `Serializable` attribute. The `IDialog` interface has just one method which you need to implement named `StartAsync`, which is used to initiate a Dialog.  Since Dialogs are asynchronous, the `StartAsync` method uses `async` and `await` to implement asynchronous calls.
 
 A bot should be able to store state in a persistent store to carry out a meaningful conversation. For example, to personalize a conversation, a bot should save the name of the user in the state so that it can address the user by name throughout the conversation. A bot can store state information using one of the following mechanisms:
