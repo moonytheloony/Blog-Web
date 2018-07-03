@@ -10,7 +10,7 @@ type = "post"
 
 Azure Operations Management Suite (OMS) gives you a visual depiction of log data from your cloud and on-premise servers. You can corelate , combine, and analyze data from OMS console which gives you a complete picture of not just the state of application but also of the environemnt on which it is executing. To connect with OMS, you need to install an OMS agent, and write logs to a OMS known data store from where it can pick up the data.
 
-OMS is capable of performing other tasks such as backup, automation, and site recovery. However, we will only discuss the logging feature of it in this article.
+OMS is capable of performing other tasks such as backup, automation, and site recovery. However, we will only discuss the logging feature of it in this article.  
 
 ## Create OMS Workspace
 You first need to create an OMS workspace to use OMS. You can visit the OMS dedicated website [http:// www.microsoft.com/OMS](http:// www.microsoft.com/OMS) to get started.
