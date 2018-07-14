@@ -184,7 +184,7 @@ Several approaches can be used to deploy the MR application to target devices. H
 
 ## The Project in Action
 
-Start all the services including the simulator and deploy the application on the emulator or wear your HoloLens device and launch the application. Try air tapping the sensors to view their last recorded values. Here is a small YouTube link that demonstrates how it works.
+Start all the services including the simulator and deploy the application on the emulator or wear your HoloLens device and launch the application. Try air tapping the sensors to view their last recorded values. Here is a short video that demonstrates how it works.
 
 {{< youtube jads_3VJqtA >}}
 
