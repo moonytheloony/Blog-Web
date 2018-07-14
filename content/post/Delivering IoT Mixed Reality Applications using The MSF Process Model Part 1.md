@@ -13,6 +13,7 @@ In this series
 
 1. [Envision and Plan](/post/Delivering-IoT-Mixed-Reality-Applications-using-The-MSF-Process-Model-Envision-and-Plan--Part-1/)
 2. [Develop and Stabilize](/post/Delivering-IoT-Mixed-Reality-Applications-using-The-MSF-Process-Model-Develop-and-Stabilize--Part-2/)
+3. [Develop, Stabilize, and Deploy](/post/Delivering-IoT-Mixed-Reality-Applications-using-The-MSF-Process-Model-Develop-Stabilize-and-Deploy--Part-3/)
 {{% /notice %}}
 Delivery of enterprise scale projects requires a cohesive and structured framework in place. A robust delivery framework ensures that projects are carefully planned, and roles and tasks are identified and defined.
 
