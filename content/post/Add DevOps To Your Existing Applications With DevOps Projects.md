@@ -22,7 +22,7 @@ The Azure DevOps Projects make it simple for you to choose appropriate Azure ser
 Remember, although you will be interacting with wizards in Azure Management Portal to configure a DevOps project, you can still tweak the build and release workflows that are automatically generated to suit your needs. In fact, we will do just that in our example that we will discuss in this article.
 
 ## The Application
-The [DevOps Projects documentation](https://docs.microsoft.com/en-us/azure/devops-project/) is excellent at explaining how you can on-board new applications to Azure DevOps. However, it is equally easy to on-board an existing application to Azure DevOps Projects as long as you can build your application using a single Dockerfile (Compose capabilities are not available yet). For our example, we will use the ASP.net core application generated from the default application template from Visual Studio. The following image shows the Visual Studio template selection wizard.
+The [DevOps Projects documentation](https://docs.microsoft.com/en-us/azure/devops-project/) is excellent at explaining how you can onboard new applications to Azure DevOps. However, it is equally easy to onboard an existing application to Azure DevOps Projects as long as you can build your application using a single Dockerfile (Compose capabilities are not available yet). For our example, we will use the ASP.net core application generated from the default application template from Visual Studio. The following image shows the Visual Studio template selection wizard.
 
 {{< img src="/Default ASPNet Core Application.png" alt="Default ASP.net Core Application" >}}
 
