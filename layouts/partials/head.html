@@ -12,7 +12,7 @@
     <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit .Site.Params.keywords "," }}{{ end }}' /> {{ with .Params.author }}
     <meta name="author" content="{{ . }}" /> {{ end }}
     <link rel="manifest" href="/manifest.json">
-    <link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="My Take on Cloud" />{{ with .Site.Params.favicon }}
+    <link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="The Cloud Blog" />{{ with .Site.Params.favicon }}
     <link rel="icon" type="image/png" href="{{ . }}" sizes="72X72" /> {{ end }} {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" /> {{ end }}

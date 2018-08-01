@@ -1,6 +1,6 @@
 baseurl = "https://rahulrai.in/"
 languageCode = "en-us"
-title = "My Take on Cloud"
+title = "The Cloud Blog"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 disableHugoGeneratorInject = true
 enableEmoji = true
@@ -24,7 +24,7 @@ paginate = 15
 #Theme Variables
 [params]
     keywords = ["Azure", "Cloud"]
-    description = "My Take on Cloud."
+    description = "The Cloud Blog"
 	heapanalytics = "2215857163"
 	appinsights = "963f772c-0ccc-4148-8dd0-d592c04d6d7b"
     disqus = "rahulrai"

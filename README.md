@@ -3,7 +3,7 @@
 
 Source code for my blog hosted on Azure and built on Hugo. If you want to contribute or discuss anything else, then chat with me on Gitter.
 
-Don't forget to subscribe to **[My Take on Cloud](https://rahulrai.in)**.
+Don't forget to subscribe to **[The Cloud Blog](https://rahulrai.in)**.
 ## Code Health & Metrices
 [![Build Status](https://travis-ci.org/rahulrai-in/Blog-Web.svg?branch=master)](https://travis-ci.org/rahulrai-in/Blog-Web)
 

@@ -4,8 +4,8 @@ function validateKey() {
     if (inputValue.length === 5) {
         var completeUrl =
             "https://onedrive.live.com/embed?cid=DFF1B4D9CD55ADCA&resid=DFF1B4D9CD55ADCA%2126211&authkey=" +
-                inputValue +
-                "vRhKe6BOaU&em=2";
+            inputValue +
+            "vRhKe6BOaU&em=2";
         theFrame.src = completeUrl;
         theFrame.style.display = "block";
     }
@@ -146,7 +146,7 @@ $(document).ready(function () {
         safari_web_id: "web.onesignal.auto.30b8db8e-86b1-4367-8886-055d3d362718",
         autoRegister: false,
         welcomeNotification: {
-            "title": "Welcome to My Take on Cloud Blog",
+            "title": "Welcome to The Cloud Blog",
             "message": "Thank you for subscribing!"
             // "url": ""
         },
