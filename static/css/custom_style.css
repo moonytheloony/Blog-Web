@@ -200,12 +200,6 @@ pre {
     padding-left: 2px;
 }
 
-.navbar-default .navbar-brand {
-    color: #000;
-    font-weight: 600;
-    font-size: 17px;
-}
-
 blockquote {
     font-size: 14px;
     color: #555555;
@@ -281,7 +275,7 @@ blockquote {
     }
 
 .titleSpan a {
-    font-size: 22px;
+    font-size: 20px;
     color: #EE5100 !important;
 }
 
