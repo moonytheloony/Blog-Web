@@ -169,6 +169,11 @@ body {
 
 .content-card {
     padding: 25px !important;
+    border-top: 0 !important;
+}
+
+.card {
+    border-top: 0 !important;
 }
 
 pre {
