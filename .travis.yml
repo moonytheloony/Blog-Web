@@ -4,43 +4,46 @@ sudo: required
 
 dist: precise
 
-install: 
-    - sudo apt-get install git
-    - npm install --g gulp
-    - npm install --save-dev gulp
-    - npm install --g gulp-cssmin
-    - npm install --save-dev gulp-cssmin
-    - npm install --g gulp-rename
-    - npm install --save-dev gulp-rename
-    - npm install --g event-stream
-    - npm install --save-dev event-stream
-    - npm install --g gulp-htmlmin
-    - npm install --save-dev gulp-htmlmin
-    - npm install --g gulp-uglify
-    - npm install --save-dev gulp-uglify
-    - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
-    - tar zxvf hugo_0.17_Linux-64bit.tar.gz
-    - mkdir -p $HOME/bin
-    - mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 $HOME/bin/hugo
-    - echo $GOPATH
-    - export PATH=$PATH:$HOME/bin:$GOPATH/bin
-    - rm -rf $deploy_dir || exit 0
+install:
+  - sudo apt-get install git
+  - npm cache clean -f
+  - npm install -g n
+  - n stable
+  - npm install --g gulp
+  - npm install --save-dev gulp
+  - npm install --g gulp-cssmin
+  - npm install --save-dev gulp-cssmin
+  - npm install --g gulp-rename
+  - npm install --save-dev gulp-rename
+  - npm install --g event-stream
+  - npm install --save-dev event-stream
+  - npm install --g gulp-htmlmin
+  - npm install --save-dev gulp-htmlmin
+  - npm install --g gulp-uglify
+  - npm install --save-dev gulp-uglify
+  - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+  - tar zxvf hugo_0.17_Linux-64bit.tar.gz
+  - mkdir -p $HOME/bin
+  - mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 $HOME/bin/hugo
+  - echo $GOPATH
+  - export PATH=$PATH:$HOME/bin:$GOPATH/bin
+  - rm -rf $deploy_dir || exit 0
 
 script:
-    - gulp minifyStylesheets
-    - gulp minifyScripts
-    - hugo
-    - gulp minifyHtml
-    - cp Web.config public/Web.config
-    - cp search.xml public/search.xml
-    - cp manifest.json public/manifest.json
-    - cp OneSignalSDKUpdaterWorker.js public/OneSignalSDKUpdaterWorker.js
-    - cp OneSignalSDKWorker.js public/OneSignalSDKWorker.js
+  - gulp minifyStylesheets
+  - gulp minifyScripts
+  - hugo
+  - gulp minifyHtml
+  - cp Web.config public/Web.config
+  - cp search.xml public/search.xml
+  - cp manifest.json public/manifest.json
+  - cp OneSignalSDKUpdaterWorker.js public/OneSignalSDKUpdaterWorker.js
+  - cp OneSignalSDKWorker.js public/OneSignalSDKWorker.js
 
 branches:
   only:
     - master
 
 after_success:
-    - cp .travis.yml $git_deploy_dir
-    - bash travisdeploy.sh --message "Travis auto commit "
+  - cp .travis.yml $git_deploy_dir
+  - bash travisdeploy.sh --message "Travis auto commit "
