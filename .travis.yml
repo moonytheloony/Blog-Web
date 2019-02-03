@@ -8,6 +8,7 @@ install:
   - sudo apt-get install git
   - npm cache clean -f
   - npm install -g n
+  - sudo n latest
   - npm install --g gulp
   - npm install --save-dev gulp
   - npm install --g gulp-cssmin
