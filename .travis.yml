@@ -4,6 +4,8 @@ sudo: required
 
 dist: precise
 
+node_js: 'node'
+
 before_install:
   - npm install -g npm
 
