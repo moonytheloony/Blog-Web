@@ -2,7 +2,7 @@ language: go
 
 sudo: required
 
-dist: precise
+# dist: precise
 
 node_js:
   - 11.10.0
