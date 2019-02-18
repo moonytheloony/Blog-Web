@@ -2,14 +2,6 @@ language: go
 
 sudo: required
 
-# dist: precise
-
-node_js:
-  - 11.10.0
-
-before_install:
-  - npm install -g npm
-
 install:
   - sudo apt-get install git
   - npm install --save-dev gulp
