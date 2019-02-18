@@ -4,11 +4,11 @@ sudo: required
 
 dist: precise
 
+before_install:
+  - npm install -g npm
+
 install:
   - sudo apt-get install git
-  - npm cache clean -f
-  - npm install -g npm
-  - sudo npm latest
   - npm install --g gulp
   - npm install --save-dev gulp
   - npm install --g gulp-cssmin
